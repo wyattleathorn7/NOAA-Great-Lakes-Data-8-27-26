@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLink>
+    <name>Great Lakes Live Buoys (auto-refresh)</name>
+    <Link>
+      <href>REPLACE_WITH_YOUR_GITHUB_PAGES_URL/live_buoys.kml</href>
+      <refreshMode>onInterval</refreshMode>
+      <refreshInterval>900</refreshInterval>
+      <viewRefreshMode>never</viewRefreshMode>
+    </Link>
+  </NetworkLink>
+</kml>

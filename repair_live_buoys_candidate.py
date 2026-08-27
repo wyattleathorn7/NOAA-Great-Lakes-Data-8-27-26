@@ -514,24 +514,209 @@ def glos_api_record(fetcher, platform, parameter_names):
     return result
 
 
+# Human-readable metric names + unit conversion. NOAA realtime2 native units are
+# degT/m/s/m/sec/hPa/degC/nmi/ft; GLOS reports temperatures in Kelvin. We present
+# marine-friendly English units (kts, ft, °, °F) and convert temperatures to °F.
+# Entry: (label, display_unit, conversion, is_int)
+#   conversion: None | numeric multiplier | "temp" (heuristic K/C->F)
+NOAA_METRICS = {
+    "WDIR": ("Wind Direction", "°", None, True),
+    "WSPD": ("Wind Speed", "kts", 1.94384, False),
+    "GST": ("Wind Gust", "kts", 1.94384, False),
+    "WVHT": ("Wave Height", "ft", 3.28084, False),
+    "DPD": ("Dominant Wave Period", "s", None, True),
+    "APD": ("Average Wave Period", "s", None, True),
+    "MWD": ("Mean Wave Direction", "°", None, True),
+    "PRES": ("Air Pressure", "hPa", None, False),
+    "BAR": ("Barometric Pressure", "hPa", None, False),
+    "SLP": ("Sea Level Pressure", "hPa", None, False),
+    "PTDY": ("Pressure Tendency", "hPa", None, False),
+    "ATMP": ("Air Temperature", "°F", "temp", False),
+    "WTMP": ("Water Temperature", "°F", "temp", False),
+    "DEWP": ("Dew Point", "°F", "temp", False),
+    "VIS": ("Visibility", "nmi", None, False),
+    "TIDE": ("Tide", "ft", None, False),
+    "WPER": ("Wave Period", "s", None, True),
+    "WTPS": ("Water Temperature at Depth", "°F", "temp", False),
+    "WTMW": ("Water Temperature (mid-water)", "°F", "temp", False),
+    "DRYT": ("Air Temperature", "°F", "temp", False),
+    "SST": ("Sea Surface Temperature", "°F", "temp", False),
+    "SRAD": ("Solar Radiation", "W/m²", None, False),
+}
+GLOS_METRICS = {
+    "sea_water_temperature": ("Water Temperature", "°F", "temp", False),
+    "sea_surface_temperature": ("Surface Water Temperature", "°F", "temp", False),
+    "sea_water_pressure": ("Water Pressure", "dbar", None, False),
+    "sea_water_pressure_at_reference_temperature": ("Water Pressure", "dbar", None, False),
+    "sea_water_electrical_conductivity_at_reference_temperature": ("Electrical Conductivity", "mS/cm", 10.0, False),
+    "sea_water_salinity": ("Salinity", "PSU", None, False),
+    "sea_water_absolute_salinity": ("Absolute Salinity", "PSU", None, False),
+    "sea_water_ph_reported_on_total_scale": ("pH", None, None, False),
+    "mass_concentration_of_oxygen_in_sea_water": ("Dissolved Oxygen", "mg/L", 1000.0, False),
+    "mass_concentration_of_chlorophyll_in_sea_water": ("Chlorophyll", "kg/m³", None, False),
+    "sea_surface_wave_significant_height": ("Wave Height", "ft", 3.28084, False),
+    "sea_surface_wave_mean_period": ("Wave Period", "s", None, True),
+    "sea_surface_wave_from_direction": ("Wave Direction", "°", None, True),
+    "sea_water_speed": ("Current Speed", "kts", 1.94384, False),
+    "eastward_sea_water_velocity": ("Eastward Current", "kts", 1.94384, False),
+    "northward_sea_water_velocity": ("Northward Current", "kts", 1.94384, False),
+    "northward_sea_water_salinity": ("Salinity", "PSU", None, False),
+    "sea_water_practical_salinity": ("Salinity", "PSU", None, False),
+    # Common CF standard_names (lower-case) that some GLOS platforms use.
+    "air_temperature": ("Air Temperature", "°F", "temp", False),
+    "dew_point_temperature": ("Dew Point", "°F", "temp", False),
+    "air_temperature_at_mean_sea_level": ("Air Temperature (MSL)", "°F", "temp", False),
+    "wind_speed": ("Wind Speed", "kts", 1.94384, False),
+    "wind_from_direction": ("Wind Direction", "°", None, True),
+    "wind_to_direction": ("Wind To Direction", "°", None, True),
+    "wind_speed_of_gust": ("Wind Gust", "kts", 1.94384, False),
+    "air_pressure": ("Air Pressure", "hPa", None, False),
+    "barometric_pressure": ("Barometric Pressure", "hPa", None, False),
+    "sea_surface_wave_significant_height": ("Wave Height", "ft", 3.28084, False),
+    "sea_surface_wave_mean_period": ("Wave Period", "s", None, True),
+    "sea_surface_wave_from_direction": ("Wave Direction", "°", None, True),
+    "sea_surface_wave_maximum_height": ("Maximum Wave Height", "ft", 3.28084, False),
+    "sea_water_speed": ("Current Speed", "kts", 1.94384, False),
+}
+
+# Some GLOS platforms report abbreviated parameter names (not CF standard_names).
+# Map the common ones to clear labels with correct units/conversion.
+GLOS_SHORT_CODES = {
+    "AirT": ("Air Temperature", "°F", "temp", False),
+    "AIRT": ("Air Temperature", "°F", "temp", False),
+    "Tair": ("Air Temperature", "°F", "temp", False),
+    "AT": ("Air Temperature", "°F", "temp", False),
+    "WT": ("Water Temperature", "°F", "temp", False),
+    "WTP": ("Water Temperature", "°F", "temp", False),
+    "TEMP": ("Water Temperature", "°F", "temp", False),
+    "DEW": ("Dew Point", "°F", "temp", False),
+    "SST": ("Sea Surface Temperature", "°F", "temp", False),
+    "WD": ("Wind Direction", "°", None, True),
+    "WDIR": ("Wind Direction", "°", None, True),
+    "WS": ("Wind Speed", "kts", 1.94384, False),
+    "WSP": ("Wind Speed", "kts", 1.94384, False),
+    "WSPEED": ("Wind Speed", "kts", 1.94384, False),
+    "WG": ("Wind Gust", "kts", 1.94384, False),
+    "WGUST": ("Wind Gust", "kts", 1.94384, False),
+    "WVDIR": ("Wave Direction", "°", None, True),
+    "WVP": ("Wave Period", "s", None, True),
+    "MWP": ("Mean Wave Period", "s", None, True),
+    "CHL": ("Chlorophyll", "", None, False),
+    "CHLA": ("Chlorophyll a", "", None, False),
+    "DO": ("Dissolved Oxygen", "mg/L", None, False),
+    "DOS": ("Dissolved Oxygen Saturation", "%", None, False),
+    "PHYCO": ("Phycocyanin", "", None, False),
+    "PHYT": ("Phytoplankton", "", None, False),
+    "RH": ("Relative Humidity", "%", None, False),
+    "BP": ("Barometric Pressure", "hPa", None, False),
+    "BARO": ("Barometric Pressure", "hPa", None, False),
+    "PRES": ("Air Pressure", "hPa", None, False),
+    "SAL": ("Salinity", "PSU", None, False),
+    "COND": ("Conductivity", "mS/cm", None, False),
+    "TURB": ("Turbidity", "NTU", None, False),
+    "TSS": ("Total Suspended Solids", "mg/L", None, False),
+    "BAT": ("Battery Voltage", "V", None, False),
+    "BATT": ("Battery Voltage", "V", None, False),
+    "VIS": ("Visibility", "nmi", None, False),
+}
+
+
+def _metric_info(key):
+    if key in NOAA_METRICS:
+        return NOAA_METRICS[key]
+    if key in GLOS_METRICS:
+        return GLOS_METRICS[key]
+    m = re.match(r"^WTemp(\d+)$", key)
+    if m:
+        return (f"Water Temperature (sensor {m.group(1)})", "°F", "temp", False)
+    ku = key.upper()
+    if ku in GLOS_SHORT_CODES:
+        return GLOS_SHORT_CODES[ku]
+    # Unknown: present the clearest available name, never a raw cryptic code.
+    label = key.replace("_", " ").replace("-", " ").title() if "_" in key or "-" in key else key
+    # Any temperature variable must be rendered in Fahrenheit (GLOS reports Kelvin
+    # for CF temperature standard names). Do not leave a raw Kelvin value exposed.
+    if "temperature" in key.lower():
+        return (label, "°F", "temp", False)
+    return (label, None, None, False)
+
+
+def _convert_temp(v):
+    if v > 100:
+        return (v - 273.15) * 9.0 / 5.0 + 32.0  # Kelvin
+    if v > 60:
+        return v  # already Fahrenheit
+    return v * 9.0 / 5.0 + 32.0  # Celsius
+
+
+def _fmt_num(v, is_int):
+    if is_int:
+        return str(int(round(v)))
+    v = round(v, 2)
+    if abs(v - round(v)) < 1e-9:
+        return str(int(round(v)))
+    return f"{v:.1f}"
+
+
+# GLOS exposes metadata/depth coordinate fields whose value is the measurement
+# depth (e.g. sea_water_temperature_fixed_depth -> "1 m"), NOT the variable itself.
+# These must never be rendered as the named measurement.
+DEPTH_META_RE = re.compile(r"(?:fixed_depth|_depth|measurement_depth|sensor_depth|depth_below|z_coordinate)$", re.I)
+
+
+def _depth_value(value):
+    """Return a clean 'Measurement Depth' string, or None if unparseable."""
+    m = re.match(r"\s*([\d.]+)\s*([a-zA-Z]+)?", str(value).strip())
+    if m:
+        num, unit = m.group(1), m.group(2)
+        return f"{num} {unit}" if unit else f"{num} m"
+    return None
+
+
 def display_values(result):
     record = result.get("record", {})
-    units = result.get("units", {})
     per_var = result.get("per_var_times", {})
     parts = []
-    time_parts = {"time", "timestamp", "datetime", "date_time", "date", "yy", "yyyy", "mm", "dd", "hh", "min", "minute", "ss", "second", "per_var_times"}
+    depth_text = None
+    time_parts = {"time", "timestamp", "datetime", "date_time", "date", "yy", "yyyy",
+                  "mm", "dd", "hh", "min", "minute", "ss", "second", "per_var_times",
+                  "latitude", "longitude", "#yy", "#yr", "yr", "mo", "dy", "hr", "mn"}
     # Distinguish coherent group time vs individually-reported variable times.
     coherent = bool(per_var) and all(per_var.get(k) == per_var.get(next(iter(per_var))) for k in per_var)
     for key, value in record.items():
-        if key.lower() in time_parts or not valid_value(value):
+        k = key.lower().lstrip("#")
+        if k in time_parts or key.lower() in time_parts or not valid_value(value):
             continue
-        suffix = f" {units[key]}" if units.get(key) else ""
+        # Depth/coordinate metadata: render once as Measurement Depth, never as the
+        # measured variable (e.g. a depth value must not become the temperature).
+        if DEPTH_META_RE.search(key):
+            dv = _depth_value(value)
+            if dv and depth_text is None:
+                depth_text = dv
+            continue
+        label, disp_unit, conv, is_int = _metric_info(key)
+        try:
+            num = float(value)
+            if conv == "temp":
+                num = _convert_temp(num)
+            elif isinstance(conv, (int, float)):
+                num = num * conv
+            shown = _fmt_num(num, is_int)
+        except (TypeError, ValueError):
+            shown = html.escape(str(value))
+        if disp_unit:
+            suffix = disp_unit if disp_unit.startswith("°") else f" {disp_unit}"
+        else:
+            suffix = ""
         if per_var and not coherent:
             vtime = per_var.get(key)
             if vtime:
-                parts.append(f"<b>{html.escape(key)}:</b> {html.escape(str(value))}{html.escape(suffix)} <span style=\"color:#888\">(observed {html.escape(vtime)})</span>")
+                parts.append(f"<b>{html.escape(label)}:</b> {shown}{html.escape(suffix)} "
+                             f"<span style=\"color:#888\">(observed {html.escape(vtime)})</span>")
                 continue
-        parts.append(f"<b>{html.escape(key)}:</b> {html.escape(str(value))}{html.escape(suffix)}")
+        parts.append(f"<b>{html.escape(label)}:</b> {shown}{html.escape(suffix)}")
+    if depth_text:
+        parts.append(f"<b>Measurement Depth:</b> {html.escape(depth_text)}")
     return "<br/>".join(parts) if parts else "No valid measurement variables returned."
 
 
