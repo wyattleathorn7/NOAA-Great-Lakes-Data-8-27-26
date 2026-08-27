@@ -33,9 +33,17 @@ jobs:
         run: python3 generate_live_kml.py --force
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          publish_branch: gh-pages
-          force_orphan: true
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          rm -rf /tmp/pages-deploy
+          mkdir -p /tmp/pages-deploy
+          cp -r docs/. /tmp/pages-deploy/
+          cd /tmp/pages-deploy
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy live buoys KML"
+          git push --force "https://x-access-token:${TOKEN}@github.com/${REPO}.git" HEAD:gh-pages
