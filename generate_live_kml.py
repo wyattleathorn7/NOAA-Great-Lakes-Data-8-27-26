@@ -56,7 +56,7 @@ def run(base_url, force=False):
     prior_map = G.prior_identity_map()
     records = {}
     audit = {"used_noaa": [], "used_glos": [], "offline": [], "unresolved": [],
-             "both_failed": [], "no_source": []}
+             "identity_failures": [], "both_failed": [], "no_source": []}
 
     def resolve(index, placemark):
         return G.resolve_placemark(index, placemark, fetcher, stations, platforms,
