@@ -1,6 +1,6 @@
 # Great Lakes Live Buoys Candidate v5 Audit
 
-Fetched: 2026-08-27 21:59:13 UTC
+Fetched: 2026-08-27 22:22:26 UTC
 Source: `great_lakes_live_buoys.kmz`
 
 ## QC Counts
@@ -21,11 +21,11 @@ Source: `great_lakes_live_buoys.kmz`
 - GLOS records used: 21
 - Other authoritative records used: 0
 - ONLINE (current observation available): 210
-- OFFLINE (exact platform linked, no current observation): 46
-- UNRESOLVED (exact platform/source identity cannot be established): 0
-- Exact identity gaps: 0
+- OFFLINE (exact platform linked, no current observation): 45
+- UNRESOLVED (exact platform/source identity cannot be established): 1
+- Exact identity gaps: 1
 - Previously unavailable/invalid descriptions audited: 256
-- Previously unavailable/invalid descriptions repaired: 256
+- Previously unavailable/invalid descriptions repaired: 255
 - Candidate descriptions with valid Observed timestamps: 210
 - Candidate descriptions still showing 'Data unavailable': 0 (offline stations are linked and auto-retried, not abandoned)
 - Measurements/timestamps coherent from one source row: 210
@@ -50,19 +50,19 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45001; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45001.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45001.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45001.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45001_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45001_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45001.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, APD, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### EAST SUPERIOR -70 NM NE Marquette, MI (2.3-meter foam discus buoy) [GLOS]
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45004.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45004; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45004.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45004.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45004.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45004_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45004_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45004.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45213.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45213; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45213.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45213.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45213.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45213_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45213_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45213.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, APD, MWD, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual variables obtained: WVHT, MWD, WTMP
+- Actual observation timestamp: 2026-08-27 18:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -72,8 +72,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45006; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45006.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45006.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45006.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45006_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45006_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45006.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, APD, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -84,7 +84,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -95,7 +95,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP, PTDY
-- Actual observation timestamp: 2026-08-27 20:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -106,7 +106,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:30:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -117,7 +117,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WVHT, MWD, WTMP
-- Actual observation timestamp: 2026-08-27 20:30:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -128,7 +128,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -150,7 +150,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 20:50:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -160,8 +160,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45173; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45173.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45173.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45173.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45173_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45173_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45173.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=65; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/65.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/65.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/65.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/65_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/65_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/65.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=172; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/172.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/172.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/172.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/172_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/172_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/172.txt; error=HTTP Error 404: Not Found
 - GLOS route results: source responded with no valid observation data; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=65; error=source returned no valid timestamped observations | lookup failed; URL=https://seagull-erddap.glos.org/erddap/tabledap/obs_65.json?time,air_pressure,air_temperature,sea_surface_temperature,sea_surface_wave_from_direction,sea_surface_wave_significant_height,sea_surface_wave_significant_period,wind_from_direction,wind_speed&orderByMax(%22time%22); error=HTTP Error 404:  | parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=172; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: wind_from_direction, sea_water_temperature, sea_surface_wave_significant_height, sea_surface_wave_mean_period, sea_surface_wave_period_at_variance_spectral_density_maximum, wind_speed, sea_surface_wave_from_direction, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, sea_surface_wave_directional_spread
-- Actual observation timestamp: 2026-08-27 20:50:49 UTC
+- Actual variables obtained: sea_surface_wave_directional_spread, sea_surface_wave_from_direction, wind_speed, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, wind_from_direction, sea_surface_wave_significant_height, sea_water_temperature, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_mean_period
+- Actual observation timestamp: 2026-08-27 21:50:49 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -171,8 +171,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=STDM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/STDM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/STDM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/STDM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/STDM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/STDM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/STDM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WSPD, GST, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -194,29 +194,29 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WVHT, DPD, APD, MWD, WTMP
-- Actual observation timestamp: 2026-08-27 21:26:00 UTC
+- Actual observation timestamp: 2026-08-27 21:56:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### East Superior Spotter (Spotter Buoy)
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45004.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45004; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45004.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45004.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45004.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45004_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45004_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45004.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45213.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45213; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45213.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45213.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45213.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45213_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45213_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45213.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, APD, MWD, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual variables obtained: WVHT, MWD, WTMP
+- Actual observation timestamp: 2026-08-27 18:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### Ontonagon, MI (Moored Buoy) [GLOS]
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/OTNM4.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OTNM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/OTNM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OTNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OTNM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/OTNM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OTNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OTNM4.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45216.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45216; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45216.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45216.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45216.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45216_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45216_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45216.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:50:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -227,7 +227,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WTMP
-- Actual observation timestamp: 2026-08-27 20:15:00 UTC
+- Actual observation timestamp: 2026-08-27 21:15:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -238,7 +238,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WSPD, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:20:00 UTC
+- Actual observation timestamp: 2026-08-27 21:20:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -260,7 +260,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -292,8 +292,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=DISW3; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/DISW3.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/DISW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/DISW3.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/DISW3_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/DISW3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/DISW3.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -303,8 +303,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=DULM5; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/DULM5.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/DULM5.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/DULM5.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/DULM5_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/DULM5_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/DULM5.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -314,8 +314,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=GDMM5; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/GDMM5.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/GDMM5.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/GDMM5.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/GDMM5_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/GDMM5_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/GDMM5.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -326,7 +326,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -348,7 +348,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 20:50:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -370,7 +370,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:56:00 UTC
+- Actual observation timestamp: 2026-08-27 21:56:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -381,7 +381,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:56:00 UTC
+- Actual observation timestamp: 2026-08-27 21:56:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -392,7 +392,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:51:00 UTC
+- Actual observation timestamp: 2026-08-27 21:51:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -402,8 +402,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=LTRM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/LTRM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/LTRM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/LTRM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/LTRM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/LTRM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/LTRM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -413,8 +413,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=MCGM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/MCGM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/MCGM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/MCGM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/MCGM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/MCGM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/MCGM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -425,18 +425,18 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### Ontonagon, MI (GLOS Weather Station)
 - Previous status: Data unavailable; missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/OTNM4.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OTNM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/OTNM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OTNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OTNM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/OTNM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OTNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OTNM4.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45216.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45216; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45216.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45216.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45216.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45216_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45216_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45216.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:50:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -458,7 +458,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -480,7 +480,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -490,8 +490,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=PTIM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/PTIM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/PTIM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/PTIM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/PTIM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/PTIM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/PTIM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -502,7 +502,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -513,7 +513,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -524,7 +524,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -534,8 +534,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=STDM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/STDM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/STDM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/STDM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/STDM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/STDM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/STDM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WSPD, GST, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -556,8 +556,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SWPM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/SWPM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SWPM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SWPM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/SWPM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SWPM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SWPM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -578,8 +578,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=WFPM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/WFPM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/WFPM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/WFPM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/WFPM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/WFPM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/WFPM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=265; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/265.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/265.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/265.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/265_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/265_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/265.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=265; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: sea_surface_wave_directional_spread, sea_surface_wave_mean_period, wind_from_direction, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum, wind_speed, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_significant_height, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, sea_surface_wave_from_direction, air_pressure
-- Actual observation timestamp: 2026-08-27 20:50:00 UTC
+- Actual variables obtained: air_pressure, sea_surface_wave_from_direction, sea_surface_wave_directional_spread, sea_surface_wave_significant_height, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, wind_from_direction, sea_surface_wave_mean_period, wind_speed
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -589,8 +589,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=WNEM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/WNEM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/WNEM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/WNEM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/WNEM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/WNEM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/WNEM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -630,7 +630,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 ### St. Joseph CG Station, MI (Weather Station)
 - Previous status: Data unavailable; missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJNM4; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJNM4.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=20CM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/20CM4.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJOM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJOM4.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJOM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJNM4; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJNM4.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=20CM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/20CM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -644,8 +644,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45002; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45002.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45002.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45002.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45002_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45002_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45002.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, APD, MWD, PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -677,8 +677,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45011; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45011.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45011.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45011.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45011_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45011_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45011.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=671; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/671.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/671.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/671.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/671_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/671_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/671.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=671; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: sea_surface_wave_significant_height, sea_surface_wave_from_direction, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum, sea_surface_wave_directional_spread, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, air_pressure, wind_from_direction, sea_surface_wave_mean_period, wind_speed
-- Actual observation timestamp: 2026-08-27 21:20:00 UTC
+- Actual variables obtained: wind_from_direction, air_pressure, sea_surface_wave_from_direction, wind_speed, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum, sea_surface_wave_directional_spread, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, sea_surface_wave_mean_period, sea_surface_wave_significant_height
+- Actual observation timestamp: 2026-08-27 22:20:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -733,7 +733,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: ATMP
-- Actual observation timestamp: 2026-08-27 20:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -744,7 +744,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: ATMP
-- Actual observation timestamp: 2026-08-27 20:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -799,18 +799,18 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### Holland Buoy, MI (Buoy) [GLOS]
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/HLNM4.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=HLNM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/HLNM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/HLNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/HLNM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/HLNM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/HLNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/HLNM4.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45029.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45029; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45029.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45029.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45029.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45029_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45029_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45029.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -832,7 +832,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -854,7 +854,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 21:20:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -865,7 +865,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -893,12 +893,12 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 
 ### Waukegan Buoy, IL (Moored Buoy) [GLOS]
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/WHRI2.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=WHRI2; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/WHRI2.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/WHRI2.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/WHRI2.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/WHRI2_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/WHRI2_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/WHRI2.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45186.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45186; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45186.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45186.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45186.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45186_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45186_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45186.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -908,8 +908,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45187; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45187.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45187.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45187.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45187_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45187_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45187.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:40:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -920,7 +920,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WVHT, DPD, APD, MWD, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -930,8 +930,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45198; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45198.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45198.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45198.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45198_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45198_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45198.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WSPD, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WSPD, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -941,8 +941,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45199; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45199.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45199.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45199.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45199_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45199_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45199.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, WVHT, DPD, MWD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 19:00:00 UTC
+- Actual variables obtained: WDIR, WSPD, WVHT, DPD, MWD, PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 20:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -953,7 +953,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WVHT, DPD, APD, MWD, WTMP
-- Actual observation timestamp: 2026-08-27 20:56:00 UTC
+- Actual observation timestamp: 2026-08-27 21:56:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -974,8 +974,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SGNW3; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/SGNW3.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SGNW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SGNW3.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/SGNW3_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SGNW3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SGNW3.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1008,7 +1008,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1018,8 +1018,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=C58W3; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/C58W3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/C58W3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/C58W3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/C58W3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/C58W3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/C58W3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=143; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/143.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/143.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/143.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/143_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/143_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/143.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=609; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/609.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/609.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/609.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/609_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/609_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/609.txt; error=HTTP Error 404: Not Found
 - GLOS route results: source responded with no valid observation data; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=143; error=source returned no valid timestamped observations | lookup failed; URL=https://seagull-erddap.glos.org/erddap/tabledap/obs_143.json?time,air_pressure,sea_surface_wave_directional_spread,sea_surface_wave_directional_spread_at_variance_spectral_density_maximum,sea_surface_wave_from_direction,sea_surface_wave_from_direction_at_variance_spectral_density_maximum,sea_surface_wave_mean_period,sea_surface_wave_period_at_variance_spectral_density_maximum,sea_surface_wave_significant_height,sea_water_temperature_1,sea_water_temperature_1_fixed_depth,sea_water_temperature_2,sea_water_temperature_2_fixed_depth,sea_water_temperature_3,sea_water_temperature_3_fixed_depth,sea_water_temperature_4,sea_water_temperature_4_fixed_depth,wind_from_direction,wind_speed&orderByMax(%22time%22); error=HTTP Error 404:  | parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=609; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_mean_period, sea_surface_wave_significant_height, wind_from_direction, wind_speed, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, sea_surface_wave_directional_spread, air_pressure, sea_surface_wave_from_direction, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum
-- Actual observation timestamp: 2026-08-27 21:25:00 UTC
+- Actual variables obtained: sea_surface_wave_significant_height, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, sea_surface_wave_from_direction, sea_surface_wave_directional_spread_at_variance_spectral_density_maximum, wind_from_direction, sea_surface_wave_directional_spread, air_pressure, sea_surface_wave_mean_period, sea_surface_wave_period_at_variance_spectral_density_maximum, wind_speed
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1030,7 +1030,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1051,8 +1051,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=CMTI2; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/CMTI2.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/CMTI2.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/CMTI2.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/CMTI2_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/CMTI2_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/CMTI2.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1074,7 +1074,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1085,7 +1085,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: ATMP
-- Actual observation timestamp: 2026-08-27 20:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1107,18 +1107,18 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### 9087031 - Holland, MI (Water Level Observation Network)
 - Previous status: Data unavailable; missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/HLNM4.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=HLNM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/HLNM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/HLNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/HLNM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/HLNM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/HLNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/HLNM4.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45029.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45029; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45029.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45029.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45029.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45029_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45029_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45029.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1151,7 +1151,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1172,8 +1172,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=MACM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/MACM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/MACM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/MACM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/MACM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/MACM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/MACM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1227,8 +1227,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=MNMM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/MNMM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/MNMM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/MNMM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/MNMM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/MNMM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/MNMM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1249,8 +1249,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=PNLM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/PNLM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/PNLM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/PNLM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/PNLM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/PNLM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/PNLM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1261,7 +1261,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, ATMP
-- Actual observation timestamp: 2026-08-27 21:35:00 UTC
+- Actual observation timestamp: 2026-08-27 22:10:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1271,15 +1271,15 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SGNW3; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/SGNW3.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SGNW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SGNW3.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/SGNW3_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SGNW3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SGNW3.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### St. Joseph, MI (GLOS Weather Station)
 - Previous status: Data unavailable; missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJNM4; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJNM4.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=20CM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/20CM4.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJOM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJOM4.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJOM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJOM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJOM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SJNM4; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SJNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SJNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SJNM4.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=20CM4; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/20CM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/20CM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/20CM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -1294,7 +1294,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1305,18 +1305,18 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### Waukegan Harbor, IL (GLOS Weather Station)
 - Previous status: Data unavailable; missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/WHRI2.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=WHRI2; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/WHRI2.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/WHRI2.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/WHRI2.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/WHRI2_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/WHRI2_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/WHRI2.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45186.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45186; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45186.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45186.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45186.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45186_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45186_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45186.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1356,7 +1356,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 ### Charlevoix Beach, MI (Beach)
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45010; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45010_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45010_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=CHARLEVOIX_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/CHARLEVOIX_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/CHARLEVOIX_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=charlevoix_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/charlevoix_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/charlevoix_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/charlevoix_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/charlevoix_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/charlevoix_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/charlevoix_beach.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=CHARLEVOIX_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/CHARLEVOIX_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/CHARLEVOIX_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/CHARLEVOIX_BEACH.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45010; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45010_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45010_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45010.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=charlevoix_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/charlevoix_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/charlevoix_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/charlevoix_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/charlevoix_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/charlevoix_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/charlevoix_beach.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -1404,7 +1404,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, DPD, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1415,7 +1415,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1425,8 +1425,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45162; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45162.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45162.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45162.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45162_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45162_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45162.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:20:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1436,8 +1436,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45209; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45209.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45209.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45209.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45209_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45209_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45209.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1470,7 +1470,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:40:00 UTC
+- Actual observation timestamp: 2026-08-27 22:15:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1480,8 +1480,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=DTLM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/DTLM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/DTLM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/DTLM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/DTLM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/DTLM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/DTLM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1491,8 +1491,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=FTGM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/FTGM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/FTGM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/FTGM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/FTGM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/FTGM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/FTGM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1503,7 +1503,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:40:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1513,8 +1513,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=HRBM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/HRBM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/HRBM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/HRBM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/HRBM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/HRBM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/HRBM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1524,8 +1524,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=KP58; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/KP58.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/KP58.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/KP58.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/KP58_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/KP58_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/KP58.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:55:00 UTC
+- Actual variables obtained: WDIR, WSPD, PRES, ATMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:55:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1535,8 +1535,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=LPNM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/LPNM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/LPNM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/LPNM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/LPNM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/LPNM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/LPNM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1675,7 +1675,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 ### Ipperwash Beach, ON (Beach)
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=IPPERWASH_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/IPPERWASH_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/IPPERWASH_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=ipperwash_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/ipperwash_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/ipperwash_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/ipperwash_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/ipperwash_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/ipperwash_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/ipperwash_beach.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=IPPERWASH_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/IPPERWASH_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/IPPERWASH_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/IPPERWASH_BEACH.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=ipperwash_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/ipperwash_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/ipperwash_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/ipperwash_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/ipperwash_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/ipperwash_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/ipperwash_beach.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -1697,7 +1697,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 ### Port Franks Beach, ON (Beach)
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=PORT_FRANKS_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/PORT_FRANKS_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/PORT_FRANKS_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=port_franks_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/port_franks_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/port_franks_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/port_franks_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/port_franks_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/port_franks_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/port_franks_beach.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=PORT_FRANKS_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/PORT_FRANKS_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/PORT_FRANKS_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/PORT_FRANKS_BEACH.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=port_franks_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/port_franks_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/port_franks_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/port_franks_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/port_franks_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/port_franks_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/port_franks_beach.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -1708,7 +1708,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 ### Bayfield Beach, ON (Beach)
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=BAYFIELD_BEACH_ON; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/BAYFIELD_BEACH_ON_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/BAYFIELD_BEACH_ON_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=bayfield_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/bayfield_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/bayfield_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/bayfield_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/bayfield_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/bayfield_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/bayfield_beach.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=BAYFIELD_BEACH_ON; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/BAYFIELD_BEACH_ON_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/BAYFIELD_BEACH_ON_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/BAYFIELD_BEACH_ON.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=bayfield_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/bayfield_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/bayfield_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/bayfield_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/bayfield_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/bayfield_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/bayfield_beach.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -1744,21 +1744,21 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45005; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45005.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45005.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45005.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45005_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45005_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45005.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ###  (3-meter discus buoy)
 - Previous status: Data unavailable; missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: lookup failed; URL=none; error=none
+- NOAA alternate attempts: none
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
 - Actual observation timestamp: none
-- Description successfully repaired: yes
-- Reason: OFFLINE: exact platform identified and linked; no current observation (auto-retried next run)
+- Description successfully repaired: no
+- Reason: UNRESOLVED: exact platform/source identity could not be established; NOAA route log retained; GLOS route log retained; NOAA final error: none; GLOS final error: not attempted
 
 ### Port Stanley (3-meter discus buoy) [GLOS]
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
@@ -1767,7 +1767,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1778,7 +1778,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1789,7 +1789,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, DPD, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1800,7 +1800,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WVHT, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1811,7 +1811,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1822,7 +1822,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:20:00 UTC
+- Actual observation timestamp: 2026-08-27 21:20:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1843,8 +1843,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45176; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45176.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45176.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45176.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45176_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45176_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45176.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1855,7 +1855,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, DEWP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1877,7 +1877,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:20:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1887,8 +1887,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45201; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45201.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45201.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45201.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45201_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45201_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45201.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1898,8 +1898,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45202; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45202.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45202.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45202.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45202_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45202_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45202.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, MWD, PRES, ATMP, WTMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1910,7 +1910,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, WTMP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1921,7 +1921,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:20:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1931,8 +1931,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45205; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45205.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45205.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45205.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45205_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45205_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45205.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1942,8 +1942,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45206; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45206.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45206.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45206.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45206_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45206_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45206.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1954,18 +1954,18 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:20:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### Ashtabula Buoy (Moored Buoy) [GLOS]
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/ASBO1.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=ASBO1; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/ASBO1.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/ASBO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/ASBO1.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/ASBO1_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/ASBO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/ASBO1.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45208.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45208; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45208.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45208.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45208.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45208_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45208_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45208.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, MWD, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1976,7 +1976,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, MWD, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:30:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1987,7 +1987,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -1998,7 +1998,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WTMP
-- Actual observation timestamp: 2026-08-27 20:30:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2008,8 +2008,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=AGCM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/AGCM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/AGCM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/AGCM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/AGCM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/AGCM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/AGCM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2020,7 +2020,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2031,7 +2031,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2042,7 +2042,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2052,8 +2052,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=BUFN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/BUFN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/BUFN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/BUFN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/BUFN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/BUFN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/BUFN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2064,7 +2064,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2086,7 +2086,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WVHT, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2096,8 +2096,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=DBLN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/DBLN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/DBLN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/DBLN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/DBLN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/DBLN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/DBLN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2108,7 +2108,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA CO-OPS
 - Actual variables obtained: water_level
-- Actual observation timestamp: 2026-08-27 21:48:00 UTC
+- Actual observation timestamp: 2026-08-27 22:12:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2118,8 +2118,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=FAIO1; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/FAIO1.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/FAIO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/FAIO1.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/FAIO1_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/FAIO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/FAIO1.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2129,7 +2129,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=GELO1; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/GELO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/GELO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/GELO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/GELO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/GELO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/GELO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=LEASH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/LEASH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/LEASH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/LEASH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/LEASH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/LEASH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/LEASH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=17; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/17.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/17.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/17.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/17_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/17_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/17.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=17; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: sea_water_ph_reported_on_total_scale, chlorophyll_fluorescence, fractional_saturation_of_oxygen_in_sea_water, sea_water_temperature, sea_water_electrical_conductivity_at_reference_temperature, mass_concentration_of_oxygen_in_sea_water, phycocyanin_fluorescence, sea_water_turbidity
+- Actual variables obtained: fractional_saturation_of_oxygen_in_sea_water, chlorophyll_fluorescence, sea_water_ph_reported_on_total_scale, sea_water_temperature, sea_water_electrical_conductivity_at_reference_temperature, mass_concentration_of_oxygen_in_sea_water, phycocyanin_fluorescence, sea_water_turbidity
 - Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
@@ -2141,7 +2141,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2151,8 +2151,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45005; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45005.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45005.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45005.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45005_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45005_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45005.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2162,8 +2162,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=MBRM4; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/MBRM4.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/MBRM4.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/MBRM4.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/MBRM4_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/MBRM4_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/MBRM4.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2173,8 +2173,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=MRHO1; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/MRHO1.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/MRHO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/MRHO1.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/MRHO1_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/MRHO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/MRHO1.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2195,8 +2195,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OWDO1; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/OWDO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OWDO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OWDO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/OWDO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OWDO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OWDO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OWCDRWQ; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/OWCDRWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OWCDRWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OWCDRWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/OWCDRWQ_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OWCDRWQ_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OWCDRWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=233; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/233.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/233.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/233.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/233_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/233_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/233.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=237; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/237.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=233; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: sea_water_temperature, mass_concentration_of_oxygen_in_sea_water, sea_water_turbidity, fractional_saturation_of_oxygen_in_sea_water, sea_water_practical_salinity, sea_water_electrical_conductivity_at_reference_temperature, sea_water_ph_reported_on_total_scale
-- Actual observation timestamp: 2026-08-27 20:15:00 UTC
+- Actual variables obtained: mass_concentration_of_oxygen_in_sea_water, sea_water_turbidity, sea_water_electrical_conductivity_at_reference_temperature, sea_water_practical_salinity, fractional_saturation_of_oxygen_in_sea_water, sea_water_ph_reported_on_total_scale, sea_water_temperature
+- Actual observation timestamp: 2026-08-27 21:15:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2206,8 +2206,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OWQO1; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/OWQO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OWQO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OWQO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/OWQO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OWQO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OWQO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OWCOLWQ; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/OWCOLWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OWCOLWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OWCOLWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/OWCOLWQ_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OWCOLWQ_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OWCOLWQ.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=235; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/235.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/235.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/235.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/235_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/235_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/235.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=237; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/237.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=235; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: sea_water_ph_reported_on_total_scale, sea_water_electrical_conductivity_at_reference_temperature, sea_water_temperature, mass_concentration_of_oxygen_in_sea_water, sea_water_turbidity, sea_water_practical_salinity, fractional_saturation_of_oxygen_in_sea_water
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual variables obtained: fractional_saturation_of_oxygen_in_sea_water, sea_water_ph_reported_on_total_scale, sea_water_electrical_conductivity_at_reference_temperature, sea_water_temperature, sea_water_turbidity, sea_water_practical_salinity, mass_concentration_of_oxygen_in_sea_water
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2217,8 +2217,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OWSO1; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/OWSO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OWSO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OWSO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/OWSO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OWSO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OWSO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=237; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/237.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=237; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: wind_speed_of_gust, relative_humidity, surface_downwelling_photosynthetic_photon_flux_in_air, air_pressure, lwe_thickness_of_precipitation_amount, wind_speed, wind_from_direction
-- Actual observation timestamp: 2026-08-27 20:45:00 UTC
+- Actual variables obtained: surface_downwelling_photosynthetic_photon_flux_in_air, wind_speed, wind_speed_of_gust, wind_from_direction, lwe_thickness_of_precipitation_amount, relative_humidity, air_pressure
+- Actual observation timestamp: 2026-08-27 21:45:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2228,8 +2228,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OWWO1; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/OWWO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OWWO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OWWO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/OWWO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OWWO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OWWO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=237; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/237.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/237_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/237.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=237; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: wind_speed_of_gust, relative_humidity, surface_downwelling_photosynthetic_photon_flux_in_air, air_pressure, lwe_thickness_of_precipitation_amount, wind_speed, wind_from_direction
-- Actual observation timestamp: 2026-08-27 20:45:00 UTC
+- Actual variables obtained: surface_downwelling_photosynthetic_photon_flux_in_air, wind_speed, wind_speed_of_gust, wind_from_direction, lwe_thickness_of_precipitation_amount, relative_humidity, air_pressure
+- Actual observation timestamp: 2026-08-27 21:45:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2250,8 +2250,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=PSTN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/PSTN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/PSTN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/PSTN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/PSTN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/PSTN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/PSTN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2261,8 +2261,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=SBIO1; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/SBIO1.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/SBIO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/SBIO1.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/SBIO1_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/SBIO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/SBIO1.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 21:30:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP, PTDY
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2283,8 +2283,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=THRO1; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/THRO1.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/THRO1.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/THRO1.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/THRO1_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/THRO1_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/THRO1.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2295,7 +2295,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2306,7 +2306,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WSPD, GST, ATMP, WTMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:40:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2317,7 +2317,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 21:10:00 UTC
+- Actual observation timestamp: 2026-08-27 22:10:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2372,14 +2372,14 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### Port Burwell Beach, ON (Beach)
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=PORT_BURWELL_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/PORT_BURWELL_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/PORT_BURWELL_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=port_burwell_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/port_burwell_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/port_burwell_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/port_burwell_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/port_burwell_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/port_burwell_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/port_burwell_beach.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=PORT_BURWELL_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/PORT_BURWELL_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/PORT_BURWELL_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/PORT_BURWELL_BEACH.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=port_burwell_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/port_burwell_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/port_burwell_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/port_burwell_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/port_burwell_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/port_burwell_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/port_burwell_beach.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -2401,7 +2401,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 ### Long Point Beach, ON (Beach)
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=LONG_POINT_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/LONG_POINT_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/LONG_POINT_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=long_point_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/long_point_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/long_point_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/long_point_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/long_point_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/long_point_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/long_point_beach.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=LONG_POINT_BEACH; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/LONG_POINT_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/LONG_POINT_BEACH_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/LONG_POINT_BEACH.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45009; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45009_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45009.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=long_point_beach; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/long_point_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/long_point_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/long_point_beach.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/long_point_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/long_point_beach_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/long_point_beach.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -2416,7 +2416,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, APD, MWD, PRES, ATMP
-- Actual observation timestamp: 2026-08-27 21:20:00 UTC
+- Actual observation timestamp: 2026-08-27 21:50:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2427,7 +2427,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2438,7 +2438,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2449,7 +2449,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2471,7 +2471,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2482,7 +2482,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:30:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2493,7 +2493,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WSPD, GST, ATMP, DEWP
-- Actual observation timestamp: 2026-08-27 20:30:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2503,8 +2503,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OSGN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/OSGN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OSGN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OSGN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/OSGN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OSGN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OSGN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2514,8 +2514,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=CAVN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/CAVN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/CAVN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/CAVN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/CAVN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/CAVN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/CAVN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, WTMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2536,8 +2536,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=NIAN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/NIAN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/NIAN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/NIAN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/NIAN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/NIAN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/NIAN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2548,7 +2548,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2558,8 +2558,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OSGN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/OSGN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OSGN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OSGN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/OSGN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OSGN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OSGN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, DEWP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2570,7 +2570,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: ATMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2581,7 +2581,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2642,12 +2642,12 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 
 ### Georgian Bay (Buoy) [GLOS]
 - Previous status: missing Observed timestamp; retrieval timestamp used without observation timestamp
-- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45143.txt; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45143; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45143.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45143.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45143.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45143_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45143_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45143.txt; error=HTTP Error 404: Not Found
+- NOAA lookup/result: parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45137.txt; error=none
+- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45137; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/45137.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45137.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45137.txt; error=response contained no NOAA header | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/45137_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45137_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45137.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2658,7 +2658,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, WVHT, DPD, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2669,7 +2669,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, DPD, PRES, ATMP, WTMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2723,8 +2723,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=45184; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/45184.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/45184.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/45184.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/45184_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/45184_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/45184.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=60; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/60.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/60.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/60.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/60_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/60_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/60.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=43; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/43.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/43.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/43.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/43_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/43_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/43.txt; error=HTTP Error 404: Not Found
 - GLOS route results: source responded with no valid observation data; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=60; error=source returned no valid timestamped observations | lookup failed; URL=https://seagull-erddap.glos.org/erddap/tabledap/obs_60.json?time,battery_voltage,chlorophyll_fluorescence,concentration_of_fluorescent_dissolved_organic_matter,fluorescent_dissolved_organic_matter,fractional_saturation_of_oxygen_in_sea_water,mass_concentration_of_blue_green_algae_in_sea_water_rfu,mass_concentration_of_blue_green_algae_in_sea_water_rfu_fixed_depth,mass_concentration_of_oxygen_in_sea_water,phycocyanin_fluorescence,sea_surface_temperature,sea_water_electrical_conductivity,sea_water_ph_reported_on_total_scale,sea_water_temperature_0,sea_water_temperature_0_fixed_depth,sea_water_temperature_1,sea_water_temperature_1_fixed_depth,sea_water_temperature_2,sea_water_temperature_2_fixed_depth,sea_water_turbidity,surface_downwelling_photosynthetic_photon_flux_in_air,surface_downwelling_photosynthetic_photon_flux_in_sea_water,wind_from_direction,wind_speed&orderByMax(%22time%22); error=HTTP Error 404:  | parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=43; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: wind_speed_of_gust, sea_water_turbidity, wind_from_direction, sea_surface_wave_significant_height, sea_water_temperature, surface_downwelling_shortwave_flux_in_air, air_temperature, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, sea_surface_wave_period_at_variance_spectral_density_maximum, air_pressure_at_mean_sea_level, wind_speed, mass_concentration_of_chlorophyll_in_sea_water, phycocyanin_fluorescence, sea_surface_wave_maximum_height, sea_surface_wave_from_direction, sea_surface_wave_mean_height_of_highest_tenth, battery_voltage
-- Actual observation timestamp: 2026-08-22 14:00:00 UTC
+- Actual variables obtained: chlorophyll_fluorescence, mass_concentration_of_oxygen_in_sea_water, wind_speed, sea_water_temperature, wind_from_direction, air_pressure_at_mean_sea_level, sea_water_electrical_conductivity_at_reference_temperature, fractional_saturation_of_oxygen_in_sea_water, sea_water_turbidity, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, mass_concentration_of_chlorophyll_in_sea_water, wind_speed_of_gust, sea_surface_wave_significant_height, air_temperature, phycocyanin_fluorescence, phycocyanin_concentration, sea_surface_wave_mean_height_of_highest_tenth, battery_voltage, surface_downwelling_shortwave_flux_in_air, depth, sea_surface_wave_from_direction, sea_water_ph_reported_on_total_scale, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_maximum_height
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2734,8 +2734,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=GBWW3; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/GBWW3.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/GBWW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/GBWW3.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/GBWW3_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/GBWW3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/GBWW3.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2745,8 +2745,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=GBLW3; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/GBLW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/GBLW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/GBLW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/GBLW3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/GBLW3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/GBLW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=43; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/43.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/43.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/43.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/43_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/43_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/43.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=GBEL; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/GBEL.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/GBEL.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/GBEL.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/GBEL_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/GBEL_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/GBEL.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=154; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/154.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/154.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/154.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/154_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/154_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/154.txt; error=HTTP Error 404: Not Found
 - GLOS route results: parsed usable observation; URL=https://seagull-api.glos.org/api/v1/obs?startDate=2026-07-28&obsDatasetId=43; error=none
 - Final selected source: GLOS Seagull
-- Actual variables obtained: wind_speed_of_gust, sea_water_turbidity, wind_from_direction, sea_surface_wave_significant_height, sea_water_temperature, surface_downwelling_shortwave_flux_in_air, air_temperature, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, sea_surface_wave_period_at_variance_spectral_density_maximum, air_pressure_at_mean_sea_level, wind_speed, mass_concentration_of_chlorophyll_in_sea_water, phycocyanin_fluorescence, sea_surface_wave_maximum_height, sea_surface_wave_from_direction, sea_surface_wave_mean_height_of_highest_tenth, battery_voltage
-- Actual observation timestamp: 2026-08-22 14:00:00 UTC
+- Actual variables obtained: chlorophyll_fluorescence, mass_concentration_of_oxygen_in_sea_water, wind_speed, sea_water_temperature, wind_from_direction, air_pressure_at_mean_sea_level, sea_water_electrical_conductivity_at_reference_temperature, fractional_saturation_of_oxygen_in_sea_water, sea_water_turbidity, sea_surface_wave_from_direction_at_variance_spectral_density_maximum, mass_concentration_of_chlorophyll_in_sea_water, wind_speed_of_gust, sea_surface_wave_significant_height, air_temperature, phycocyanin_fluorescence, phycocyanin_concentration, sea_surface_wave_mean_height_of_highest_tenth, battery_voltage, surface_downwelling_shortwave_flux_in_air, depth, sea_surface_wave_from_direction, sea_water_ph_reported_on_total_scale, sea_surface_wave_period_at_variance_spectral_density_maximum, sea_surface_wave_maximum_height
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2756,8 +2756,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=GBWW3; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/GBWW3.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/GBWW3.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/GBWW3.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/GBWW3_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/GBWW3_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/GBWW3.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: WDIR, WSPD, GST, PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2790,7 +2790,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2801,7 +2801,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, GST, PRES, ATMP, PTDY
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2812,7 +2812,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: WDIR, WSPD, WVHT, DPD, PRES, ATMP, WTMP
-- Actual observation timestamp: 2026-08-27 21:00:00 UTC
+- Actual observation timestamp: 2026-08-27 22:00:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2823,7 +2823,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2834,7 +2834,7 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
 - Actual variables obtained: PRES, WTMP
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual observation timestamp: 2026-08-27 21:30:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
@@ -2844,15 +2844,15 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=OBGN6; error=station page fetched; observation feed required | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/realtime2/OBGN6.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/OBGN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/OBGN6.txt; error=HTTP Error 404: Not Found | parsed usable observation; URL=https://www.ndbc.noaa.gov/data/5day2/OBGN6_5day.txt; error=none | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/OBGN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/OBGN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: NOAA NDBC
-- Actual variables obtained: PRES
-- Actual observation timestamp: 2026-08-27 21:18:00 UTC
+- Actual variables obtained: PRES, ATMP
+- Actual observation timestamp: 2026-08-27 21:48:00 UTC
 - Description successfully repaired: yes
 - Reason: ONLINE: live observation rebuilt from one source observation row
 
 ### Thousand I. Brdg., NY (C-MAN Station)
 - Previous status: Data unavailable; missing Observed timestamp; retrieval timestamp used without observation timestamp
 - NOAA lookup/result: lookup failed; URL=; error=none
-- NOAA alternate attempts: source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=THIN6; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/THIN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/THIN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/THIN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/THIN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/THIN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/THIN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=TICN6; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/TICN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/TICN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/TICN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/TICN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/TICN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/TICN6.txt; error=HTTP Error 404: Not Found
+- NOAA alternate attempts: lookup failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=TICN6; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/TICN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/TICN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/TICN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/TICN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/TICN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/TICN6.txt; error=HTTP Error 404: Not Found | source responded but parse failed; URL=https://www.ndbc.noaa.gov/station_page.php?station=THIN6; error=station page fetched; observation feed required | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime2/THIN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/realtime/THIN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/latest_obs/THIN6.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day2/THIN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/5day/THIN6_5day.txt; error=HTTP Error 404: Not Found | lookup failed; URL=https://www.ndbc.noaa.gov/data/historical/THIN6.txt; error=HTTP Error 404: Not Found
 - GLOS route results: not queried because NOAA row was usable
 - Final selected source: none
 - Actual variables obtained: none
@@ -2862,9 +2862,8 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 
 ## Lists
 
-### OFFLINE (exact platform linked, no current observation) (46)
+### OFFLINE (exact platform linked, no current observation) (45)
 
--  (3-meter discus buoy)
 - 63rd St., Chicago, IL (C-MAN Station)
 - Algoma City Marina, WI (Weather Station)
 - Barker's Island, Lake Superior Reserve, WI (NERRS Water Quality Station)
@@ -2911,8 +2910,9 @@ Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only a
 - Wasaga Beach, ON (Beach)
 - White Shoal Light, MI (C-MAN Station)
 
-### UNRESOLVED (exact platform/source identity could not be established) (0)
+### UNRESOLVED (exact platform/source identity could not be established) (1)
 
+-  (3-meter discus buoy)
 
 ### Suspicious (0)
 

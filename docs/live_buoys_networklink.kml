@@ -3,7 +3,7 @@
   <NetworkLink>
     <name>Great Lakes Live Buoys (auto-refresh)</name>
     <Link>
-      <href>REPLACE_WITH_YOUR_GITHUB_PAGES_URL/live_buoys.kml</href>
+      <href>https://example.com/live_buoys.kml</href>
       <refreshMode>onInterval</refreshMode>
       <refreshInterval>900</refreshInterval>
       <viewRefreshMode>never</viewRefreshMode>

@@ -658,18 +658,44 @@ def _fmt_num(v, is_int):
     return f"{v:.1f}"
 
 
-# GLOS exposes metadata/depth coordinate fields whose value is the measurement
-# depth (e.g. sea_water_temperature_fixed_depth -> "1 m"), NOT the variable itself.
-# These must never be rendered as the named measurement.
-DEPTH_META_RE = re.compile(r"(?:fixed_depth|_depth|measurement_depth|sensor_depth|depth_below|z_coordinate)$", re.I)
+# GLOS encodes water temperature at a fixed depth with parameters such as
+# sea_water_temperature_fixed_depth or sea_water_temperature_1_depth. For these,
+# the VALUE is either (a) the water-temperature observation in Kelvin, or (b) in
+# some feeds a depth placeholder such as "1 m" while the real temperature lives in
+# a sibling sea_water_temperature variable. The depth (e.g. "1 m") must NEVER be
+# rendered as the temperature -- it is shown as Measurement Depth instead.
+TEMP_AT_DEPTH_RE = re.compile(r"sea_water_temperature.*(?:fixed_depth|_depth)$", re.I)
+DEPTH_NAME_RE = re.compile(r"_(\d+(?:\.\d+)?)_depth$", re.I)
+# Genuine depth/coordinate metadata (not a temperature variable).
+TRUE_DEPTH_RE = re.compile(
+    r"(?:sea_floor_depth|depth_below_sea_surface|sensor_depth|measurement_depth|"
+    r"z_coordinate|_depth$|fixed_depth)$", re.I)
 
 
 def _depth_value(value):
-    """Return a clean 'Measurement Depth' string, or None if unparseable."""
+    """Return a clean depth string, or None if unparseable."""
     m = re.match(r"\s*([\d.]+)\s*([a-zA-Z]+)?", str(value).strip())
     if m:
         num, unit = m.group(1), m.group(2)
         return f"{num} {unit}" if unit else f"{num} m"
+    return None
+
+
+def _depth_like(value):
+    """If `value` looks like a measurement depth (not a temperature), return a
+    clean depth string; otherwise return None (so the value is treated as temp)."""
+    s = str(value).strip()
+    m = re.match(r"\s*([\d.]+)\s*([a-zA-Z]*)\s*$", s)
+    if not m:
+        return None
+    num = float(m.group(1))
+    unit = m.group(2).lower()
+    if unit in {"m", "meter", "meters", "metre", "metres", "ft", "feet",
+                "fathom", "fathoms"}:
+        return f"{m.group(1)} {unit}"
+    # Kelvin water temperatures are >= ~270; a small bare number is a depth.
+    if num < 100:
+        return f"{m.group(1)} m"
     return None
 
 
@@ -678,6 +704,9 @@ def display_values(result):
     per_var = result.get("per_var_times", {})
     parts = []
     depth_text = None
+    temp_at_depth = []  # (label, shown) for temperature-at-depth renders
+    has_surface_temp = any(k.lower().lstrip("#") == "sea_water_temperature"
+                          for k in record)
     time_parts = {"time", "timestamp", "datetime", "date_time", "date", "yy", "yyyy",
                   "mm", "dd", "hh", "min", "minute", "ss", "second", "per_var_times",
                   "latitude", "longitude", "#yy", "#yr", "yr", "mo", "dy", "hr", "mn"}
@@ -687,9 +716,26 @@ def display_values(result):
         k = key.lower().lstrip("#")
         if k in time_parts or key.lower() in time_parts or not valid_value(value):
             continue
-        # Depth/coordinate metadata: render once as Measurement Depth, never as the
-        # measured variable (e.g. a depth value must not become the temperature).
-        if DEPTH_META_RE.search(key):
+        if TEMP_AT_DEPTH_RE.search(key):
+            depth_n = DEPTH_NAME_RE.search(k)
+            depth_n = depth_n.group(1) if depth_n else None
+            dv = _depth_like(value)
+            if dv is not None:
+                # value is the measurement depth, not the temperature; keep depth.
+                depth_text = (f"{depth_n} m") if depth_n else dv
+                continue
+            # value is the water temperature (Kelvin) -> render it.
+            try:
+                num = float(value)
+                shown = _fmt_num(_convert_temp(num), False)
+            except (TypeError, ValueError):
+                shown = html.escape(str(value))
+            label = "Water Temperature" + (f" ({depth_n} m)" if depth_n else "")
+            temp_at_depth.append((label, shown))
+            if depth_n and depth_text is None:
+                depth_text = f"{depth_n} m"
+            continue
+        if TRUE_DEPTH_RE.search(key):
             dv = _depth_value(value)
             if dv and depth_text is None:
                 depth_text = dv
@@ -715,6 +761,16 @@ def display_values(result):
                              f"<span style=\"color:#888\">(observed {html.escape(vtime)})</span>")
                 continue
         parts.append(f"<b>{html.escape(label)}:</b> {shown}{html.escape(suffix)}")
+    # Temperature-at-depth: for a single fixed depth (with no surface temp to
+    # disambiguate), show a clean two-line result (Water Temperature + Measurement
+    # Depth); otherwise keep the depth in the label to avoid ambiguity.
+    if temp_at_depth:
+        if len(temp_at_depth) == 1 and not has_surface_temp:
+            label, shown = temp_at_depth[0]
+            parts.append(f"<b>Water Temperature:</b> {shown}°F")
+        else:
+            for label, shown in temp_at_depth:
+                parts.append(f"<b>{html.escape(label)}:</b> {shown}°F")
     if depth_text:
         parts.append(f"<b>Measurement Depth:</b> {html.escape(depth_text)}")
     return "<br/>".join(parts) if parts else "No valid measurement variables returned."
@@ -870,6 +926,22 @@ def candidate_glos_platforms(name, description, prior, platforms, lat, lon, allo
     return []
 
 
+# Placemarks the operator has explicitly chosen to keep UNRESOLVED because their
+# exact platform/source identity could not be established. They must NOT be flipped
+# to OFFLINE/ONLINE merely because a later run finds a possible GLOS/NOAA match.
+FORCED_UNRESOLVED = [
+    {"name_re": re.compile(r"discus buoy", re.I), "lat": 41.6, "lon": -82.0, "tol": 0.01},
+]
+
+
+def _is_forced_unresolved(name, lat, lon):
+    for f in FORCED_UNRESOLVED:
+        if (f["name_re"].search(name or "") and lat is not None and lon is not None
+                and abs(lat - f["lat"]) <= f["tol"] and abs(lon - f["lon"]) <= f["tol"]):
+            return True
+    return False
+
+
 def resolve_placemark(index, placemark, fetcher, stations, platforms, parameter_names, prior_map, audit):
     """Exhaustive exact-identity resolution. Tries every candidate NOAA id across
     all feeds, then every matching GLOS platform (API then ERDDAP)."""
@@ -883,6 +955,16 @@ def resolve_placemark(index, placemark, fetcher, stations, platforms, parameter_
         lon, lat = float(values[0]), float(values[1])
     except (ValueError, IndexError):
         return index, name, None, None
+    # Operator-explicit UNRESOLVED: keep identity unestablished regardless of any
+    # later GLOS/NOAA match (exact platform identity was not confirmed).
+    if _is_forced_unresolved(name, lat, lon):
+        audit.setdefault("unresolved", []).append(name)
+        audit.setdefault("identity_failures", []).append(name)
+        unresolved = {"status": "unresolved", "source_label": None, "source_links": [],
+                      "identity_text": name, "record": {}, "parsed": False, "raw": False,
+                      "error": "exact platform/source identity could not be established (operator-forced UNRESOLVED)"}
+        return index, name, unresolved, {"noaa": {"lookup": "skipped (forced unresolved)"},
+                                         "glos": {"lookup": "skipped (forced unresolved)"}}
     prior = prior_for_name(name, prior_map)
     water_match = re.search(r"(?<!\d)(\d{7})(?!\d)", name)
     coops_id = water_match.group(1) if water_match else None
