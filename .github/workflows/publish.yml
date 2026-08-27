@@ -1,0 +1,41 @@
+name: Publish live buoys KML
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub may delay scheduled runs slightly.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed by peaceiris/actions-gh-pages to push gh-pages
+
+concurrency:
+  group: publish-live-buoys
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate live KML
+        env:
+          KML_BASE_URL: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+        run: python3 generate_live_kml.py --force
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true
