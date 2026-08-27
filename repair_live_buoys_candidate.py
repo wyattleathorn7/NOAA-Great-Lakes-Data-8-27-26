@@ -709,9 +709,18 @@ def resolve_placemark(index, placemark, fetcher, stations, platforms, parameter_
     if is_beach:
         # Beaches have their own exact NOAA station id (embedded in the original
         # source link, e.g. station=grand_bend_beach); never fall back to a nearby
-        # buoy. Only match stations that are themselves beach stations.
+        # buoy. Match only stations that are themselves beach stations. If the
+        # original link gave no id, derive the beach's own nominal station id from
+        # its name (same <location>_beach convention) so the placemark stays tied
+        # to its exact platform rather than becoming unresolved.
         noaa_ids = candidate_noaa_ids(name, description, prior, stations, lat, lon,
                                       allow_table_match=True, beach_only=True)
+        loc = re.split(r",", name)[0]
+        loc = re.sub(r"\(.*?\)", "", loc)
+        loc = re.sub(r"\bbeach\b", "", loc, flags=re.I)
+        loc = loc.strip().lower().replace(" ", "_")
+        if loc:
+            noaa_ids.append(loc + "_beach")
         glos_candidates = []
     else:
         noaa_ids = candidate_noaa_ids(name, description, prior, stations, lat, lon, allow_table_match=True)
