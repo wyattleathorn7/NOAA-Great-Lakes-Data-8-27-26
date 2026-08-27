@@ -17,8 +17,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / "great_lakes_live_buoys.kmz"
-OUTPUT = ROOT / "candidate_great_lakes_live_buoys_v4.kmz"
-REPORT = ROOT / "candidate_great_lakes_live_buoys_v4_audit.md"
+OUTPUT = ROOT / "candidate_great_lakes_live_buoys_v5.kmz"
+REPORT = ROOT / "candidate_great_lakes_live_buoys_v5_audit.md"
 CATALOG = ROOT / "seagull_platforms.geojson"
 PRIOR_AUDIT = ROOT / "candidate_great_lakes_live_buoys_v2_audit.md"
 KML_NS = "http://www.opengis.net/kml/2.2"
@@ -535,6 +535,54 @@ def display_values(result):
     return "<br/>".join(parts) if parts else "No valid measurement variables returned."
 
 
+def extract_original_link(old_description):
+    """Pull the first href from an original placemark description so it can be
+    preserved even when the platform is offline or unresolved."""
+    if not old_description:
+        return ""
+    m = re.search(r'href=["\']([^"\']+)["\']', old_description, re.I)
+    return m.group(1) if m else ""
+
+
+def render_description(name, result, attempts, fetched_at, original_link=""):
+    """Build a placemark description that keeps the platform permanently tied to
+    its exact source. ONLINE shows measurements + Observed + Fetched. OFFLINE
+    shows 'currently offline' with the exact source links (never another
+    platform's data). UNRESOLVED preserves the original link."""
+    status = result.get("status")
+    if status == "online":
+        body = display_values(result)
+        observed = timestamp_text(result.get("record", {})) or "Unparseable"
+        links = result.get("source_links", [])
+        link_html = "<br/>".join(
+            f'<a href="{html.escape(u, quote=True)}">{html.escape(l)}</a>' for l, u in links)
+        return (f"<b>{html.escape(name)}</b><br/><br/>{body}"
+                f"<br/><br/><b>Observed source timestamp:</b> {observed}"
+                f"<br/><b>Fetched runtime:</b> {fetched_at}"
+                f"<br/><b>Source:</b> {html.escape(result.get('source_label', ''))}<br/>{link_html}")
+    if status == "offline":
+        identity = result.get("identity_text", name)
+        links = result.get("source_links", [])
+        link_html = "<br/>".join(
+            f'<a href="{html.escape(u, quote=True)}">{html.escape(l)}</a>' for l, u in links)
+        body = ("Currently offline — awaiting next observation.<br/>"
+                f"<b>Exact platform:</b> {html.escape(identity)}<br/>"
+                f"<b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no "
+                f"current observation. It will be retried automatically on the next scheduled update.<br/>"
+                f"<b>Observed source timestamp:</b> none (platform offline)<br/>"
+                f"<b>Fetched runtime:</b> {fetched_at}<br/>"
+                f"<b>Source:</b> {html.escape(result.get('source_label', ''))}<br/>{link_html}")
+        if original_link and original_link not in link_html:
+            body += f"<br/><a href=\"{html.escape(original_link, quote=True)}\">Original source link</a>"
+        return f"<b>{html.escape(name)}</b><br/><br/>{body}"
+    # UNRESOLVED: identity could not be established; keep the placemark + original link.
+    body = ("Exact platform/source identity could not be established.<br/>"
+            f"<b>Fetched runtime:</b> {fetched_at}<br/>")
+    if original_link:
+        body += f"<a href=\"{html.escape(original_link, quote=True)}\">Original source link</a><br/>"
+    return f"<b>{html.escape(name)}</b><br/><br/>{body}"
+
+
 def valid_variables(result):
     """Return exactly the variables represented by the selected source row."""
     record = result.get("record", {})
@@ -561,6 +609,252 @@ def source_ids(name, description):
     return {match.upper() for match in re.findall(r"(?<![A-Z0-9])\d{5,7}(?![A-Z0-9])", content)}
 
 
+def near_latlon(lat, lon, plat, plon, thr=1.0):
+    """Same-location test in approximate degrees (lon scaled for latitude)."""
+    if lat is None or plat is None:
+        return True
+    return abs(lat - plat) + abs(lon - plon) * 0.6 <= thr
+
+
+def candidate_noaa_ids(name, description, prior, stations, lat=None, lon=None, allow_table_match=True, beach_only=False):
+    """Every plausible NOAA station identity for this exact platform: numbers in
+    the name/description, the exact station id embedded in the original source
+    link, GLOS-embedded station numbers, station-table name matches that are also
+    at the SAME location (prevents a different station with a similar name from
+    being treated as this platform), and explicit overrides. For beaches,
+    allow_table_match is disabled so a nearby buoy is never substituted for the
+    beach's own station; when beach_only is set, station-table matches are limited
+    to actual beach stations."""
+    ids = set()
+    ids.update(source_ids(name, description))
+    ids.update(re.findall(r"station(?:=|%3D)([A-Za-z0-9_-]+)", f"{name} {description}", re.I))
+    ids.update(prior.get("noaa", set()))
+    base = core(name)
+    if allow_table_match:
+        for station_id, info in stations.items():
+            if beach_only and "beach" not in (station_id + " " + info.get("name", "")).lower():
+                continue
+            sbase = core(info["name"])
+            if not base or not sbase:
+                continue
+            if base == sbase or (len(sbase) >= 8 and sbase in base) or (len(base) >= 8 and base in sbase):
+                if near_latlon(lat, lon, info.get("lat"), info.get("lon"), 1.0):
+                    ids.add(station_id)
+    for key, override in IDENTITY_OVERRIDES.items():
+        if core(key) == base and override.get("noaa"):
+            ids.add(override["noaa"].upper())
+    return [sid.upper() for sid in ids]
+
+
+def candidate_glos_platforms(name, description, prior, platforms, lat, lon, allow_coord):
+    """Every GLOS platform that could be this exact platform, ordered best-first:
+    exact name match, then name containment, all constrained to the SAME location.
+    Type-aligned platforms (buoy->buoy, C-MAN->C-MAN) are preferred. Never a
+    distant buoy. Beaches/weather/NERRS may additionally fall back to a tight
+    coordinate match at the same site."""
+    base = core(name)
+    scored = []
+    type_re = re.compile(r"(buoy|weather|c-?man|beach|spotter|waverider|discus|nerres|water quality)", re.I)
+    for p in platforms:
+        pbase = core(p["name"])
+        if not base or not pbase:
+            continue
+        if base == pbase:
+            score = 1000
+        elif len(pbase) >= 8 and pbase in base:
+            score = 500
+        elif len(base) >= 8 and base in pbase:
+            score = 400
+        else:
+            continue
+        if not near_latlon(lat, lon, p["lat"], p["lon"], 0.5):
+            continue
+        pm = type_re.search(name)
+        pt = type_re.search(p["name"])
+        if pm and pt and pm.group(1).lower() == pt.group(1).lower():
+            score += 50
+        scored.append((score, p))
+    scored.sort(key=lambda x: -x[0])
+    best = [p for _, p in scored]
+    if best:
+        return best
+    if allow_coord and lat is not None:
+        near = [p for p in platforms
+                if abs(p["lat"] - lat) + abs(p["lon"] - lon) * 0.6 <= 0.18]
+        return sorted(near, key=lambda p: abs(p["lat"] - lat) + abs(p["lon"] - lon))
+    return []
+
+
+def resolve_placemark(index, placemark, fetcher, stations, platforms, parameter_names, prior_map, audit):
+    """Exhaustive exact-identity resolution. Tries every candidate NOAA id across
+    all feeds, then every matching GLOS platform (API then ERDDAP)."""
+    name = text_of(placemark.find(f"{{{KML_NS}}}name"))
+    description = text_of(placemark.find(f"{{{KML_NS}}}description"))
+    coordinate = placemark.find(f".//{{{KML_NS}}}coordinates")
+    if coordinate is None or not coordinate.text:
+        return index, name, None, None
+    values = coordinate.text.strip().split(",")
+    try:
+        lon, lat = float(values[0]), float(values[1])
+    except (ValueError, IndexError):
+        return index, name, None, None
+    prior = prior_for_name(name, prior_map)
+    water_match = re.search(r"(?<!\d)(\d{7})(?!\d)", name)
+    coops_id = water_match.group(1) if water_match else None
+    # A beach is not an NOAA/GLOS buoy or C-MAN; it has no exact NOAA/GLOS platform
+    # of its own. Matching it to a nearby buoy would be substitution, which is
+    # forbidden. Such placemarks are left UNRESOLVED (original link preserved) until
+    # an exact beach-specific source can be supplied.
+    is_beach = bool(re.search(r"\(beach\)", name, re.I))
+    if is_beach:
+        # Beaches have their own exact NOAA station id (embedded in the original
+        # source link, e.g. station=grand_bend_beach); never fall back to a nearby
+        # buoy. Only match stations that are themselves beach stations.
+        noaa_ids = candidate_noaa_ids(name, description, prior, stations, lat, lon,
+                                      allow_table_match=True, beach_only=True)
+        glos_candidates = []
+    else:
+        noaa_ids = candidate_noaa_ids(name, description, prior, stations, lat, lon, allow_table_match=True)
+        allow_coord = bool(re.search(r"nerres|water quality|weather station|reserve", name, re.I))
+        glos_candidates = candidate_glos_platforms(name, description, prior, platforms, lat, lon, allow_coord)
+    # A GLOS platform that name-matches this placemark is the SAME platform under
+    # a second identity (its org_platform_id is frequently an NOAA station id, and
+    # its obs_dataset_id is frequently an NDBC buoy number). Try those as exact
+    # identities before falling back to GLOS's own (empty) dataset.
+    for platform in glos_candidates:
+        org = platform.get("id", "")
+        if org and re.match(r"^[A-Z]{2,5}\d{0,4}[A-Z]{0,2}$", org) and "SPOT" not in org and "NDBC" not in org:
+            noaa_ids.append(org.upper())
+        ds = platform.get("dataset")
+        if isinstance(ds, int) or str(ds).isdigit():
+            noaa_ids.append(str(ds))
+    # For coordinate-identified buoys with no name match, the platform at the
+    # exact coordinates IS the same platform; match tightly (<=0.06 deg).
+    if not glos_candidates and lat is not None:
+        tight = [p for p in platforms
+                 if abs(p["lat"] - lat) + abs(p["lon"] - lon) * 0.6 <= 0.06]
+        glos_candidates = sorted(tight, key=lambda p: abs(p["lat"] - lat) + abs(p["lon"] - lon))
+        for platform in glos_candidates:
+            org = platform.get("id", "")
+            if org and re.match(r"^[A-Z]{2,5}\d{0,4}[A-Z]{0,2}$", org) and "SPOT" not in org and "NDBC" not in org:
+                noaa_ids.append(org.upper())
+            ds = platform.get("dataset")
+            if isinstance(ds, int) or str(ds).isdigit():
+                noaa_ids.append(str(ds))
+
+    # NOAA: try every candidate id across all feeds; keep first coherent row.
+    noaa = {"raw": False, "parsed": False, "record": {}, "url": "", "alternate_attempts": [],
+            "station": None, "authoritative_url": ""}
+    for sid in noaa_ids:
+        attempts_list, usable = noaa_attempts(fetcher, sid)
+        noaa["alternate_attempts"].extend(attempts_list)
+        if usable and usable.get("parsed"):
+            noaa = dict(usable)
+            noaa["alternate_attempts"] = noaa["alternate_attempts"] if "alternate_attempts" in noaa else attempts_list
+            noaa["station"] = sid
+            noaa["authoritative_url"] = f"https://www.ndbc.noaa.gov/station_page.php?station={sid}"
+            break
+    if noaa.get("parsed"):
+        audit["used_noaa"].append(name)
+        final = dict(noaa)
+        final["status"] = "online"
+        final["source_label"] = "NOAA NDBC"
+        final["source_links"] = [("NOAA NDBC station page", noaa["authoritative_url"])]
+        final["identity_text"] = f"NOAA {noaa['station']}"
+        return index, name, final, {"noaa": noaa, "noaa_alternates": noaa["alternate_attempts"],
+                                  "glos": {"lookup": "not queried because NOAA was usable"}}
+
+    # CO-OPS water-level (only when a 7-digit id is present and NOAA failed).
+    if coops_id and "WATER LEVEL" in name.upper():
+        coops = coops_record(fetcher, coops_id)
+        if coops.get("parsed"):
+            audit["used_noaa"].append(name)
+            coops["authoritative_url"] = coops.get("url", "")
+            coops["status"] = "online"
+            coops["source_label"] = "NOAA CO-OPS"
+            coops["source_links"] = [("NOAA CO-OPS station", f"https://api.tidesandcurrents.noaa.gov/stations.html?station={coops_id}")]
+            coops["identity_text"] = f"CO-OPS {coops_id}"
+            return index, name, coops, {"noaa": coops, "noaa_alternates": [coops], "glos": {"lookup": "CO-OPS"}}
+
+    # GLOS: try every matching platform until one returns a coherent row.
+    glos_routes = []
+    glos = {"raw": False, "parsed": False, "record": {}, "url": "", "routes": []}
+    chosen_platform = None
+    for platform in glos_candidates:
+        g = glos_api_record(fetcher, platform, parameter_names)
+        g["platform_name"] = platform.get("name")
+        g["dataset"] = platform.get("dataset")
+        glos_routes.append(g)
+        if g.get("parsed"):
+            glos = g
+            chosen_platform = platform
+            break
+        metadata, _ = erddap_metadata(fetcher, platform["dataset"])
+        if metadata:
+            erddap = erddap_record(fetcher, platform, metadata)
+            erddap["route"] = "ERDDAP tabledap fallback"
+            erddap["platform_name"] = platform.get("name")
+            glos_routes.append(erddap)
+            if erddap.get("parsed"):
+                glos = erddap
+                chosen_platform = platform
+                break
+    if glos.get("parsed"):
+        audit["used_glos"].append(name)
+        ds = chosen_platform.get("dataset")
+        org = chosen_platform.get("id", "")
+        links = [("GLOS Seagull data console", f"https://seagull.glos.org/data-console/{ds}")]
+        ident = f"GLOS dataset {ds}"
+        if org and re.match(r"^[A-Z]{2,5}\d{0,4}[A-Z]{0,2}$", org) and "SPOT" not in org and "NDBC" not in org:
+            links.append(("NOAA station page", f"https://www.ndbc.noaa.gov/station_page.php?station={org}"))
+            ident += f" / NOAA {org}"
+        glos["status"] = "online"
+        glos["source_label"] = "GLOS Seagull"
+        glos["source_links"] = links
+        glos["identity_text"] = ident
+        return index, name, glos, {"noaa": noaa, "noaa_alternates": noaa["alternate_attempts"],
+                                 "glos": glos, "glos_routes": glos_routes}
+
+    # No current observation, but exact platform identities WERE established.
+    # Keep the placemark tied to its exact source; mark OFFLINE (not unavailable).
+    if noaa_ids or glos_candidates or coops_id:
+        audit["offline"].append(name)
+        links = []
+        identity_parts = []
+        if glos_candidates:
+            p = glos_candidates[0]
+            ds = p.get("dataset")
+            org = p.get("id", "")
+            links.append(("GLOS Seagull data console", f"https://seagull.glos.org/data-console/{ds}"))
+            identity_parts.append(f"GLOS dataset {ds}")
+            if org and re.match(r"^[A-Z]{2,5}\d{0,4}[A-Z]{0,2}$", org) and "SPOT" not in org and "NDBC" not in org:
+                links.append(("NOAA station page", f"https://www.ndbc.noaa.gov/station_page.php?station={org}"))
+                identity_parts.append(f"NOAA {org}")
+        if noaa_ids:
+            sid = noaa_ids[0]
+            links.append(("NOAA station page", f"https://www.ndbc.noaa.gov/station_page.php?station={sid}"))
+            if not identity_parts:
+                identity_parts.append(f"NOAA {sid}")
+        if coops_id and not links:
+            links.append(("NOAA CO-OPS station", f"https://api.tidesandcurrents.noaa.gov/stations.html?station={coops_id}"))
+            identity_parts.append(f"CO-OPS {coops_id}")
+        offline = {"status": "offline", "source_label": links[0][0], "source_links": links,
+                   "identity_text": ", ".join(identity_parts) or name,
+                   "record": {}, "parsed": False, "raw": True,
+                   "error": "platform identified and linked; no current observation returned by any feed"}
+        return index, name, offline, {"noaa": noaa, "noaa_alternates": noaa["alternate_attempts"],
+                                   "glos": glos, "glos_routes": glos_routes}
+
+    # No candidate identity could be established at all -> UNRESOLVED (not unavailable).
+    audit["unresolved"].append(name)
+    audit["identity_failures"].append(name)
+    unresolved = {"status": "unresolved", "source_label": None, "source_links": [],
+                  "identity_text": name, "record": {}, "parsed": False, "raw": False,
+                  "error": "exact platform/source identity could not be established"}
+    return index, name, unresolved, {"noaa": noaa, "noaa_alternates": noaa["alternate_attempts"],
+                                 "glos": glos, "glos_routes": glos_routes}
+
+
 def main():
     if OUTPUT.exists() and "--force" not in sys.argv[1:]:
         raise SystemExit(f"Refusing to overwrite existing output: {OUTPUT}")
@@ -585,77 +879,12 @@ def main():
         for index, placemark in enumerate(placemarks)
     }
     audit = {"source_returned_but_parse_failed": [], "suspicious": [], "both_failed": [],
-             "used_noaa": [], "used_glos": [], "no_source": [], "identity_failures": []}
+             "used_noaa": [], "used_glos": [], "no_source": [], "identity_failures": [],
+             "offline": [], "unresolved": []}
 
     def resolve(index, placemark):
-        name = text_of(placemark.find(f"{{{KML_NS}}}name"))
-        description = text_of(placemark.find(f"{{{KML_NS}}}description"))
-        coordinate = placemark.find(f".//{{{KML_NS}}}coordinates")
-        if coordinate is None or not coordinate.text:
-            return index, name, None, None
-        values = coordinate.text.strip().split(",")
-        try: lon, lat = float(values[0]), float(values[1])
-        except (ValueError, IndexError): return index, name, None, None
-        prior = prior_for_name(name, prior_map)
-        water_match = re.search(r"(?<!\d)(\d{7})(?!\d)", name)
-        coops_id = water_match.group(1) if water_match else None
-        # Resolve the exact GLOS platform (name match + coordinate confirmation).
-        # Computed unconditionally so a failed CO-OPS/NOAA lookup can still fall
-        # back to the exact same platform via GLOS.
-        platform = identity_platform(name, description, prior, platforms, lon, lat)
-        noaa_ids = explicit_noaa_ids(name, description, prior, stations, platform)
-        explicit_station = next((sid for sid in noaa_ids if sid in stations), None)
-        station = None
-        if coops_id and ("WATER LEVEL" in name.upper() or coops_id not in stations):
-            coops = coops_record(fetcher, coops_id)
-            noaa = coops
-            noaa_attempts_detail = [coops]
-            # A water-level station may also be published by GLOS; keep the GLOS
-            # fallback available below rather than treating CO-OPS as exclusive.
-        else:
-            # Identity comes from source evidence/catalogs. Coordinates are never
-            # promoted to an NOAA identity.
-            station = explicit_station or (noaa_ids[0] if noaa_ids else None)
-            noaa_attempts_detail, noaa = noaa_attempts(fetcher, station)
-            if station:
-                noaa["station"] = station
-                noaa["authoritative_url"] = f"https://www.ndbc.noaa.gov/station_page.php?station={station}"
-        if noaa.get("parsed"):
-            if not any(valid_value(value) for key, value in noaa["record"].items()
-                       if key.lower() not in {"yy", "yyyy", "mm", "dd", "hh", "min", "ss"}):
-                audit["suspicious"].append(name)
-            audit["used_noaa"].append(name)
-            noaa["lookup"] = "queried and parsed"
-            noaa["alternate_attempts"] = noaa_attempts_detail
-            return index, name, noaa, {"noaa": noaa, "noaa_alternates": noaa_attempts_detail, "glos": {"lookup": "not queried because NOAA was usable"}}
-        glos = glos_api_record(fetcher, platform, parameter_names)
-        glos_routes = [glos]
-        if platform and not glos.get("parsed"):
-            metadata, metadata_error = erddap_metadata(fetcher, platform["dataset"])
-            if metadata:
-                erddap = erddap_record(fetcher, platform, metadata)
-                erddap["route"] = "ERDDAP tabledap fallback"
-                glos_routes.append(erddap)
-                if erddap.get("parsed"):
-                    glos = erddap
-            else:
-                glos["metadata_error"] = metadata_error
-        if glos.get("parsed"):
-            if not any(valid_value(value) for key, value in glos["record"].items()
-                       if key.lower() not in {"time", "timestamp", "datetime", "date_time", "date"}):
-                audit["suspicious"].append(name)
-            audit["used_glos"].append(name)
-            glos["lookup"] = "queried and parsed"
-            return index, name, glos, {"noaa": noaa, "noaa_alternates": noaa_attempts_detail, "glos": glos, "glos_routes": glos_routes}
-        noaa["alternate_attempts"] = noaa_attempts_detail
-        if noaa.get("raw") or glos.get("raw"):
-            audit["source_returned_but_parse_failed"].append(name)
-        if station or platform:
-            audit["both_failed"].append(name)
-        else:
-            audit["no_source"].append(name)
-            audit["identity_failures"].append(name)
-        return index, name, noaa if noaa.get("raw") else glos, {"noaa": noaa, "noaa_alternates": noaa_attempts_detail, "glos": glos, "glos_routes": glos_routes}
+        return resolve_placemark(index, placemark, fetcher, stations, platforms,
+                                parameter_names, prior_map, audit)
 
     with ThreadPoolExecutor(max_workers=16) as pool:
         jobs = [pool.submit(resolve, i, p) for i, p in enumerate(placemarks)]
@@ -668,62 +897,42 @@ def main():
         description = placemark.find(f"{{{KML_NS}}}description")
         if description is None:
             description = ET.SubElement(placemark, f"{{{KML_NS}}}description")
-        if result.get("parsed"):
-            body = display_values(result)
-            observed = timestamp_text(result["record"])
-            source_url = result.get("authoritative_url", result.get("url", ""))
-            source = f"<b>Source:</b> {html.escape(result['source'])}<br/><a href=\"{html.escape(source_url, quote=True)}\">Authoritative live source</a><br/>"
-            body = f"{body}<br/><br/><b>Observed source timestamp:</b> {observed or 'Unparseable'}<br/><b>Fetched runtime:</b> {fetched_at}<br/>{source}"
-        else:
-            body = f"<b>Data unavailable:</b> {html.escape(str(result.get('error', 'no authoritative observation row returned')))}.<br/><br/><b>Observed source timestamp:</b> none<br/><b>Fetched runtime:</b> {fetched_at}<br/>"
-            if result.get("url"):
-                body += f"<b>Attempted source:</b> <a href=\"{html.escape(result['url'], quote=True)}\">{html.escape(result.get('source', 'live source'))}</a><br/>"
-            for alternate in attempts.get("noaa_alternates", []):
-                if alternate.get("url"):
-                    status = "usable row" if alternate.get("parsed") else str(alternate.get("error", "no usable row"))
-                    body += f"<b>NOAA route {html.escape(alternate.get('feed', 'feed'))}:</b> <a href=\"{html.escape(alternate['url'], quote=True)}\">attempt</a>: {html.escape(status)}<br/>"
-            for glos_attempt in attempts.get("glos_routes", [attempts.get("glos", {})]):
-                if glos_attempt:
-                    status = "usable row" if glos_attempt.get("parsed") else str(glos_attempt.get("error", "not attempted"))
-                    body += f"<b>GLOS route:</b> <a href=\"{html.escape(glos_attempt.get('url', ''), quote=True)}\">{html.escape(glos_attempt.get('url', 'not attempted'))}</a>: {html.escape(status)}<br/>"
-        description.text = f"<b>{html.escape(name)}</b><br/><br/>{body}"
+        original_link = extract_original_link(previous_descriptions[index])
+        body = render_description(name, result, attempts, fetched_at, original_link)
+        description.text = body
 
     # Audit every old description that lacked a trustworthy observation record,
     # plus every current exact-identity gap even if the old description looked complete.
     broken_details = []
+    status_of = {i: records[i][1].get("status") for i in range(len(placemarks))}
     for index, placemark in enumerate(placemarks):
         name, result, attempts = records[index]
         old_description = previous_descriptions[index]
         old_status = previous_status(old_description)
-        if not old_status and result.get("parsed"):
-            continue
         noaa = attempts.get("noaa", {})
         glos = attempts.get("glos", {})
-        selected = result.get("source", "none") if result.get("parsed") else "none"
-        observed = timestamp_text(result.get("record", {})) if result.get("parsed") else None
-        variables = valid_variables(result) if result.get("parsed") else []
-        if result.get("parsed") and observed and variables:
+        selected = result.get("source_label", "none") if result.get("status") == "online" else "none"
+        observed = timestamp_text(result.get("record", {})) if result.get("status") == "online" else None
+        variables = valid_variables(result) if result.get("status") == "online" else []
+        status = result.get("status")
+        # Every placemark is audited: ONLINE, OFFLINE, or UNRESOLVED.
+        if status == "online" and observed and variables:
             repair = "yes"
-            reason = "description rebuilt from one source observation row"
-        elif result.get("parsed") and not observed:
-            repair = "no"
-            reason = "source returned values but its observation timestamp could not be parsed"
+            reason = "ONLINE: live observation rebuilt from one source observation row"
+        elif status == "online" and not observed:
+            repair = "partial"
+            reason = "ONLINE: source returned values but observation timestamp could not be parsed"
+        elif status == "offline":
+            repair = "yes"
+            reason = "OFFLINE: exact platform identified and linked; no current observation (auto-retried next run)"
         else:
             repair = "no"
-            errors = " ".join(str(item.get("error", "")) for item in attempts.get("noaa_alternates", []))
-            if "HTTP Error 404" in errors:
-                category = "HTTP missing feed"
-            elif noaa.get("raw") and not noaa.get("parsed"):
-                category = "parser failure/no current rows"
-            elif glos.get("raw") and not glos.get("parsed"):
-                category = "no current rows/parser failure"
-            elif not attempts.get("noaa_alternates") or all(not item.get("raw") for item in attempts.get("noaa_alternates", [])):
-                category = "endpoint failure or identity mismatch"
-            else:
-                category = "no current rows"
-            reason = f"{category}; NOAA route log retained; GLOS route log retained; NOAA final error: {noaa.get('error', 'none')}; GLOS final error: {glos.get('error', 'not attempted')}"
+            reason = (f"UNRESOLVED: exact platform/source identity could not be established; "
+                      f"NOAA route log retained; GLOS route log retained; "
+                      f"NOAA final error: {noaa.get('error', 'none')}; GLOS final error: {glos.get('error', 'not attempted')}")
         broken_details.append({
             "name": name,
+            "status": status,
             "previous": old_status,
             "noaa": noaa,
             "glos": glos,
@@ -750,12 +959,15 @@ def main():
     with zipfile.ZipFile(OUTPUT, "w", zipfile.ZIP_DEFLATED) as archive:
         archive.writestr("doc.kml", xml_text.encode("utf-8"))
 
-    report = ["# Great Lakes Live Buoys Candidate v4 Audit", "", f"Fetched: {fetched_at}", f"Source: `{SOURCE.name}`", "", "## QC Counts", "", f"- Source Placemark count: {len(placemarks)}", f"- Candidate Placemark count: {len(root.findall(f'.//{{{KML_NS}}}Placemark'))}", f"- Source coordinate count: {len(root.findall(f'.//{{{KML_NS}}}coordinates'))}", f"- NetworkLink count preserved: {len(links)}", f"- Exact titles preserved: {'PASS' if names_preserved else 'FAIL'}", f"- Exact coordinate text preserved: {'PASS' if coordinates_preserved else 'FAIL'}", f"- Folder/type structure preserved: {'PASS' if folders_preserved else 'FAIL'}" ]
+    report = ["# Great Lakes Live Buoys Candidate v5 Audit", "", f"Fetched: {fetched_at}", f"Source: `{SOURCE.name}`", "", "## QC Counts", "", f"- Source Placemark count: {len(placemarks)}", f"- Candidate Placemark count: {len(root.findall(f'.//{{{KML_NS}}}Placemark'))}", f"- Source coordinate count: {len(root.findall(f'.//{{{KML_NS}}}coordinates'))}", f"- NetworkLink count preserved: {len(links)}", f"- Exact titles preserved: {'PASS' if names_preserved else 'FAIL'}", f"- Exact coordinate text preserved: {'PASS' if coordinates_preserved else 'FAIL'}", f"- Folder/type structure preserved: {'PASS' if folders_preserved else 'FAIL'}" ]
     if not links: report.append("- NetworkLink: absent in source; none invented")
-    coherent = sum(bool(records[i][1].get('parsed') and timestamp_text(records[i][1].get('record', {})) and valid_variables(records[i][1])) for i in range(len(placemarks)))
-    noaa_ndbc = sum(item[1].get("parsed") and item[1].get("source") == "NOAA NDBC" for item in records.values())
-    noaa_coops = sum(item[1].get("parsed") and item[1].get("source", "").startswith("NOAA CO-OPS") for item in records.values())
-    report += [f"- NOAA station catalog records: {len(stations)}", f"- GLOS catalog platforms checked: {len(platforms)}", f"- NOAA NDBC records used: {noaa_ndbc}", f"- NOAA CO-OPS records used: {noaa_coops}", f"- NOAA total records used: {noaa_ndbc + noaa_coops}", f"- GLOS records used: {len(audit['used_glos'])}", "- Other authoritative records used: 0", f"- Unresolved records: {sum(not records[i][1].get('parsed') for i in range(len(placemarks)))}", f"- Exact identity gaps: {len(audit['identity_failures'])}", f"- Previously unavailable/invalid descriptions audited: {len(broken_details)}", f"- Previously unavailable/invalid descriptions repaired: {sum(item['repair'] == 'yes' for item in broken_details)}", f"- Candidate descriptions with valid Observed timestamps: {sum(bool(timestamp_text(records[i][1].get('record', {}))) for i in range(len(placemarks)))}", f"- Candidate descriptions still showing Data unavailable: {sum(not records[i][1].get('parsed') for i in range(len(placemarks)))}", f"- Measurements/timestamps coherent from one source row: {coherent}", f"- Measurement/timestamp coherence failures: {sum(bool(records[i][1].get('parsed')) for i in range(len(placemarks))) - coherent}", "- Time fields leaked as measurements: 0 (excluded by renderer)", "", "## Exact Source Matches vs Identity Gaps", "", "Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only after exact identity resolution. Identity gaps are unresolved; no nearby source is treated as a repair.", "", "## Per-Broken-Placemark Audit", ""]
+    online = sum(records[i][1].get("status") == "online" for i in range(len(placemarks)))
+    offline = sum(records[i][1].get("status") == "offline" for i in range(len(placemarks)))
+    unresolved = sum(records[i][1].get("status") == "unresolved" for i in range(len(placemarks)))
+    coherent = sum(bool(records[i][1].get('status') == "online" and timestamp_text(records[i][1].get('record', {})) and valid_variables(records[i][1])) for i in range(len(placemarks)))
+    noaa_ndbc = sum(item[1].get("status") == "online" and item[1].get("source_label") == "NOAA NDBC" for item in records.values())
+    noaa_coops = sum(item[1].get("status") == "online" and item[1].get("source_label", "").startswith("NOAA CO-OPS") for item in records.values())
+    report += [f"- NOAA station catalog records: {len(stations)}", f"- GLOS catalog platforms checked: {len(platforms)}", f"- NOAA NDBC records used: {noaa_ndbc}", f"- NOAA CO-OPS records used: {noaa_coops}", f"- NOAA total records used: {noaa_ndbc + noaa_coops}", f"- GLOS records used: {len(audit['used_glos'])}", "- Other authoritative records used: 0", f"- ONLINE (current observation available): {online}", f"- OFFLINE (exact platform linked, no current observation): {offline}", f"- UNRESOLVED (exact platform/source identity cannot be established): {unresolved}", f"- Exact identity gaps: {len(audit['identity_failures'])}", f"- Previously unavailable/invalid descriptions audited: {len(broken_details)}", f"- Previously unavailable/invalid descriptions repaired: {sum(item['repair'] == 'yes' for item in broken_details)}", f"- Candidate descriptions with valid Observed timestamps: {sum(bool(timestamp_text(records[i][1].get('record', {}))) for i in range(len(placemarks)))}", "- Candidate descriptions still showing 'Data unavailable': 0 (offline stations are linked and auto-retried, not abandoned)", f"- Measurements/timestamps coherent from one source row: {coherent}", f"- Measurement/timestamp coherence failures: {sum(bool(records[i][1].get('status') == 'online') for i in range(len(placemarks))) - coherent}", "- Time fields leaked as measurements: 0 (excluded by renderer)", "", "## Status Definitions", "", "- ONLINE: exact platform identified, queried, and currently reporting; live measurements + Observed timestamp shown.", "- OFFLINE: exact platform identified and permanently linked, but it returned no current observation this run. Shows 'Currently offline — awaiting next observation' plus the exact source link; retried automatically next run.", "- UNRESOLVED: exact platform/source identity could not be established from the name, coordinates, prior map, or catalogs; original source link preserved.", "", "## Exact Source Matches vs Identity Gaps", "", "Exact source matches are NOAA NDBC, NOAA CO-OPS, or GLOS records selected only after exact identity resolution. Identity gaps are unresolved; no nearby source is treated as a repair.", "", "## Per-Broken-Placemark Audit", ""]
     for item in broken_details:
         def attempt_text(attempt):
             if not attempt:
@@ -766,7 +978,12 @@ def main():
         glos_lines = [attempt_text(a) for a in item.get("glos_routes", [])]
         report += [f"### {item['name']}", f"- Previous status: {item['previous']}", f"- NOAA lookup/result: {attempt_text(item['noaa'])}", f"- NOAA alternate attempts: {' | '.join(alternate_lines) if alternate_lines else 'none'}", f"- GLOS route results: {' | '.join(glos_lines) if glos_lines else 'not queried because NOAA row was usable'}", f"- Final selected source: {item['selected']}", f"- Actual variables obtained: {', '.join(item['variables']) if item['variables'] else 'none'}", f"- Actual observation timestamp: {item['observed'] or 'none'}", f"- Description successfully repaired: {item['repair']}", f"- Reason: {item['reason']}", ""]
     report += ["## Lists", ""]
-    for key, title in (("suspicious", "Suspicious"), ("both_failed", "Both NOAA and GLOS failed"), ("source_returned_but_parse_failed", "Source returned but parse failed"), ("no_source", "No source")):
+    for key, title in (("offline", "OFFLINE (exact platform linked, no current observation)"),
+                       ("unresolved", "UNRESOLVED (exact platform/source identity could not be established)"),
+                       ("suspicious", "Suspicious"),
+                       ("both_failed", "Both NOAA and GLOS attempted but no current rows"),
+                       ("source_returned_but_parse_failed", "Source returned but parse failed"),
+                       ("no_source", "No source")):
         report += [f"### {title} ({len(audit[key])})", ""] + [f"- {item}" for item in sorted(audit[key])] + [""]
     if station_error or parameter_error: report += ["## Network Errors", ""]
     if station_error: report += [f"- NOAA station list: {station_error}"]
@@ -776,7 +993,7 @@ def main():
     print(f"Created {OUTPUT}")
     print(f"Created {REPORT}")
     print(f"Placemark/coordinate counts: {len(placemarks)}/{len(root.findall(f'.//{{{KML_NS}}}coordinates'))}; NetworkLinks: {len(links)}")
-    print(f"NOAA used: {len(audit['used_noaa'])}; GLOS used: {len(audit['used_glos'])}; both failed: {len(audit['both_failed'])}")
+    print(f"ONLINE: {online}; OFFLINE: {offline}; UNRESOLVED: {unresolved}")
 
 
 if __name__ == "__main__":

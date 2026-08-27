@@ -1,0 +1,1829 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Great Lakes Live Weather Buoys &amp; Beaches</name>
+    <description><![CDATA[Real-time NOAA buoy data for the Great Lakes.<br/>Data fetched: 2026-08-26 21:20 UTC<br/>GLOS corrections applied: 79]]></description>
+    <Folder>
+      <name>Lake Superior</name>
+      <Placemark>
+        <name>MID SUPERIOR- 60 NM North Northeast Hancock, MI (2.1-meter ionomer foam buoy) [GLOS]</name>
+        <description><![CDATA[<b>MID SUPERIOR- 60 NM North Northeast Hancock, MI (2.1-meter ionomer foam buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 220<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.2<br/><b>APD:</b> 2.9<br/><b>PRES:</b> 1017.2<br/><b>ATMP:</b> 14.9<br/><b>WTMP:</b> 14.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45001">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.793000,48.061000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>EAST SUPERIOR -70 NM NE Marquette, MI (2.3-meter foam discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>EAST SUPERIOR -70 NM NE Marquette, MI (2.3-meter foam discus buoy) [GLOS]</b><br/><br/><b>WVHT:</b> 0.5<br/><b>MWD:</b> 2<br/><b>WTMP:</b> 12.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 18:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45213">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.585000,47.585000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WEST SUPERIOR - 30NM NE of Outer Island, WI (2.3-meter foam discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>WEST SUPERIOR - 30NM NE of Outer Island, WI (2.3-meter foam discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 20<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.1<br/><b>APD:</b> 2.9<br/><b>PRES:</b> 1017.4<br/><b>ATMP:</b> 17.6<br/><b>WTMP:</b> 16.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45006">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-89.793000,47.335000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North Entry Buoy, North Keweenaw Peninsula, MI (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>North Entry Buoy, North Keweenaw Peninsula, MI (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>MWD:</b> 113<br/><b>PRES:</b> 1017.3<br/><b>ATMP:</b> 18.5<br/><b>WTMP:</b> 18.9<br/><b>DEWP:</b> 16.1<br/><b>PTDY:</b> +0.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45023">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-88.607050,47.269930,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Entry Buoy, South Keweenaw Peninsula, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>South Entry Buoy, South Keweenaw Peninsula, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 140<br/><b>WSPD:</b> 1.0<br/><b>GST:</b> 2.0<br/><b>WVHT:</b> 0.2<br/><b>MWD:</b> 319<br/><b>PRES:</b> 1016.3<br/><b>ATMP:</b> 20.6<br/><b>WTMP:</b> 18.8<br/><b>DEWP:</b> 15.9<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45025">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-88.397680,46.968730,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>McQuade Harbor Nearshore, MN (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>McQuade Harbor Nearshore, MN (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 210<br/><b>WSPD:</b> 2.0<br/><b>WVHT:</b> 0.1<br/><b>MWD:</b> 113<br/><b>PRES:</b> 1017.9<br/><b>ATMP:</b> 20.9<br/><b>WTMP:</b> 17.6<br/><b>DEWP:</b> 14.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45027">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-91.930000,46.860000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Western Lake Superior (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Western Lake Superior (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 360<br/><b>WVHT:</b> 0.0<br/><b>MWD:</b> 125<br/><b>WTMP:</b> 25.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45028">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-91.840000,46.810000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Slate Island (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Slate Island (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.2<br/><b>DPD:</b> 4<br/><b>PRES:</b> 1016.8<br/><b>ATMP:</b> 14.9<br/><b>WTMP:</b> 14.5<br/><b>PTDY:</b> +0.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45136">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.950000,48.540000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Granite Island Buoy, Granite Island, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Granite Island Buoy, Granite Island, MI (Buoy) [GLOS]</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 66<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/66">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GRIM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.411388,46.723888,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Marais Buoy, Grand Marais, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Grand Marais Buoy, Grand Marais, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 6.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GRMM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.975555,46.741112,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Munising Buoy, Munising, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Munising Buoy, Munising, MI (Buoy) [GLOS]</b><br/><br/><b>sea_surface_wave_significant_height:</b> 0.77<br/><b>sea_water_temperature:</b> 291.85<br/><b>sea_surface_wave_period_at_variance_spectral_density_maximum:</b> 4.86<br/><b>sea_surface_wave_mean_period:</b> 3.96<br/><b>wind_from_direction:</b> 354.0<br/><b>wind_speed:</b> 4.4<br/><b>sea_surface_wave_from_direction:</b> 0.682<br/><b>sea_surface_wave_directional_spread_at_variance_spectral_density_maximum:</b> 35.722<br/><b>sea_surface_wave_from_direction_at_variance_spectral_density_maximum:</b> 1.182<br/><b>sea_surface_wave_directional_spread:</b> 47.46<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:49 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/172">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-86.572170,46.572810,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stannard Rock Buoy (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Stannard Rock Buoy (Buoy) [GLOS]</b><br/><br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.6<br/><b>PRES:</b> 1017.7<br/><b>ATMP:</b> 15.2<br/><b>DEWP:</b> 13.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=STDM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.224000,47.195000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Isle of Royale East, MI (230) (Waverider Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Isle of Royale East, MI (230) (Waverider Buoy) [GLOS]</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 212<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/212">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45180">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.730000,48.034000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Island North, MI (268) (Waverider Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Grand Island North, MI (268) (Waverider Buoy) [GLOS]</b><br/><br/><b>WVHT:</b> 0.6<br/><b>DPD:</b> 5<br/><b>APD:</b> 3.8<br/><b>MWD:</b> 7<br/><b>WTMP:</b> 14.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:26:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45211">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.568200,46.972700,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East Superior Spotter (Spotter Buoy)</name>
+        <description><![CDATA[<b>East Superior Spotter (Spotter Buoy)</b><br/><br/><b>WVHT:</b> 0.5<br/><b>MWD:</b> 2<br/><b>WTMP:</b> 12.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 18:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45213">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.588000,47.588000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ontonagon, MI (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Ontonagon, MI (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 360<br/><b>WSPD:</b> 2.1<br/><b>GST:</b> 3.6<br/><b>PRES:</b> 1016.6<br/><b>ATMP:</b> 21.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OTNM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-89.349548,46.932000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wisconsin Point (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Wisconsin Point (Buoy) [GLOS]</b><br/><br/><b>WTMP:</b> 18.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:15:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45217">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-91.999590,46.707580,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Two Harbors Nearshore Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Two Harbors Nearshore Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WSPD:</b> 3.0<br/><b>PRES:</b> 1017.0<br/><b>ATMP:</b> 18.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:10:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45219">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-91.625000,47.021000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MID SUPERIOR- 60NM North Northeast Hancock, MI (2.1-meter ionomer foam buoy)</name>
+        <description><![CDATA[<b>MID SUPERIOR- 60NM North Northeast Hancock, MI (2.1-meter ionomer foam buoy)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45T01<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45T01">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.666000,48.008000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Big Bay, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Big Bay, MI (GLOS Weather Station)</b><br/><br/><b>WSPD:</b> 0.0<br/><b>GST:</b> 1.5<br/><b>PRES:</b> 1015.9<br/><b>ATMP:</b> 21.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BIGM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.727000,46.827000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barker's Island, Lake Superior Reserve, WI (NERRS Water Quality Station)</name>
+        <description><![CDATA[<b>Barker&#x27;s Island, Lake Superior Reserve, WI (NERRS Water Quality Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 238, NOAA LKSBAWQ<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/238">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=LKSBAWQ">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BILW3">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-92.064000,46.722000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Caribou Island (Weather Station)</name>
+        <description><![CDATA[<b>Caribou Island (Weather Station)</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 6.7<br/><b>PRES:</b> 1016.8<br/><b>ATMP:</b> 16.1<br/><b>DEWP:</b> 15.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CWCI">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.833000,47.334000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Devils Island, WI (C-MAN Station)</name>
+        <description><![CDATA[<b>Devils Island, WI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 230<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1017.0<br/><b>ATMP:</b> 20.9<br/><b>DEWP:</b> 14.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=DISW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-90.728000,47.079000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9099064 - Duluth, MN (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9099064 - Duluth, MN (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 360<br/><b>WSPD:</b> 2.6<br/><b>GST:</b> 6.2<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 25.4<br/><b>WTMP:</b> 17.5<br/><b>DEWP:</b> 8.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=DULM5">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-92.092000,46.776000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9099090 - Grand Marais, MN (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9099090 - Grand Marais, MN (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1017.7<br/><b>ATMP:</b> 17.7<br/><b>WTMP:</b> 10.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GDMM5">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-90.341000,47.749000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GLRC Observatory (Coastal Marine Station)</name>
+        <description><![CDATA[<b>GLRC Observatory (Coastal Marine Station)</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 3.6<br/><b>ATMP:</b> 21.1<br/><b>DEWP:</b> 12.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GRCM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-88.545000,47.121000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Granite Island, MI (Weather Station)</name>
+        <description><![CDATA[<b>Granite Island, MI (Weather Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 6, NOAA GRIM4<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/6">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GRIM4">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GRIM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.412000,46.721000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Marais, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Grand Marais, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 6.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GRMM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.972000,46.684000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Superior Grand Traverse Bay, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Superior Grand Traverse Bay, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 1.5<br/><b>GST:</b> 3.1<br/><b>PRES:</b> 1014.6<br/><b>ATMP:</b> 22.3<br/><b>PTDY:</b> -0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-19 23:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GTRM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-88.241000,47.179000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bay of Grand Marais, MN (Weather Station)</name>
+        <description><![CDATA[<b>Bay of Grand Marais, MN (Weather Station)</b><br/><br/><b>WDIR:</b> 270<br/><b>WSPD:</b> 2.1<br/><b>PRES:</b> 1016.6<br/><b>ATMP:</b> 17.2<br/><b>DEWP:</b> 14.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:56:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=KGNA">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-90.346000,47.745000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Munising Lake Shore, MI (Weather Station)</name>
+        <description><![CDATA[<b>Munising Lake Shore, MI (Weather Station)</b><br/><br/><b>WDIR:</b> 50<br/><b>WSPD:</b> 3.1<br/><b>PRES:</b> 1017.4<br/><b>ATMP:</b> 17.8<br/><b>DEWP:</b> 11.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:56:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=KP53">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.650000,46.417000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Copper Harbor, MI (Weather Station)</name>
+        <description><![CDATA[<b>Copper Harbor, MI (Weather Station)</b><br/><br/><b>WDIR:</b> 350<br/><b>WSPD:</b> 3.1<br/><b>PRES:</b> 1017.0<br/><b>ATMP:</b> 17.8<br/><b>DEWP:</b> 12.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:51:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=KP59">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.883000,47.467000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9076033 - Little Rapids, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9076033 - Little Rapids, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 5.7<br/><b>GST:</b> 8.8<br/><b>PRES:</b> 1015.0<br/><b>ATMP:</b> 18.6<br/><b>WTMP:</b> 16.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=LTRM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.302000,46.486000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9099018 - Marquette C.G., MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9099018 - Marquette C.G., MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 120<br/><b>WSPD:</b> 4.1<br/><b>GST:</b> 5.7<br/><b>PRES:</b> 1017.0<br/><b>ATMP:</b> 16.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MCGM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.379000,46.546000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Naubinway, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Naubinway, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 7.2<br/><b>GST:</b> 9.3<br/><b>PRES:</b> 1016.3<br/><b>ATMP:</b> 20.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=NABM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.444000,46.087000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ontonagon, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Ontonagon, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.2<br/><b>MWD:</b> 16<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 19.3<br/><b>WTMP:</b> 19.8<br/><b>DEWP:</b> 16.3<br/><b>PTDY:</b> -0.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45216">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-89.330000,46.870000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Portage Canal, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Portage Canal, MI (GLOS Weather Station)</b><br/><br/><b>air_pressure_at_mean_sea_level:</b> 99050 Pa<br/><b>air_temperature:</b> 278.3499998092651 K<br/><b>wind_from_direction:</b> 30 degree<br/><b>wind_speed:</b> 11.300000190734863 m s-1<br/><b>wind_speed_of_gust:</b> 14.399999618530273 m s-1<br/><br/><b>Observed source timestamp:</b> 2025-11-07 14:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/640">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PCLM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-88.528000,47.276000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Passage Island, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Passage Island, MI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 160<br/><b>WSPD:</b> 2.6<br/><b>GST:</b> 2.6<br/><b>PRES:</b> 1017.0<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PILM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-88.366000,48.223000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pokegama Bay, Lake Superior Reserve, WI (NERRS Weather Station)</name>
+        <description><![CDATA[<b>Pokegama Bay, Lake Superior Reserve, WI (NERRS Weather Station)</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 3.6<br/><b>PRES:</b> 1017.0<br/><b>ATMP:</b> 24.8<br/><b>DEWP:</b> 11.3<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PKBW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-92.136000,46.672000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Wing, WI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Port Wing, WI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 290<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.6<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PNGW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-91.386000,46.792000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9099004 - Point Iroquois, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9099004 - Point Iroquois, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 6.2<br/><b>GST:</b> 10.3<br/><b>PRES:</b> 1015.7<br/><b>ATMP:</b> 16.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PTIM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.631000,46.485000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9076024 - Rock Cut, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9076024 - Rock Cut, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 290<br/><b>WSPD:</b> 6.2<br/><b>GST:</b> 8.8<br/><b>PRES:</b> 1014.8<br/><b>WTMP:</b> 18.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=RCKM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.191000,46.264000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rock of Ages, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Rock of Ages, MI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 170<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 4.6<br/><b>ATMP:</b> 16.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=ROAM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-89.315000,47.867000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Silver Bay, MN (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Silver Bay, MN (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 200<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.1<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 17.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SLVM5">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-91.270000,47.278000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stannard Rock, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Stannard Rock, MI (C-MAN Station)</b><br/><br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.6<br/><b>PRES:</b> 1017.7<br/><b>ATMP:</b> 15.2<br/><b>DEWP:</b> 13.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=STDM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.225000,47.184000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Superior Shoals, NY (C-MAN Station)</name>
+        <description><![CDATA[<b>Superior Shoals, NY (C-MAN Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA SUPN6<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SUPN6">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-75.800000,44.467000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9076070 - S.W. Pier, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9076070 - S.W. Pier, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 7.7<br/><b>GST:</b> 9.8<br/><b>PRES:</b> 1015.4<br/><b>ATMP:</b> 17.2<br/><b>WTMP:</b> 19.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SWPM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.372000,46.501000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saxon Harbor, WI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Saxon Harbor, WI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 1.5<br/><b>GST:</b> 3.6<br/><b>PRES:</b> 1010.5<br/><b>ATMP:</b> 19.2<br/><br/><b>Observed source timestamp:</b> 2026-08-26 12:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SXHW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-90.437000,46.563000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Whitefish Point, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Whitefish Point, MI (GLOS Weather Station)</b><br/><br/><b>sea_surface_wave_mean_period:</b> 3.38 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>sea_surface_wave_from_direction:</b> 311.6 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>sea_surface_wave_directional_spread_at_variance_spectral_density_maximum:</b> 39.696 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>air_pressure:</b> 99620.0 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>sea_surface_wave_period_at_variance_spectral_density_maximum:</b> 3.42 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>sea_surface_wave_directional_spread:</b> 45.29 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>sea_surface_wave_from_direction_at_variance_spectral_density_maximum:</b> 309.258 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>wind_from_direction:</b> 308.0 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>wind_speed:</b> 9.6 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><b>sea_surface_wave_significant_height:</b> 0.81 <span style="color:#888">(observed 2026-08-27 20:50 UTC)</span><br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/265">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-84.970000,46.760000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9076027 - West Neebish Island, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9076027 - West Neebish Island, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 8.2<br/><b>GST:</b> 9.8<br/><b>PRES:</b> 1014.8<br/><b>ATMP:</b> 17.9<br/><b>WTMP:</b> 17.4<br/><b>DEWP:</b> 11.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=WNEM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.210000,46.285000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bayfield Beach, WI (Beach)</name>
+        <description><![CDATA[<b>Bayfield Beach, WI (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45010<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45010">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-90.883800,46.747500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Madeline Island Beach, WI (Beach)</name>
+        <description><![CDATA[<b>Madeline Island Beach, WI (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45010<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45010">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-90.700500,46.813300,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Lake Michigan</name>
+      <Placemark>
+        <name>Michigan City CG Station, IN (Weather Station)</name>
+        <description><![CDATA[<b>Michigan City CG Station, IN (Weather Station)</b><br/><br/><b>WDIR:</b> 210<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1014.8<br/><b>ATMP:</b> 22.3<br/><b>DEWP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MCYI3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.910000,41.730000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St. Joseph CG Station, MI (Weather Station)</name>
+        <description><![CDATA[<b>St. Joseph CG Station, MI (Weather Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA SJNM4<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SJNM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-86.490000,42.090000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NORTH MICHIGAN- Halfway between North Manitou and Washington Islands. (2.1-meter ionomer foam buoy) [GLOS]</name>
+        <description><![CDATA[<b>NORTH MICHIGAN- Halfway between North Manitou and Washington Islands. (2.1-meter ionomer foam buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 30<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 3.0<br/><b>WVHT:</b> 0.5<br/><b>DPD:</b> 4<br/><b>APD:</b> 3.3<br/><b>MWD:</b> 18<br/><b>PRES:</b> 1016.7<br/><b>ATMP:</b> 20.0<br/><b>WTMP:</b> 20.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45002">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.411000,45.344000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SOUTH MICHIGAN - 43NM East Southeast of Milwaukee, WI (2.3-meter foam discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>SOUTH MICHIGAN - 43NM East Southeast of Milwaukee, WI (2.3-meter foam discus buoy) [GLOS]</b><br/><br/><b>WVHT:</b> 0.7<br/><b>MWD:</b> 351<br/><b>WTMP:</b> 22.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45214">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.020000,42.672000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name> (2.4-meter discus buoy)</name>
+        <description><![CDATA[<b> (2.4-meter discus buoy)</b><br/><br/><b>WDIR:</b> 230<br/><b>WSPD:</b> 2.6<br/><b>GST:</b> 3.6<br/><b>ATMP:</b> 23.1<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MLWW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.800000,43.000000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Haven Michigan (3-meter discus buoy)</name>
+        <description><![CDATA[<b>Grand Haven Michigan (3-meter discus buoy)</b><br/><br/><b>sea_surface_wave_from_direction:</b> 324.227 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>wind_speed:</b> 7.87 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_period_at_variance_spectral_density_maximum:</b> 3.793 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>air_pressure:</b> 99561.0 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_from_direction_at_variance_spectral_density_maximum:</b> 326.189 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_significant_height:</b> 0.748 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_mean_period:</b> 3.32 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_directional_spread_at_variance_spectral_density_maximum:</b> 23.667 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>wind_from_direction:</b> 326.0 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_directional_spread:</b> 32.602 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/671">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-86.270000,43.020000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ATW20 - Atwater Park, WI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>ATW20 - Atwater Park, WI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 100<br/><b>WSPD:</b> 5.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 4<br/><b>MWD:</b> 34<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 21.7<br/><b>WTMP:</b> 22.6<br/><b>DEWP:</b> 18.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 18:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45013">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.849600,43.098000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calumet Beach, Chicago, IL (Buoy)</name>
+        <description><![CDATA[<b>Calumet Beach, Chicago, IL (Buoy)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 395<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/395">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45015">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.527000,41.714000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sixth-third St. Beach, Chicago, IL (Buoy)</name>
+        <description><![CDATA[<b>Sixth-third St. Beach, Chicago, IL (Buoy)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 113, NOAA JAKI2<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/113">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=JAKI2">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45016">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.573000,41.783000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oak St. Beach, Chicago, IL (Buoy)</name>
+        <description><![CDATA[<b>Oak St. Beach, Chicago, IL (Buoy)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 1.0<br/><b>GST:</b> 1.5<br/><b>ATMP:</b> 21.4<br/><br/><b>Observed source timestamp:</b> 2026-08-25 12:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OKSI2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.622000,41.903000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Montrose Ave. Beach, Chicago, IL (Buoy)</name>
+        <description><![CDATA[<b>Montrose Ave. Beach, Chicago, IL (Buoy)</b><br/><br/><b>ATMP:</b> 23.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=FSTI2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.637000,41.968000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Foster Ave. Beach, Chicago, IL (Buoy)</name>
+        <description><![CDATA[<b>Foster Ave. Beach, Chicago, IL (Buoy)</b><br/><br/><b>ATMP:</b> 23.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=FSTI2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.649000,41.979000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Traverse Bay South Buoy, MI (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Grand Traverse Bay South Buoy, MI (Moored Buoy) [GLOS]</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 217<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/217">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45020">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-85.604000,44.789000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Traverse Bay #3, MI (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Traverse Bay #3, MI (Moored Buoy) [GLOS]</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 224<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/224">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45021">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-85.493000,45.048000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Traverse Bay Buoy, MI (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Little Traverse Bay Buoy, MI (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 6.0<br/><b>GST:</b> 8.0<br/><b>WVHT:</b> 0.7<br/><b>DPD:</b> 4<br/><b>MWD:</b> 326<br/><b>PRES:</b> 1017.0<br/><b>ATMP:</b> 18.6<br/><b>WTMP:</b> 21.0<br/><b>DEWP:</b> 14.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45022">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.088000,45.404400,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ludington Buoy, MI (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Ludington Buoy, MI (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 7.2<br/><b>ATMP:</b> 21.2<br/><b>DEWP:</b> 12.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=LDTM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.560000,43.980000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cook Nuclear Plant Buoy, Stevensville, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Cook Nuclear Plant Buoy, Stevensville, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.5<br/><b>DPD:</b> 5<br/><b>MWD:</b> 349<br/><b>PRES:</b> 1017.8<br/><b>ATMP:</b> 22.3<br/><b>WTMP:</b> 24.0<br/><b>DEWP:</b> 17.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45026">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.617000,41.983000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Holland Buoy, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Holland Buoy, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 7.0<br/><b>GST:</b> 10.0<br/><b>WVHT:</b> 0.7<br/><b>DPD:</b> 4<br/><b>MWD:</b> 324<br/><b>PRES:</b> 1015.0<br/><b>ATMP:</b> 20.2<br/><b>WTMP:</b> 20.8<br/><b>DEWP:</b> 17.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45029">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.272291,42.899572,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Muskegon Buoy, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Muskegon Buoy, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>PRES:</b> 1023.9<br/><b>ATMP:</b> 22.3<br/><b>WTMP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-18 15:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45161">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.360760,43.179067,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Haven Buoy, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>South Haven Buoy, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.1<br/><b>ATMP:</b> 22.8<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SVNM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.331000,42.397000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Michigan City Buoy, IN (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Michigan City Buoy, IN (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 210<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1014.8<br/><b>ATMP:</b> 22.3<br/><b>DEWP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MCYI3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.968000,41.755000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wilmette Buoy, IL (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Wilmette Buoy, IL (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 110<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 5<br/><b>MWD:</b> 23<br/><b>PRES:</b> 1020.0<br/><b>ATMP:</b> 23.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45174">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.655000,42.135000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mackinac Straits West, Mackinaw City, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Mackinac Straits West, Mackinaw City, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 7.0<br/><b>GST:</b> 10.0<br/><b>WVHT:</b> 0.4<br/><b>MWD:</b> 249<br/><b>PRES:</b> 1014.8<br/><b>ATMP:</b> 19.9<br/><b>WTMP:</b> 18.1<br/><b>DEWP:</b> 11.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45175">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.772170,45.825260,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ohio St. Beach, Chicago, IL (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Ohio St. Beach, Chicago, IL (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 1.0<br/><b>GST:</b> 1.5<br/><b>ATMP:</b> 21.4<br/><br/><b>Observed source timestamp:</b> 2026-08-25 12:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OKSI2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.613000,41.894000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sleeping Bear Dunes (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Sleeping Bear Dunes (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 350<br/><b>WSPD:</b> 5.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.6<br/><b>DPD:</b> 5<br/><b>MWD:</b> 333<br/><b>PRES:</b> 1019.1<br/><b>ATMP:</b> 19.6<br/><b>WTMP:</b> 20.9<br/><b>DEWP:</b> 15.7<br/><b>PTDY:</b> +1.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45183">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.830860,44.981640,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Waukegan Buoy, IL (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Waukegan Buoy, IL (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 70<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 5<br/><b>MWD:</b> 2<br/><b>PRES:</b> 1017.2<br/><b>ATMP:</b> 23.0<br/><b>WTMP:</b> 23.2<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45186">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.795225,42.367168,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Winthrop Harbor Buoy, IL (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Winthrop Harbor Buoy, IL (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 60<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 5<br/><b>MWD:</b> 8<br/><b>PRES:</b> 1016.4<br/><b>ATMP:</b> 22.8<br/><b>WTMP:</b> 23.3<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45187">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.778883,42.490632,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>McGulpin Point North, MI (253) (Waverider Buoy) [GLOS]</name>
+        <description><![CDATA[<b>McGulpin Point North, MI (253) (Waverider Buoy) [GLOS]</b><br/><br/><b>WVHT:</b> 0.5<br/><b>DPD:</b> 4<br/><b>APD:</b> 2.6<br/><b>MWD:</b> 290<br/><b>ATMP:</b> 19.5<br/><b>WTMP:</b> 18.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45194">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.791600,45.803400,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chicago Buoy (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Chicago Buoy (Buoy) [GLOS]</b><br/><br/><b>WSPD:</b> 4.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 4<br/><b>MWD:</b> 9<br/><b>PRES:</b> 1015.6<br/><b>ATMP:</b> 23.2<br/><b>WTMP:</b> 23.4<br/><b>DEWP:</b> 18.6<br/><b>PTDY:</b> -0.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45198">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.563056,41.892500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salmon Unlimited Wisconsin (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Salmon Unlimited Wisconsin (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 50<br/><b>WSPD:</b> 3.0<br/><b>WVHT:</b> 0.5<br/><b>DPD:</b> 5<br/><b>MWD:</b> 9<br/><b>PRES:</b> 1018.6<br/><b>ATMP:</b> 21.6<br/><b>WTMP:</b> 23.2<br/><b>PTDY:</b> +1.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 18:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45199">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.646600,42.701700,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rawley Point East, WI (269) (Waverider Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Rawley Point East, WI (269) (Waverider Buoy) [GLOS]</b><br/><br/><b>WVHT:</b> 0.5<br/><b>DPD:</b> 5<br/><b>APD:</b> 3.4<br/><b>MWD:</b> 16<br/><b>WTMP:</b> 21.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:26:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45210">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.050000,44.055000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Michigan Spotter (Spotter Buoy)</name>
+        <description><![CDATA[<b>South Michigan Spotter (Spotter Buoy)</b><br/><br/><b>WVHT:</b> 0.7<br/><b>MWD:</b> 351<br/><b>WTMP:</b> 22.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45214">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.026000,42.674000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wisconsin Shipwreck Coast NMS / Sheboygan, WI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Wisconsin Shipwreck Coast NMS / Sheboygan, WI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 70<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.7<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 20.6<br/><b>DEWP:</b> 16.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SGNW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.625000,43.731000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Algoma City Marina, WI (Weather Station)</name>
+        <description><![CDATA[<b>Algoma City Marina, WI (Weather Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 206, NOAA ALGOMA<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/206">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=ALGOMA">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=AGMW3">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.433000,44.608000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Burns Harbor, IN (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Burns Harbor, IN (GLOS Weather Station)</b><br/><br/><b>PRES:</b> 1012.9<br/><br/><b>Observed source timestamp:</b> 2026-08-11 15:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BHRI3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.147000,41.646000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Big Sable Point, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Big Sable Point, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 350<br/><b>WSPD:</b> 5.1<br/><b>GST:</b> 6.7<br/><b>PRES:</b> 1018.3<br/><b>ATMP:</b> 20.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BSBM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.514000,44.055000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Two Rivers CG Station, WI (Weather Station)</name>
+        <description><![CDATA[<b>Two Rivers CG Station, WI (Weather Station)</b><br/><br/><b>wind_from_direction:</b> 12.0 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_directional_spread:</b> 53.605 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_significant_height:</b> 0.389 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_from_direction_at_variance_spectral_density_maximum:</b> 37.504 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_directional_spread_at_variance_spectral_density_maximum:</b> 43.913 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_mean_period:</b> 3.372 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_period_at_variance_spectral_density_maximum:</b> 4.452 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>air_pressure:</b> 99933.0 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>sea_surface_wave_from_direction:</b> 31.697 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><b>wind_speed:</b> 2.42 <span style="color:#888">(observed 2026-08-27 21:00 UTC)</span><br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/609">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-87.563000,44.146000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chambers Island, WI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Chambers Island, WI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 20<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.7<br/><b>ATMP:</b> 21.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CBRW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.360000,45.198000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Harrison-Dever Crib, Chicago, IL (C-MAN Station)</name>
+        <description><![CDATA[<b>Harrison-Dever Crib, Chicago, IL (C-MAN Station)</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 4.1<br/><b>ATMP:</b> 23.4<br/><b>DEWP:</b> 17.2<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CHII2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.572000,41.916000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9087044 - Calumet Harbor, IL (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9087044 - Calumet Harbor, IL (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 50<br/><b>WSPD:</b> 4.1<br/><b>GST:</b> 4.6<br/><b>PRES:</b> 1017.0<br/><b>ATMP:</b> 23.6<br/><b>DEWP:</b> 18.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CMTI2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.538000,41.730000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northerly Isle, IL (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Northerly Isle, IL (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 60<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 5.1<br/><b>ATMP:</b> 24.3<br/><b>DEWP:</b> 18.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:15:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CNII2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.609000,41.856000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fairport, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Fairport, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 350<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 6.2<br/><b>ATMP:</b> 26.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=FPTM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.660000,45.619000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Foster Ave., Chicago, IL (C-MAN Station)</name>
+        <description><![CDATA[<b>Foster Ave., Chicago, IL (C-MAN Station)</b><br/><br/><b>ATMP:</b> 23.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=FSTI2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.648000,41.976000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Traverse Bay Observing System Station 2 (Coastal Marine Station)</name>
+        <description><![CDATA[<b>Grand Traverse Bay Observing System Station 2 (Coastal Marine Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 228, NOAA GTBM4<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/228">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GTBM4">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GTBM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-85.607000,44.767000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Traverse Light, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Grand Traverse Light, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 4.1<br/><b>GST:</b> 4.6<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 23.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GTLM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.550000,45.211000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9087031 - Holland, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9087031 - Holland, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 7.0<br/><b>GST:</b> 10.0<br/><b>WVHT:</b> 0.7<br/><b>DPD:</b> 4<br/><b>MWD:</b> 324<br/><b>PRES:</b> 1015.0<br/><b>ATMP:</b> 20.2<br/><b>WTMP:</b> 20.8<br/><b>DEWP:</b> 17.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45029">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.213000,42.773000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>63rd St., Chicago, IL (C-MAN Station)</name>
+        <description><![CDATA[<b>63rd St., Chicago, IL (C-MAN Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 113, NOAA JAKI2<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/113">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=JAKI2">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=JAKI2">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.573000,41.781000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kenosha Light, Kenosha, WI (C-MAN Station)</name>
+        <description><![CDATA[<b>Kenosha Light, Kenosha, WI (C-MAN Station)</b><br/><br/><b>air_pressure_at_mean_sea_level:</b> 101250 Pa<br/><b>air_temperature:</b> 294.2500003814697 K<br/><b>wind_from_direction:</b> 10 degree<br/><b>wind_speed:</b> 11.300000190734863 m s-1<br/><b>wind_speed_of_gust:</b> 13.399999618530273 m s-1<br/><br/><b>Observed source timestamp:</b> 2024-09-28 23:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/296">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=KNSW3">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.809000,42.589000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9087069 - Kewaunee MET, WI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9087069 - Kewaunee MET, WI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 110<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1016.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:48:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=KWNW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.496000,44.465000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9087023 - Ludington, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9087023 - Ludington, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 7.2<br/><b>ATMP:</b> 21.2<br/><b>DEWP:</b> 12.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=LDTM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.441000,43.947000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9075080 - Mackinaw City, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9075080 - Mackinaw City, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 5.7<br/><b>GST:</b> 8.8<br/><b>PRES:</b> 1015.3<br/><b>ATMP:</b> 20.7<br/><b>WTMP:</b> 20.0<br/><b>DEWP:</b> 11.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MACM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.721000,45.777000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Michigan City Harbor Entrance Light, Michigan City, IN (C-MAN Station)</name>
+        <description><![CDATA[<b>Michigan City Harbor Entrance Light, Michigan City, IN (C-MAN Station)</b><br/><br/><b>WDIR:</b> 210<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1014.8<br/><b>ATMP:</b> 22.3<br/><b>DEWP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MCYI3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.912000,41.729000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Manistee Harbor, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Manistee Harbor, MI (GLOS Weather Station)</b><br/><br/><b>air_temperature:</b> 291.65 K<br/><b>wind_from_direction:</b> 360 degree<br/><b>wind_speed:</b> 7.199999809265137 m s-1<br/><b>wind_speed_of_gust:</b> 7.699999809265137 m s-1<br/><br/><b>Observed source timestamp:</b> 2025-09-24 00:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/297">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MEEM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-86.342000,44.251000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Muskegon CG Station, Muskegon, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Muskegon CG Station, Muskegon, MI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>PRES:</b> 1023.9<br/><b>ATMP:</b> 22.3<br/><b>WTMP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-18 15:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45161">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.339000,43.228000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port of Milwaukee (C-MAN Station)</name>
+        <description><![CDATA[<b>Port of Milwaukee (C-MAN Station)</b><br/><br/><b>WDIR:</b> 230<br/><b>WSPD:</b> 2.6<br/><b>GST:</b> 3.6<br/><b>ATMP:</b> 23.1<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MLWW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.884000,43.005000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9087088 - Menominee, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9087088 - Menominee, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 90<br/><b>WSPD:</b> 2.6<br/><b>GST:</b> 3.1<br/><b>PRES:</b> 1016.8<br/><b>ATMP:</b> 20.2<br/><b>WTMP:</b> 21.0<br/><b>DEWP:</b> 15.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MNMM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.590000,45.096000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oak St., Chicago, IL (C-MAN Station)</name>
+        <description><![CDATA[<b>Oak St., Chicago, IL (C-MAN Station)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 1.0<br/><b>GST:</b> 1.5<br/><b>ATMP:</b> 21.4<br/><br/><b>Observed source timestamp:</b> 2026-08-25 12:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OKSI2">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.624000,41.912000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9087096 - Port Inland, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9087096 - Port Inland, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 360<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 6.7<br/><b>PRES:</b> 1015.7<br/><b>ATMP:</b> 21.3<br/><b>WTMP:</b> 16.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PNLM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-85.869000,45.968000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Washington, WI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Port Washington, WI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 90<br/><b>WSPD:</b> 7.2<br/><b>ATMP:</b> 22.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PWAW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.867000,43.388000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sheboygan, WI (C-MAN Station)</name>
+        <description><![CDATA[<b>Sheboygan, WI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 70<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.7<br/><b>PRES:</b> 1016.9<br/><b>ATMP:</b> 20.6<br/><b>DEWP:</b> 16.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SGNW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.693000,43.749000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St. Joseph, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>St. Joseph, MI (GLOS Weather Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA SJNM4<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SJNM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-86.494000,42.098000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Haven Light, South Haven, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>South Haven Light, South Haven, MI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.1<br/><b>ATMP:</b> 22.8<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SVNM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.288000,42.401000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yacht Works Sister Bay, WI (Weather Station)</name>
+        <description><![CDATA[<b>Yacht Works Sister Bay, WI (Weather Station)</b><br/><br/><b>WDIR:</b> 20<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.7<br/><b>ATMP:</b> 21.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CBRW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.121000,45.202000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Waukegan Harbor, IL (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Waukegan Harbor, IL (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 70<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 5<br/><b>MWD:</b> 2<br/><b>PRES:</b> 1017.2<br/><b>ATMP:</b> 23.0<br/><b>WTMP:</b> 23.2<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45186">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.813000,42.361000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White Shoal Light, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>White Shoal Light, MI (C-MAN Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 10, NOAA WSLM4<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/10">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=WSLM4">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=WSLM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-85.135000,45.842000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sleeping Bear Beach, MI (Beach)</name>
+        <description><![CDATA[<b>Sleeping Bear Beach, MI (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45010<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45010">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=sleeping_bear_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-86.057500,44.883700,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Indiana Dunes Beach, IN (Beach)</name>
+        <description><![CDATA[<b>Indiana Dunes Beach, IN (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45010<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45010">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-87.207300,41.615300,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Charlevoix Beach, MI (Beach)</name>
+        <description><![CDATA[<b>Charlevoix Beach, MI (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45010<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45010">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=charlevoix_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-85.267600,45.317700,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saugatuck Beach, MI (Beach)</name>
+        <description><![CDATA[<b>Saugatuck Beach, MI (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 375<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/375">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45010">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-86.216200,42.663300,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Lake Huron</name>
+      <Placemark>
+        <name>NORTH HURON - 32NM Northeast of Alpena, MI (2.3-meter foam discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>NORTH HURON - 32NM Northeast of Alpena, MI (2.3-meter foam discus buoy) [GLOS]</b><br/><br/><b>WVHT:</b> 0.9<br/><b>MWD:</b> 277<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45212">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.840000,45.351000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SOUTH HURON - 43NM East of Oscoda, MI (2.3-meter foam discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>SOUTH HURON - 43NM East of Oscoda, MI (2.3-meter foam discus buoy) [GLOS]</b><br/><br/><b>air_pressure_at_mean_sea_level:</b> 102009.99755859375 Pa<br/><b>air_temperature:</b> 276.5500000953674 K<br/><b>dew_point_temperature:</b> 269.15 K<br/><b>sea_water_temperature_fixed_depth:</b> 1 m<br/><b>wind_from_direction:</b> 10 degree<br/><b>wind_speed:</b> 1 m s-1<br/><b>wind_speed_of_gust:</b> 2 m s-1<br/><br/><b>Observed source timestamp:</b> 2025-11-18 17:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/182">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-82.416000,44.283000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Southern Lake Huron (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Southern Lake Huron (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 70<br/><b>WSPD:</b> 3.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>WTMP:</b> 21.8<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45149">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.080000,43.540000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North Channel East (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>North Channel East (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 6.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>PRES:</b> 1013.7<br/><b>ATMP:</b> 18.4<br/><b>WTMP:</b> 20.2<br/><b>PTDY:</b> +1.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45154">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.640000,46.050000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thunder Bay Buoy, Alpena, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Thunder Bay Buoy, Alpena, MI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 7.0<br/><b>GST:</b> 9.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 2<br/><b>MWD:</b> 38<br/><b>PRES:</b> 1013.2<br/><b>ATMP:</b> 21.1<br/><b>WTMP:</b> 19.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45162">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.268700,44.988300,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lakeport Buoy, MI (Moored Buoy)</name>
+        <description><![CDATA[<b>Lakeport Buoy, MI (Moored Buoy)</b><br/><br/><b>WDIR:</b> 10<br/><b>WSPD:</b> 2.0<br/><b>GST:</b> 3.0<br/><b>WVHT:</b> 0.2<br/><b>MWD:</b> 332<br/><b>ATMP:</b> 23.6<br/><b>WTMP:</b> 22.5<br/><b>DEWP:</b> 19.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45209">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.391000,43.129000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North Huron Spotter (Spotter Buoy)</name>
+        <description><![CDATA[<b>North Huron Spotter (Spotter Buoy)</b><br/><br/><b>WVHT:</b> 0.9<br/><b>MWD:</b> 277<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45212">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.840000,45.351000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alpena Harbor Light, Alpena, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Alpena Harbor Light, Alpena, MI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 5.1<br/><b>GST:</b> 6.2<br/><b>ATMP:</b> 24.0<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=APNM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.424000,45.060000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cheboygan Marina, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Cheboygan Marina, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 330<br/><b>WSPD:</b> 9.3<br/><b>GST:</b> 12.9<br/><b>PRES:</b> 1015.0<br/><b>ATMP:</b> 23.6<br/><b>DEWP:</b> 8.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:05:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CYGM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.464000,45.658000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9075099 - De Tour Village, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9075099 - De Tour Village, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 6.2<br/><b>GST:</b> 8.2<br/><b>PRES:</b> 1014.4<br/><b>ATMP:</b> 19.5<br/><b>WTMP:</b> 15.3<br/><b>DEWP:</b> 14.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=DTLM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.898000,45.993000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9014098 - Fort Gratiot, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9014098 - Fort Gratiot, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 4.6<br/><b>PRES:</b> 1013.4<br/><b>ATMP:</b> 25.2<br/><b>DEWP:</b> 16.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=FTGM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.422000,43.007000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gravelly Shoal Light, MI (Weather Station)</name>
+        <description><![CDATA[<b>Gravelly Shoal Light, MI (Weather Station)</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 5.7<br/><b>GST:</b> 6.2<br/><b>PRES:</b> 1014.2<br/><b>ATMP:</b> 23.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GSLM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.537000,44.018000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9075014 - Harbor Beach, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9075014 - Harbor Beach, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 350<br/><b>WSPD:</b> 4.1<br/><b>GST:</b> 5.7<br/><b>PRES:</b> 1013.3<br/><b>ATMP:</b> 22.0<br/><b>WTMP:</b> 20.7<br/><b>DEWP:</b> 17.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=HRBM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.643000,43.846000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Hope, MI (Weather Station)</name>
+        <description><![CDATA[<b>Port Hope, MI (Weather Station)</b><br/><br/><b>PRES:</b> 1013.5<br/><b>ATMP:</b> 22.2<br/><b>DEWP:</b> 18.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:55:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=KP58">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.800000,44.017000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9075065 - Alpena, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9075065 - Alpena, MI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 360<br/><b>WSPD:</b> 4.1<br/><b>GST:</b> 6.2<br/><b>PRES:</b> 1013.6<br/><b>ATMP:</b> 23.2<br/><b>WTMP:</b> 17.2<br/><b>DEWP:</b> 13.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=LPNM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.429000,45.063000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9014095 - Port Huron, North of Blue Water Bridge, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9014095 - Port Huron, North of Blue Water Bridge, MI (Water Level Observation Network)</b><br/><br/><b>backscatter_turbidity:</b> 16.3 1<br/><b>battery_voltage:</b> 12.78 V<br/><b>sea_water_temperature:</b> 278.154 K<br/><b>sea_water_temperature_fixed_depth:</b> 5 m<br/><b>sea_water_temperature_0_fixed_depth:</b> 0.5 m<br/><b>sea_water_temperature_1_fixed_depth:</b> 1.5 m<br/><b>sea_water_temperature_2_fixed_depth:</b> 2.5 m<br/><b>sea_water_temperature_3_fixed_depth:</b> 3.5 m<br/><b>sea_water_temperature_4_fixed_depth:</b> 4.5 m<br/><b>sidescatter_turbidity:</b> 28.02 1<br/><b>sidescatter_turbidity_fixed_depth:</b> 0.1 m<br/><b>total_suspended_solids:</b> 0.82 mg L-1<br/><b>total_suspended_solids_fixed_depth:</b> 15 m<br/><br/><b>Observed source timestamp:</b> 2025-04-04 17:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/167">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BWB">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-82.423000,43.002000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Presque Isle Light, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Presque Isle Light, MI (GLOS Weather Station)</b><br/><br/><b>WSPD:</b> 9.3<br/><b>GST:</b> 12.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PRIM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.492000,45.357000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Sanilac, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Port Sanilac, MI (GLOS Weather Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA PSCM4<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PSCM4">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-82.540000,43.420000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sturgeon Point Light, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Sturgeon Point Light, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 1.5<br/><b>GST:</b> 8.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SPTM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.273000,44.713000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Spectacle Reef Light, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Spectacle Reef Light, MI (C-MAN Station)</b><br/><br/><b>ATMP:</b> 22.0<br/><b>DEWP:</b> 17.3<br/><br/><b>Observed source timestamp:</b> 2026-08-18 17:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SRLM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-84.137000,45.773000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tawas Point, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Tawas Point, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1013.9<br/><b>ATMP:</b> 22.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 16:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=TAWM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.449000,44.254000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thunder Bay Island, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Thunder Bay Island, MI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 220<br/><b>WSPD:</b> 6.7<br/><b>GST:</b> 7.2<br/><b>ATMP:</b> 21.8<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=TBIM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.194000,45.035000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point Edward (Fixed Station)</name>
+        <description><![CDATA[<b>Point Edward (Fixed Station)</b><br/><br/><b>sea_water_temperature:</b> 295.52<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.0094<br/><b>sea_water_ph_reported_on_total_scale:</b> 8.52<br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.022<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/306">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-82.415500,43.004800,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canatara Beach, Sarnia, ON (Beach)</name>
+        <description><![CDATA[<b>Canatara Beach, Sarnia, ON (Beach)</b><br/><br/><b>sea_water_temperature:</b> 295.52<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.0094<br/><b>sea_water_ph_reported_on_total_scale:</b> 8.52<br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.022<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/306">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-82.404000,43.005600,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Grand Bend Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Grand Bend Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=grand_bend_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-81.758100,43.320700,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sauble Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Sauble Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-81.264900,44.629800,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Singing Sands Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Singing Sands Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-81.577600,45.191400,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ipperwash Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Ipperwash Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=ipperwash_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-81.987500,43.207100,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pinery Provincial Park Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Pinery Provincial Park Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=pinery_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-81.836300,43.259300,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Franks Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Port Franks Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=port_franks_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-81.913700,43.230600,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bayfield Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Bayfield Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=bayfield_beach_on">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-81.706600,43.568300,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Lake Erie</name>
+      <Placemark>
+        <name>Walnut Creek Buoy (Moored Buoy)</name>
+        <description><![CDATA[<b>Walnut Creek Buoy (Moored Buoy)</b><br/><br/><b>WDIR:</b> 250<br/><b>WSPD:</b> 1.5<br/><b>GST:</b> 2.6<br/><b>ATMP:</b> 24.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=WCRP1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.270000,42.132000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Buffalo Buoy (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Buffalo Buoy (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 228<br/><b>WSPD:</b> 11.0<br/><b>PRES:</b> 1011.8<br/><b>ATMP:</b> 22.8<br/><b>WTMP:</b> 23.2<br/><b>DEWP:</b> 20.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:10:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=4403586">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-78.904000,42.847000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>WEST ERIE - 16 NM NW of Lorain, OH (2.3-meter foam discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>WEST ERIE - 16 NM NW of Lorain, OH (2.3-meter foam discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>PRES:</b> 1014.3<br/><b>ATMP:</b> 23.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45005">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.398000,41.677000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name> (3-meter discus buoy)</name>
+        <description><![CDATA[<b> (3-meter discus buoy)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-82.000000,41.600000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Stanley (3-meter discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>Port Stanley (3-meter discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 5.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>PRES:</b> 1013.3<br/><b>ATMP:</b> 23.6<br/><b>WTMP:</b> 23.0<br/><b>PTDY:</b> -0.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45132">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.220000,42.460000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Colborne (3-meter discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>Port Colborne (3-meter discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 250<br/><b>WSPD:</b> 8.0<br/><b>GST:</b> 9.0<br/><b>WVHT:</b> 0.9<br/><b>DPD:</b> 4<br/><b>PRES:</b> 1012.5<br/><b>ATMP:</b> 22.9<br/><b>WTMP:</b> 22.8<br/><b>PTDY:</b> +0.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45142">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.290000,42.740000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lake St Clair (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Lake St Clair (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 150<br/><b>WSPD:</b> 2.0<br/><b>WVHT:</b> 0.1<br/><b>DPD:</b> 2<br/><b>PRES:</b> 1013.3<br/><b>ATMP:</b> 24.0<br/><b>WTMP:</b> 23.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45147">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.680000,42.430000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cleveland Buoy, OH (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Cleveland Buoy, OH (Buoy) [GLOS]</b><br/><br/><b>WVHT:</b> 0.2<br/><b>ATMP:</b> 23.6<br/><b>WTMP:</b> 24.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45164">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.693720,41.732130,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Toledo Water Intake Buoy, Oregon, OH (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Toledo Water Intake Buoy, Oregon, OH (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 1.0<br/><b>GST:</b> 2.0<br/><b>WVHT:</b> 0.1<br/><b>MWD:</b> 160<br/><b>ATMP:</b> 25.9<br/><b>WTMP:</b> 25.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45165">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.261450,41.702033,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Erie Nearshore Buoy, Erie, PA (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Erie Nearshore Buoy, Erie, PA (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 290<br/><b>WSPD:</b> 7.0<br/><b>GST:</b> 10.0<br/><b>WVHT:</b> 0.6<br/><b>DPD:</b> 4<br/><b>MWD:</b> 274<br/><b>ATMP:</b> 22.7<br/><b>WTMP:</b> 23.7<br/><b>DEWP:</b> 20.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:20:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45167">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.134842,42.184658,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lakewood Buoy, OH (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Lakewood Buoy, OH (Buoy) [GLOS]</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> GLOS dataset 216<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull data console<br/><a href="https://seagull.glos.org/data-console/216">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45169">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-81.821000,41.615000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cleveland Intake Crib Buoy, OH (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Cleveland Intake Crib Buoy, OH (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>MWD:</b> 277<br/><b>PRES:</b> 1013.4<br/><b>ATMP:</b> 23.4<br/><b>WTMP:</b> 24.4<br/><b>DEWP:</b> 19.3<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45176">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.765280,41.550160,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rocky River, OH (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Rocky River, OH (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 110<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.0<br/><b>MWD:</b> 0<br/><b>PRES:</b> 1013.4<br/><b>ATMP:</b> 23.6<br/><b>DEWP:</b> 19.1<br/><b>PTDY:</b> -0.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45196">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.880300,41.520900,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Euclid, OH (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Euclid, OH (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 330<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>MWD:</b> 270<br/><b>PRES:</b> 1013.4<br/><b>ATMP:</b> 23.5<br/><b>WTMP:</b> 24.2<br/><b>DEWP:</b> 19.0<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45197">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.617600,41.619400,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maumee Bay Buoy (Moored Buoy)</name>
+        <description><![CDATA[<b>Maumee Bay Buoy (Moored Buoy)</b><br/><br/><b>WDIR:</b> 290<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.1<br/><b>MWD:</b> 10<br/><b>PRES:</b> 1013.7<br/><b>ATMP:</b> 26.9<br/><b>WTMP:</b> 25.2<br/><b>DEWP:</b> 18.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45200">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.370000,41.724000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Erie Islands Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Erie Islands Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.2<br/><b>MWD:</b> 265<br/><b>PRES:</b> 1014.1<br/><b>ATMP:</b> 24.9<br/><b>WTMP:</b> 24.7<br/><b>DEWP:</b> 18.7<br/><b>PTDY:</b> -0.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45201">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.781000,41.601000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Clinton Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Port Clinton Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 2.0<br/><b>GST:</b> 3.0<br/><b>WVHT:</b> 0.1<br/><b>MWD:</b> 332<br/><b>PRES:</b> 1013.9<br/><b>ATMP:</b> 26.5<br/><b>WTMP:</b> 25.0<br/><b>DEWP:</b> 19.1<br/><b>PTDY:</b> -0.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45202">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.941000,41.532000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Huron Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Huron Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>MWD:</b> 315<br/><b>WTMP:</b> 24.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45203">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.512000,41.393000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sheffield Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Sheffield Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 330<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>MWD:</b> 312<br/><b>ATMP:</b> 23.8<br/><b>WTMP:</b> 24.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45204">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.115000,41.508000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Edgewater Beach Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Edgewater Beach Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>MWD:</b> 268<br/><b>PRES:</b> 1013.2<br/><b>ATMP:</b> 23.5<br/><b>WTMP:</b> 24.5<br/><b>DEWP:</b> 18.8<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45205">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.748000,41.501000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Euclid Beach Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Euclid Beach Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 350<br/><b>WSPD:</b> 2.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>MWD:</b> 296<br/><b>PRES:</b> 1014.2<br/><b>ATMP:</b> 23.5<br/><b>DEWP:</b> 18.9<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45206">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.583000,41.585000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mentor Harbor Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Mentor Harbor Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 270<br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>MWD:</b> 260<br/><b>ATMP:</b> 23.2<br/><b>WTMP:</b> 24.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45207">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.331000,41.762000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ashtabula Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Ashtabula Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 270<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=ASBO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.747000,41.934000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dunkirk Buoy (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Dunkirk Buoy (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 10.0<br/><b>WVHT:</b> 0.9<br/><b>MWD:</b> 298<br/><b>PRES:</b> 1014.2<br/><b>ATMP:</b> 22.7<br/><b>DEWP:</b> 21.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:10:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45220">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.432000,42.561000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beach 2 Buoy (Moored Buoy)</name>
+        <description><![CDATA[<b>Beach 2 Buoy (Moored Buoy)</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 5.1<br/><b>GST:</b> 8.2<br/><b>ATMP:</b> 23.1<br/><b>DEWP:</b> 20.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BCTP1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.148000,42.126000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beach 6 Buoy (Moored Buoy)</name>
+        <description><![CDATA[<b>Beach 6 Buoy (Moored Buoy)</b><br/><br/><b>WTMP:</b> 24.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45223">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.139000,42.144000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9014070 - Algonac, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9014070 - Algonac, MI (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1013.5<br/><b>ATMP:</b> 26.2<br/><b>WTMP:</b> 22.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=AGCM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.527000,42.621000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ashtabula Lighthouse ()</name>
+        <description><![CDATA[<b>Ashtabula Lighthouse ()</b><br/><br/><b>WDIR:</b> 270<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=ASBO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.796000,41.918000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barcelona Harbor, NY (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Barcelona Harbor, NY (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 250<br/><b>WSPD:</b> 7.7<br/><b>GST:</b> 8.8<br/><b>PRES:</b> 1015.9<br/><b>ATMP:</b> 22.8<br/><b>PTDY:</b> -0.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BARN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.595000,42.345000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beach 2 Tower (Coastal Marine Station)</name>
+        <description><![CDATA[<b>Beach 2 Tower (Coastal Marine Station)</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 5.1<br/><b>GST:</b> 8.2<br/><b>ATMP:</b> 23.1<br/><b>DEWP:</b> 20.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BCTP1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.131000,42.153000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063020 - Buffalo, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063020 - Buffalo, NY (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 230<br/><b>WSPD:</b> 6.7<br/><b>GST:</b> 9.8<br/><b>PRES:</b> 1012.5<br/><b>ATMP:</b> 23.2<br/><b>WTMP:</b> 22.9<br/><b>DEWP:</b> 19.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=BUFN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-78.890000,42.878000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Conneaut Breakwater Light, OH (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Conneaut Breakwater Light, OH (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 4.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CBLO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.556000,41.981000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Camp Perry, OH (C-MAN Station)</name>
+        <description><![CDATA[<b>Camp Perry, OH (C-MAN Station)</b><br/><br/><b>WSPD:</b> 0.0<br/><b>GST:</b> 0.0<br/><b>ATMP:</b> -17.8<br/><br/><b>Observed source timestamp:</b> 2026-08-24 21:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CMPO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.015000,41.547000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063063 - Cleveland, OH (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063063 - Cleveland, OH (Water Level Observation Network)</b><br/><br/><b>WVHT:</b> 0.2<br/><b>ATMP:</b> 23.6<br/><b>WTMP:</b> 24.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45164">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.637000,41.542000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dunkirk, NY (C-MAN Station)</name>
+        <description><![CDATA[<b>Dunkirk, NY (C-MAN Station)</b><br/><br/><b>WDIR:</b> 230<br/><b>WSPD:</b> 7.2<br/><b>GST:</b> 9.3<br/><b>PRES:</b> 1012.9<br/><b>ATMP:</b> 22.9<br/><b>DEWP:</b> 18.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=DBLN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.353000,42.493000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063038 - Erie (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063038 - Erie (Water Level Observation Network)</b><br/><br/><b>water_level:</b> 3.028<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:12:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA CO-OPS<br/><a href="https://api.tidesandcurrents.noaa.gov/stations.html?station=9063038">NOAA CO-OPS station</a>]]></description>
+        <Point>
+          <coordinates>-80.098000,42.172000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063053 - Fairport, OH (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063053 - Fairport, OH (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1013.6<br/><b>ATMP:</b> 24.8<br/><b>WTMP:</b> 23.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=FAIO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.281000,41.764000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Geneva on the Lake Light, OH (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Geneva on the Lake Light, OH (GLOS Weather Station)</b><br/><br/><b>phycocyanin_fluorescence:</b> 0.35<br/><b>chlorophyll_fluorescence:</b> 0.45<br/><b>sea_water_turbidity:</b> 0.86<br/><b>sea_water_temperature:</b> 296.79<br/><b>fractional_saturation_of_oxygen_in_sea_water:</b> 103.4<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.00876<br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.0286<br/><b>sea_water_ph_reported_on_total_scale:</b> 0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/17">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=LEASH">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-80.975000,41.859000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Huron Harbor Light, OH (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Huron Harbor Light, OH (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.6<br/><b>ATMP:</b> 24.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=HHLO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.545000,41.401000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lorain Harbor, OH (C-MAN Station)</name>
+        <description><![CDATA[<b>Lorain Harbor, OH (C-MAN Station)</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 5.0<br/><b>PRES:</b> 1014.3<br/><b>ATMP:</b> 23.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45005">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.195000,41.481000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9014090 - Mouth of the Black River, MI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9014090 - Mouth of the Black River, MI (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1013.7<br/><b>ATMP:</b> 28.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MBRM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.419000,42.975000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063079 - Marblehead, OH (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063079 - Marblehead, OH (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 3.6<br/><b>PRES:</b> 1014.0<br/><b>ATMP:</b> 24.8<br/><b>WTMP:</b> 24.7<br/><b>DEWP:</b> 13.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:48:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=MRHO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.731000,41.544000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northeast Marina, PA (C-MAN Station)</name>
+        <description><![CDATA[<b>Northeast Marina, PA (C-MAN Station)</b><br/><br/><b>WDIR:</b> 290<br/><b>WSPD:</b> 5.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=NREP1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.792000,42.258000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Darrow Road, Old Woman Creek Reserve, OH (NERRS Water Quality Station)</name>
+        <description><![CDATA[<b>Darrow Road, Old Woman Creek Reserve, OH (NERRS Water Quality Station)</b><br/><br/><b>sea_water_temperature:</b> 294.85<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.0065<br/><b>sea_water_turbidity:</b> 19.0<br/><b>fractional_saturation_of_oxygen_in_sea_water:</b> 73.9<br/><b>sea_water_practical_salinity:</b> 0.3<br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.068<br/><b>sea_water_ph_reported_on_total_scale:</b> 7.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:15:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/233">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OWCDRWQ">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-82.505000,41.365000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lower Estuary, Old Woman Creek Reserve, OH (NERRS Water Quality Station)</name>
+        <description><![CDATA[<b>Lower Estuary, Old Woman Creek Reserve, OH (NERRS Water Quality Station)</b><br/><br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.038<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.0079<br/><b>fractional_saturation_of_oxygen_in_sea_water:</b> 95.6<br/><b>sea_water_turbidity:</b> 18.0<br/><b>sea_water_temperature:</b> 298.05<br/><b>sea_water_practical_salinity:</b> 0.2<br/><b>sea_water_ph_reported_on_total_scale:</b> 7.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/235">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OWCOLWQ">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-82.514000,41.382000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>State Road 6, Old Woman Creek Reserve, OH (NERRS Water Quality Station)</name>
+        <description><![CDATA[<b>State Road 6, Old Woman Creek Reserve, OH (NERRS Water Quality Station)</b><br/><br/><b>wind_speed_of_gust:</b> 4.6<br/><b>air_pressure:</b> 101500.0<br/><b>relative_humidity:</b> 66.0<br/><b>lwe_thickness_of_precipitation_amount:</b> 0.0<br/><b>surface_downwelling_photosynthetic_photon_flux_in_air:</b> 1.324<br/><b>wind_from_direction:</b> 329.0<br/><b>wind_speed:</b> 1.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:45:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/237">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-82.514000,41.383000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Railroad, Old Woman Creek Reserve, OH (Water Quality Station)</name>
+        <description><![CDATA[<b>Railroad, Old Woman Creek Reserve, OH (Water Quality Station)</b><br/><br/><b>wind_speed_of_gust:</b> 4.6<br/><b>air_pressure:</b> 101500.0<br/><b>relative_humidity:</b> 66.0<br/><b>lwe_thickness_of_precipitation_amount:</b> 0.0<br/><b>surface_downwelling_photosynthetic_photon_flux_in_air:</b> 1.324<br/><b>wind_from_direction:</b> 329.0<br/><b>wind_speed:</b> 1.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:45:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/237">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-82.513000,41.373000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Old Woman Creek, Old Woman Creek Reserve, OH (NERRS Weather Station)</name>
+        <description><![CDATA[<b>Old Woman Creek, Old Woman Creek Reserve, OH (NERRS Weather Station)</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 2.1<br/><b>PRES:</b> 1015.0<br/><b>ATMP:</b> 24.8<br/><b>DEWP:</b> 18.2<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:45:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OWXO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.508000,41.378000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063028 - Sturgeon Point, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063028 - Sturgeon Point, NY (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1012.6<br/><b>ATMP:</b> 22.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PSTN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.048000,42.691000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Bass Island, OH (C-MAN Station)</name>
+        <description><![CDATA[<b>South Bass Island, OH (C-MAN Station)</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 4.1<br/><b>GST:</b> 5.1<br/><b>PRES:</b> 1013.3<br/><b>ATMP:</b> 24.9<br/><b>DEWP:</b> 16.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SBIO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.841000,41.629000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Toledo Light No. 2 OH (C-MAN Station)</name>
+        <description><![CDATA[<b>Toledo Light No. 2 OH (C-MAN Station)</b><br/><br/><b>WDIR:</b> 270<br/><b>WSPD:</b> 4.1<br/><b>GST:</b> 5.1<br/><b>PRES:</b> 1015.4<br/><b>ATMP:</b> 22.5<br/><b>DEWP:</b> 16.5<br/><br/><b>Observed source timestamp:</b> 2026-08-18 14:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=THLO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.194000,41.826000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063085 - Toledo, OH (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063085 - Toledo, OH (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 300<br/><b>WSPD:</b> 2.6<br/><b>GST:</b> 4.6<br/><b>PRES:</b> 1013.8<br/><b>ATMP:</b> 27.3<br/><b>DEWP:</b> 15.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=THRO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.473000,41.694000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TREC Tower (Coastal Marine Station)</name>
+        <description><![CDATA[<b>TREC Tower (Coastal Marine Station)</b><br/><br/><b>WDIR:</b> 310<br/><b>WSPD:</b> 6.2<br/><b>GST:</b> 8.2<br/><b>ATMP:</b> 22.7<br/><b>DEWP:</b> 19.9<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=TRTP1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.154000,42.110000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Toledo Crib, OH (C-MAN Station)</name>
+        <description><![CDATA[<b>Toledo Crib, OH (C-MAN Station)</b><br/><br/><b>WSPD:</b> 2.1<br/><b>GST:</b> 3.6<br/><b>ATMP:</b> 26.0<br/><b>WTMP:</b> 23.2<br/><b>DEWP:</b> 18.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:40:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=TWCO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.259000,41.699000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Vermilion River at Lake Erie, OH ()</name>
+        <description><![CDATA[<b>Vermilion River at Lake Erie, OH ()</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:10:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=VRMO1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.364000,41.428000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Walnut Creek Marina, PA ()</name>
+        <description><![CDATA[<b>Walnut Creek Marina, PA ()</b><br/><br/><b>WDIR:</b> 250<br/><b>WSPD:</b> 1.5<br/><b>GST:</b> 2.6<br/><b>ATMP:</b> 24.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=WCRP1">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.240000,42.077000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Point Pelee Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Point Pelee Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA POINT_PELEE_BEACH<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=POINT_PELEE_BEACH">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=point_pelee_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-82.513100,41.945200,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rondeau Provincial Park Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Rondeau Provincial Park Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-81.869200,42.289200,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colchester Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Colchester Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-82.933900,41.983700,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Stanley Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Port Stanley Beach, ON (Beach)</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 5.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>PRES:</b> 1013.3<br/><b>ATMP:</b> 23.6<br/><b>WTMP:</b> 23.0<br/><b>PTDY:</b> -0.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45132">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.218500,42.659500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Burwell Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Port Burwell Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA PORT_BURWELL_BEACH<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=PORT_BURWELL_BEACH">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=port_burwell_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-80.805700,42.642800,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Port Dover Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Port Dover Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-80.202600,42.783100,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long Point Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Long Point Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA LONG_POINT_BEACH<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=LONG_POINT_BEACH">NOAA station page</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=long_point_beach">Original source link</a>]]></description>
+        <Point>
+          <coordinates>-80.384400,42.578000,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Lake Ontario</name>
+      <Placemark>
+        <name>EAST Lake Ontario  - 20NM North Northeast of Rochester, NY (2.3-meter foam discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>EAST Lake Ontario  - 20NM North Northeast of Rochester, NY (2.3-meter foam discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 5.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>APD:</b> 2.9<br/><b>MWD:</b> 248<br/><b>PRES:</b> 1011.0<br/><b>ATMP:</b> 21.3<br/><b>WTMP:</b> 20.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:50:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45012">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-77.406000,43.621000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Prince Edward Pt (3-meter discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>Prince Edward Pt (3-meter discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 6.0<br/><b>GST:</b> 7.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 3<br/><b>PRES:</b> 1011.1<br/><b>ATMP:</b> 21.9<br/><b>WTMP:</b> 21.5<br/><b>PTDY:</b> -0.5<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45135">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-76.670000,43.780000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>West Lake Ontario - Grimsby (3-meter discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>West Lake Ontario - Grimsby (3-meter discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 290<br/><b>WSPD:</b> 6.0<br/><b>GST:</b> 7.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>PRES:</b> 1011.5<br/><b>ATMP:</b> 23.9<br/><b>WTMP:</b> 21.2<br/><b>PTDY:</b> +0.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45139">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.530000,43.250000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lake Simcoe (Buoy)</name>
+        <description><![CDATA[<b>Lake Simcoe (Buoy)</b><br/><br/><b>WDIR:</b> 290<br/><b>WSPD:</b> 6.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 2<br/><b>PRES:</b> 1012.2<br/><b>ATMP:</b> 20.9<br/><b>WTMP:</b> 21.3<br/><b>PTDY:</b> +0.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45151">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.370000,44.500000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pan Am Games (3-meter discus buoy)</name>
+        <description><![CDATA[<b>Pan Am Games (3-meter discus buoy)</b><br/><br/><b>air_temperature:</b> 284.62 K<br/><b>battery_voltage:</b> 2.8 V<br/><b>surface_elevation:</b> 75.74 m<br/><br/><b>Observed source timestamp:</b> 2025-04-02 10:36:50 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/210">GLOS Seagull data console</a><br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=FD010">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-79.390000,43.590000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NW Lake Ontario Ajax (3-meter discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>NW Lake Ontario Ajax (3-meter discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 240<br/><b>WSPD:</b> 4.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 3<br/><b>PRES:</b> 1011.0<br/><b>ATMP:</b> 18.1<br/><b>WTMP:</b> 15.5<br/><b>PTDY:</b> +0.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45159">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-78.980000,43.770000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sodus Point, NY (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Sodus Point, NY (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 6.0<br/><b>GST:</b> 8.0<br/><b>ATMP:</b> 21.9<br/><b>WTMP:</b> 21.4<br/><b>DEWP:</b> 20.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45190">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-76.961000,43.282000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oak Orchard, NY (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Oak Orchard, NY (Buoy) [GLOS]</b><br/><br/><b>WSPD:</b> 3.0<br/><b>GST:</b> 4.0<br/><b>ATMP:</b> 21.0<br/><b>WTMP:</b> 21.5<br/><b>DEWP:</b> 19.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 19:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45191">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-78.192000,43.388000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oswego, NY (274) (Waverider Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Oswego, NY (274) (Waverider Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 6.2<br/><b>PRES:</b> 1012.2<br/><b>ATMP:</b> 23.1<br/><b>DEWP:</b> 18.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:48:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OSGN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-76.538420,43.500800,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9052000 - Cape Vincent, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9052000 - Cape Vincent, NY (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 230<br/><b>WSPD:</b> 2.1<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1010.0<br/><b>ATMP:</b> 24.0<br/><b>WTMP:</b> 22.6<br/><b>DEWP:</b> 20.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:48:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CAVN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-76.333000,44.130000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Galloo Island, NY (C-MAN Station)</name>
+        <description><![CDATA[<b>Galloo Island, NY (C-MAN Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA GLLN6<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GLLN6">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-76.450000,43.890000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9063012 - Niagara Intake, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9063012 - Niagara Intake, NY (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1012.2<br/><b>ATMP:</b> 23.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=NIAN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.014000,43.077000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Olcott Harbor, NY (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Olcott Harbor, NY (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 6.2<br/><b>GST:</b> 8.2<br/><b>PRES:</b> 1002.4<br/><b>ATMP:</b> 23.8<br/><b>PTDY:</b> +0.4<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OLCN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-78.719000,43.341000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9052030 - Oswego, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9052030 - Oswego, NY (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 260<br/><b>WSPD:</b> 3.6<br/><b>GST:</b> 6.2<br/><b>PRES:</b> 1012.2<br/><b>ATMP:</b> 23.1<br/><b>DEWP:</b> 18.6<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:48:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OSGN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-76.511000,43.464000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9052058 - Rochester, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9052058 - Rochester, NY (Water Level Observation Network)</b><br/><br/><b>ATMP:</b> 25.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=RCRN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-77.626000,43.269000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rochester Coast Guard, NY (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Rochester Coast Guard, NY (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 6.2<br/><b>GST:</b> 8.2<br/><b>PRES:</b> 1004.1<br/><b>ATMP:</b> 23.6<br/><b>PTDY:</b> +0.0<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=RPRN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-77.598000,43.263000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Niagara Coast Guard Station, NY (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Niagara Coast Guard Station, NY (GLOS Weather Station)</b><br/><br/><b>sea_water_temperature:</b> 295.47<br/><b>sea_water_ph_reported_on_total_scale:</b> 8.4<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.0084<br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.028<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/299">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-79.064000,43.262000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Toronto Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Toronto Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-79.307300,43.661900,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hamilton Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Hamilton Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-79.786600,43.279300,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Burlington Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Burlington Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-79.799100,43.307800,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cobourg Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Cobourg Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-78.162000,43.957200,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Georgian Bay</name>
+      <Placemark>
+        <name>Georgian Bay (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Georgian Bay (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 8.0<br/><b>GST:</b> 10.0<br/><b>WVHT:</b> 1.0<br/><b>DPD:</b> 4<br/><b>PRES:</b> 1012.4<br/><b>ATMP:</b> 19.1<br/><b>WTMP:</b> 20.4<br/><b>PTDY:</b> +0.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45143">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-81.020000,45.540000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Georgian Bay (3-meter discus buoy) [GLOS]</name>
+        <description><![CDATA[<b>South Georgian Bay (3-meter discus buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 280<br/><b>WSPD:</b> 8.0<br/><b>GST:</b> 10.0<br/><b>WVHT:</b> 1.0<br/><b>DPD:</b> 4<br/><b>PRES:</b> 1012.4<br/><b>ATMP:</b> 19.1<br/><b>WTMP:</b> 20.4<br/><b>PTDY:</b> +0.8<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45143">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-80.627000,44.940000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lake Nipissing (Buoy)</name>
+        <description><![CDATA[<b>Lake Nipissing (Buoy)</b><br/><br/><b>WDIR:</b> 340<br/><b>WSPD:</b> 8.0<br/><b>WVHT:</b> 0.4<br/><b>DPD:</b> 2<br/><b>PRES:</b> 1011.2<br/><b>ATMP:</b> 17.8<br/><b>WTMP:</b> 21.2<br/><b>PTDY:</b> +2.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45152">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-79.720000,46.230000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wasaga Beach, ON (Beach)</name>
+        <description><![CDATA[<b>Wasaga Beach, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-80.020300,44.522500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sunset Point Beach, Collingwood, ON (Beach)</name>
+        <description><![CDATA[<b>Sunset Point Beach, Collingwood, ON (Beach)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA 45009<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45009">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-80.202000,44.507700,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Green Bay</name>
+      <Placemark>
+        <name>Sturgeon Bay CG Station, WI (Weather Station)</name>
+        <description><![CDATA[<b>Sturgeon Bay CG Station, WI (Weather Station)</b><br/><br/><b>AirT:</b> 290.04999999999995 K<br/><b>Chl:</b> 0.109 RFU<br/><b>DO:</b> 0 kg m-3<br/><b>DO_fixed_depth:</b> 5 m<br/><b>DOS:</b> 0 1<br/><b>DOS_fixed_depth:</b> 5 m<br/><b>Phyco:</b> 0.117 RFU<br/><b>WD:</b> 304.83 degree<br/><b>WS:</b> 2.44 m s-1<br/><b>WTemp0:</b> 288.962 K<br/><b>WTemp1:</b> 288.775 K<br/><b>WTemp1_fixed_depth:</b> 1 m<br/><b>WTemp2:</b> 289.462 K<br/><b>WTemp2_fixed_depth:</b> 2 m<br/><b>WTemp3:</b> 293.15 K<br/><b>WTemp3_fixed_depth:</b> 3 m<br/><b>WTemp4:</b> 292.462 K<br/><b>WTemp4_fixed_depth:</b> 4 m<br/><b>WTemp5_fixed_depth:</b> 5 m<br/><b>WTemp6_fixed_depth:</b> 6 m<br/><b>WTemp7_fixed_depth:</b> 7 m<br/><b>WTemp8_fixed_depth:</b> 8 m<br/><b>WTemp9_fixed_depth:</b> 9 m<br/><b>WVDIR:</b> 8.591 degree<br/><b>WVHT:</b> 0.143 m<br/><br/><b>Observed source timestamp:</b> 2025-09-26 17:37:17 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/94">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-87.313000,44.794000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>GB17 - South Green Bay, WI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>GB17 - South Green Bay, WI (Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 360<br/><b>WSPD:</b> 5.0<br/><b>GST:</b> 6.0<br/><b>WVHT:</b> 0.3<br/><b>DPD:</b> 2<br/><b>MWD:</b> 61<br/><b>ATMP:</b> 18.3<br/><b>WTMP:</b> 22.1<br/><br/><b>Observed source timestamp:</b> 2026-08-22 13:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45014">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.760000,44.800000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Green Bay East Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Green Bay East Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>wind_speed_of_gust:</b> 6.3<br/><b>sea_water_turbidity:</b> 1.01<br/><b>battery_voltage:</b> 11.5<br/><b>wind_speed:</b> 4.8<br/><b>fractional_saturation_of_oxygen_in_sea_water:</b> 33.84<br/><b>sea_water_ph_reported_on_total_scale:</b> 8.68<br/><b>sea_water_temperature:</b> 295.205<br/><b>sea_surface_wave_significant_height:</b> 0.254<br/><b>surface_downwelling_shortwave_flux_in_air:</b> 518.9<br/><b>air_temperature:</b> 291.45<br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.03081<br/><b>phycocyanin_fluorescence:</b> 21.92<br/><b>sea_surface_wave_mean_height_of_highest_tenth:</b> 0.323<br/><b>phycocyanin_concentration:</b> 0.5<br/><b>sea_surface_wave_from_direction_at_variance_spectral_density_maximum:</b> 38.4<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.00815<br/><b>sea_surface_wave_period_at_variance_spectral_density_maximum:</b> 2.3<br/><b>sea_surface_wave_from_direction:</b> 61.2<br/><b>air_pressure_at_mean_sea_level:</b> 99290.0<br/><b>depth:</b> 12.368<br/><b>mass_concentration_of_chlorophyll_in_sea_water:</b> 4e-06<br/><b>sea_surface_wave_maximum_height:</b> 0.449<br/><b>chlorophyll_fluorescence:</b> 1.09<br/><b>wind_from_direction:</b> 3.0<br/><br/><b>Observed source timestamp:</b> 2026-08-22 13:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/43">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-87.958880,44.550283,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Green Bay West Buoy (Moored Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Green Bay West Buoy (Moored Buoy) [GLOS]</b><br/><br/><b>WDIR:</b> 70<br/><b>WSPD:</b> 2.1<br/><b>GST:</b> 2.6<br/><b>PRES:</b> 1016.5<br/><b>ATMP:</b> 23.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GBWW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-87.987607,44.576730,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Green Bay Entrance Light, WI (Weather Station)</name>
+        <description><![CDATA[<b>Green Bay Entrance Light, WI (Weather Station)</b><br/><br/><b>wind_speed_of_gust:</b> 6.3<br/><b>sea_water_turbidity:</b> 1.01<br/><b>battery_voltage:</b> 11.5<br/><b>wind_speed:</b> 4.8<br/><b>fractional_saturation_of_oxygen_in_sea_water:</b> 33.84<br/><b>sea_water_ph_reported_on_total_scale:</b> 8.68<br/><b>sea_water_temperature:</b> 295.205<br/><b>sea_surface_wave_significant_height:</b> 0.254<br/><b>surface_downwelling_shortwave_flux_in_air:</b> 518.9<br/><b>air_temperature:</b> 291.45<br/><b>sea_water_electrical_conductivity_at_reference_temperature:</b> 0.03081<br/><b>phycocyanin_fluorescence:</b> 21.92<br/><b>sea_surface_wave_mean_height_of_highest_tenth:</b> 0.323<br/><b>phycocyanin_concentration:</b> 0.5<br/><b>sea_surface_wave_from_direction_at_variance_spectral_density_maximum:</b> 38.4<br/><b>mass_concentration_of_oxygen_in_sea_water:</b> 0.00815<br/><b>sea_surface_wave_period_at_variance_spectral_density_maximum:</b> 2.3<br/><b>sea_surface_wave_from_direction:</b> 61.2<br/><b>air_pressure_at_mean_sea_level:</b> 99290.0<br/><b>depth:</b> 12.368<br/><b>mass_concentration_of_chlorophyll_in_sea_water:</b> 4e-06<br/><b>sea_surface_wave_maximum_height:</b> 0.449<br/><b>chlorophyll_fluorescence:</b> 1.09<br/><b>wind_from_direction:</b> 3.0<br/><br/><b>Observed source timestamp:</b> 2026-08-22 13:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> GLOS Seagull<br/><a href="https://seagull.glos.org/data-console/43">GLOS Seagull data console</a>]]></description>
+        <Point>
+          <coordinates>-87.901000,44.653000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>9087077 - Green Bay West, WI (Water Level Observation Network)</name>
+        <description><![CDATA[<b>9087077 - Green Bay West, WI (Water Level Observation Network)</b><br/><br/><b>WDIR:</b> 70<br/><b>WSPD:</b> 2.1<br/><b>GST:</b> 2.6<br/><b>PRES:</b> 1016.5<br/><b>ATMP:</b> 23.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=GBWW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-88.003000,44.538000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northport Pier at Death's Door, WI (Weather Station)</name>
+        <description><![CDATA[<b>Northport Pier at Death&#x27;s Door, WI (Weather Station)</b><br/><br/><b>WDIR:</b> 350<br/><b>WSPD:</b> 4.6<br/><b>GST:</b> 5.7<br/><b>PRES:</b> 1017.6<br/><b>PTDY:</b> +0.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=NPDW3">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-86.977000,45.291000,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Saginaw Bay</name>
+      <Placemark>
+        <name>Saginaw Bay Buoy, MI (Buoy) [GLOS]</name>
+        <description><![CDATA[<b>Saginaw Bay Buoy, MI (Buoy) [GLOS]</b><br/><br/><b>ATMP:</b> 25.7<br/><br/><b>Observed source timestamp:</b> 2026-07-14 05:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45163">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.600100,43.982600,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saginaw Bay Light #1, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>Saginaw Bay Light #1, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 320<br/><b>WSPD:</b> 5.1<br/><b>GST:</b> 6.7<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=SBLM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-83.720000,43.810000,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>St. Clair/Detroit Rivers</name>
+      <Placemark>
+        <name>St. Clair Shores, MI (GLOS Weather Station)</name>
+        <description><![CDATA[<b>St. Clair Shores, MI (GLOS Weather Station)</b><br/><br/><b>WDIR:</b> 110<br/><b>WSPD:</b> 3.1<br/><b>GST:</b> 4.1<br/><b>PRES:</b> 1014.6<br/><b>ATMP:</b> 22.9<br/><b>PTDY:</b> -0.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=CLSM4">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.877000,42.471000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lake St. Clair Light, MI (C-MAN Station)</name>
+        <description><![CDATA[<b>Lake St. Clair Light, MI (C-MAN Station)</b><br/><br/><b>WDIR:</b> 150<br/><b>WSPD:</b> 2.0<br/><b>WVHT:</b> 0.1<br/><b>DPD:</b> 2<br/><b>PRES:</b> 1013.3<br/><b>ATMP:</b> 24.0<br/><b>WTMP:</b> 23.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 21:00:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=45147">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-82.755000,42.465000,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>St. Lawrence River</name>
+      <Placemark>
+        <name>Alexandria Bay, NY (C-MAN Station)</name>
+        <description><![CDATA[<b>Alexandria Bay, NY (C-MAN Station)</b><br/><br/><b>PRES:</b> 1010.5<br/><b>WTMP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:48:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=ALXN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-75.933000,44.333000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>8311062 - Alexandria Bay, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>8311062 - Alexandria Bay, NY (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1010.5<br/><b>WTMP:</b> 22.3<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:48:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=ALXN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-75.934000,44.331000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>8311030 - Ogdensburg, NY (Water Level Observation Network)</name>
+        <description><![CDATA[<b>8311030 - Ogdensburg, NY (Water Level Observation Network)</b><br/><br/><b>PRES:</b> 1009.9<br/><b>ATMP:</b> 25.1<br/><br/><b>Observed source timestamp:</b> 2026-08-27 20:30:00 UTC<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA NDBC<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=OBGN6">NOAA NDBC station page</a>]]></description>
+        <Point>
+          <coordinates>-75.494000,44.702000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thousand I. Brdg., NY (C-MAN Station)</name>
+        <description><![CDATA[<b>Thousand I. Brdg., NY (C-MAN Station)</b><br/><br/>Currently offline — awaiting next observation.<br/><b>Exact platform:</b> NOAA THIN6<br/><b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no current observation. It will be retried automatically on the next scheduled update.<br/><b>Observed source timestamp:</b> none (platform offline)<br/><b>Fetched runtime:</b> 2026-08-27 21:20:57 UTC<br/><b>Source:</b> NOAA station page<br/><a href="https://www.ndbc.noaa.gov/station_page.php?station=THIN6">NOAA station page</a>]]></description>
+        <Point>
+          <coordinates>-75.983000,44.300000,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
