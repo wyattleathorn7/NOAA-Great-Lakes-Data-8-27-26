@@ -162,131 +162,136 @@ ROSTER_118 = [
     ("I12","CCGS Judy LaMarsh","CCG","Light shallow 217ft",9560120,316050643,"CGJL","CAN","217ft"), # Wiki alternate 316999999 preserved in notes
 ]
 
-# Verify counts
-assert len(ROSTER_118)==118, f"Expected 118, got {len(ROSTER_118)}"
-# Check unique MMSI
-mmsis=[r[5] for r in ROSTER_118]
-assert len(mmsis)==len(set(mmsis)), f"Duplicate MMSI found: {len(mmsis)} vs {len(set(mmsis))}"
-# Check ceiling
-assert len(ROSTER_118) <= 180
 
-# Load snapshot (mock or real if USERNAME set)
-import urllib.request, urllib.parse, json, time
-SNAP_PATH=str(pathlib.Path(__file__).parent / "latest_snapshot.json")
-snapshot=None
-try:
-    snapshot=json.load(open(SNAP_PATH))
-except: snapshot={"vessels":[]}
-snap_map={str(v.get("MMSI")):v for v in snapshot.get("vessels",[])}
+def main():
+    # Verify counts
+    assert len(ROSTER_118)==118, f"Expected 118, got {len(ROSTER_118)}"
+    # Check unique MMSI
+    mmsis=[r[5] for r in ROSTER_118]
+    assert len(mmsis)==len(set(mmsis)), f"Duplicate MMSI found: {len(mmsis)} vs {len(set(mmsis))}"
+    # Check ceiling
+    assert len(ROSTER_118) <= 180
 
-fetched_at=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-source_attrib="Source: AISHub (data.aishub.net) — Contributor network. Data may be delayed/incomplete/inaccurate. Not for navigation."
-interval_min=10
-bbox_str=f"{BBOX['latmin']}–{BBOX['latmax']} / {BBOX['lonmin']}–{BBOX['lonmax']}"
-
-# KML heading helper
-def kml_heading(h):
+    # Load snapshot (mock or real if USERNAME set)
+    import urllib.request, urllib.parse, json, time
+    SNAP_PATH=str(pathlib.Path(__file__).parent / "latest_snapshot.json")
+    snapshot=None
     try:
-        hi=int(float(h))
-    except: return None
-    if hi==511: return None
-    if hi==0: return 360
-    return hi
+        snapshot=json.load(open(SNAP_PATH))
+    except: snapshot={"vessels":[]}
+    snap_map={str(v.get("MMSI")):v for v in snapshot.get("vessels",[])}
 
-# Build KML
-kml_lines=[]
-kml_lines.append('<?xml version="1.0" encoding="UTF-8"?>')
-kml_lines.append('<kml xmlns="http://www.opengis.net/kml/2.2">')
-kml_lines.append('<Document>')
-kml_lines.append('  <name>Great Lakes Commercial &amp; Operational Ships — AIS Live (Production — 118)</name>')
-kml_lines.append(f'  <description><![CDATA[Production AIS vessel layer — 118 permanent placemarks (MMSI primary key, never name-matched).<br/>Source: {source_attrib}<br/>Interval {interval_min} min | 1 req/min limit → 5-min 12/hr feasible $0<br/>Bbox {bbox_str} | Fetched {html.escape(fetched_at)}<br/>MMSI→placemark never changes, heading via &lt;IconStyle&gt;&lt;heading&gt; (HEADING priority, COG fallback labelled), offline retained visibility 0.<br/>118/118 High, ceiling 180 not approached. Not for navigation.]]></description>')
-# Styles — RED ICON ONLY
-kml_lines.append('  <Style id="vesselActive">')
-kml_lines.append(f'    <IconStyle><scale>0.8</scale><Icon><href>{ICON_HREF_PRODUCTION}</href></Icon><hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>')
-kml_lines.append('    <LabelStyle><scale>0.7</scale></LabelStyle>')
-kml_lines.append('    <BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle>')
-kml_lines.append('  </Style>')
-kml_lines.append('  <Style id="vesselOffline">')
-kml_lines.append(f'    <IconStyle><color>ff808080</color><scale>0.7</scale><Icon><href>{ICON_HREF_PRODUCTION}</href></Icon></IconStyle>')
-kml_lines.append('    <LabelStyle><scale>0.6</scale></LabelStyle>')
-kml_lines.append('  </Style>')
+    fetched_at=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    source_attrib="Source: AISHub (data.aishub.net) — Contributor network. Data may be delayed/incomplete/inaccurate. Not for navigation."
+    interval_min=10
+    bbox_str=f"{BBOX['latmin']}–{BBOX['latmax']} / {BBOX['lonmin']}–{BBOX['lonmax']}"
 
-# Track counts for inspection
-live=0
-offline=0
-for code,name,op,typ,imo,mmsi,call,flag,length in ROSTER_118:
-    mmsi_str=str(mmsi)
-    ais=snap_map.get(mmsi_str)
-    # Determine live position within interval
-    is_live=False
-    lat=None; lon=None; heading=None; cog=None; sog=None; navstat=None; ais_time=None; ais_name=None
-    if ais:
+    # KML heading helper
+    def kml_heading(h):
         try:
-            lat=float(ais.get("LATITUDE")); lon=float(ais.get("LONGITUDE"))
-            # Validate
-            if lat==0 and lon==0: raise ValueError
-            if not (-90<=lat<=90 and -180<=lon<=180): raise ValueError
-            is_live=True
-        except: is_live=False
-        heading=ais.get("HEADING"); cog=ais.get("COG"); sog=ais.get("SOG"); navstat=ais.get("NAVSTAT"); ais_time=ais.get("TIME"); ais_name=ais.get("NAME")
-    if is_live:
-        live+=1
-        # Heading logic
-        h_val=kml_heading(heading)
-        cog_val=None
-        try:
-            if cog not in (360,360.0,"360",3600, "360.0") and cog is not None:
-                cog_val=float(cog)
-        except: pass
-        heading_src="HEADING"
-        icon_h=h_val
-        heading_num=heading
-        if h_val is None and cog_val is not None:
-            icon_h=int(cog_val) if cog_val!=360 else None
-            heading_src="COG (HEADING=511/NA fallback)"
+            hi=int(float(h))
+        except: return None
+        if hi==511: return None
+        if hi==0: return 360
+        return hi
+
+    # Build KML
+    kml_lines=[]
+    kml_lines.append('<?xml version="1.0" encoding="UTF-8"?>')
+    kml_lines.append('<kml xmlns="http://www.opengis.net/kml/2.2">')
+    kml_lines.append('<Document>')
+    kml_lines.append('  <name>Great Lakes Commercial &amp; Operational Ships — AIS Live (Production — 118)</name>')
+    kml_lines.append(f'  <description><![CDATA[Production AIS vessel layer — 118 permanent placemarks (MMSI primary key, never name-matched).<br/>Source: {source_attrib}<br/>Interval {interval_min} min | 1 req/min limit → 5-min 12/hr feasible $0<br/>Bbox {bbox_str} | Fetched {html.escape(fetched_at)}<br/>MMSI→placemark never changes, heading via &lt;IconStyle&gt;&lt;heading&gt; (HEADING priority, COG fallback labelled), offline retained visibility 0.<br/>118/118 High, ceiling 180 not approached. Not for navigation.]]></description>')
+    # Styles — RED ICON ONLY
+    kml_lines.append('  <Style id="vesselActive">')
+    kml_lines.append(f'    <IconStyle><scale>0.8</scale><Icon><href>{ICON_HREF_PRODUCTION}</href></Icon><hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/></IconStyle>')
+    kml_lines.append('    <LabelStyle><scale>0.7</scale></LabelStyle>')
+    kml_lines.append('    <BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle>')
+    kml_lines.append('  </Style>')
+    kml_lines.append('  <Style id="vesselOffline">')
+    kml_lines.append(f'    <IconStyle><color>ff808080</color><scale>0.7</scale><Icon><href>{ICON_HREF_PRODUCTION}</href></Icon></IconStyle>')
+    kml_lines.append('    <LabelStyle><scale>0.6</scale></LabelStyle>')
+    kml_lines.append('  </Style>')
+
+    # Track counts for inspection
+    live=0
+    offline=0
+    for code,name,op,typ,imo,mmsi,call,flag,length in ROSTER_118:
+        mmsi_str=str(mmsi)
+        ais=snap_map.get(mmsi_str)
+        # Determine live position within interval
+        is_live=False
+        lat=None; lon=None; heading=None; cog=None; sog=None; navstat=None; ais_time=None; ais_name=None
+        if ais:
+            try:
+                lat=float(ais.get("LATITUDE")); lon=float(ais.get("LONGITUDE"))
+                # Validate
+                if lat==0 and lon==0: raise ValueError
+                if not (-90<=lat<=90 and -180<=lon<=180): raise ValueError
+                is_live=True
+            except: is_live=False
+            heading=ais.get("HEADING"); cog=ais.get("COG"); sog=ais.get("SOG"); navstat=ais.get("NAVSTAT"); ais_time=ais.get("TIME"); ais_name=ais.get("NAME")
+        if is_live:
+            live+=1
+            # Heading logic
+            h_val=kml_heading(heading)
+            cog_val=None
+            try:
+                if cog not in (360,360.0,"360",3600, "360.0") and cog is not None:
+                    cog_val=float(cog)
+            except: pass
+            heading_src="HEADING"
+            icon_h=h_val
             heading_num=heading
-        heading_str=f"{heading}°" if heading not in (511,"511",None) else "not available (COG fallback)"
-        cog_str=f"{cog}°" if cog not in (360,360.0) and cog is not None else "not available"
-        sog_str=f"{sog} kn" if sog not in (102.4,1024) and sog is not None else "not available"
-        desc=f"<![CDATA[<b>{html.escape(name)}</b> ({code})<br/>Operator: {html.escape(op)}<br/>Type: {html.escape(typ)}<br/>MMSI: {mmsi} | IMO: {imo} | Call: {html.escape(call)} | Flag: {flag} | Length: {length}<br/>Position: {lat:.5f}, {lon:.5f}<br/>HEADING: {heading_str} (source: {heading_src}) | COG: {cog_str} | SOG: {sog_str}<br/>NAVSTAT: {navstat} | AIS NAME: {html.escape(str(ais_name))}<br/>AIS TIME: {html.escape(str(ais_time))} | Fetched: {html.escape(fetched_at)}<br/>Source: AISHub — attribution preserved<br/><i>{html.escape(DISCLAIMER)}</i>]]>"
-        extended=f'<ExtendedData><Data name="mmsi"><value>{mmsi}</value></Data><Data name="imo"><value>{imo}</value></Data><Data name="heading"><value>{heading}</value></Data><Data name="cog"><value>{cog}</value></Data><Data name="sog"><value>{sog}</value></Data><Data name="ais_time"><value>{html.escape(str(ais_time))}</value></Data><Data name="fetched_at"><value>{html.escape(fetched_at)}</value></Data><Data name="source"><value>AISHub (data.aishub.net)</value></Data><Data name="callsign"><value>{html.escape(call)}</value></Data></ExtendedData>'
-        # Build placemark with red icon heading
-        kml_lines.append(f'  <Placemark id="{mmsi}">')
-        kml_lines.append(f'    <name>{html.escape(name)}</name>')
-        kml_lines.append(f'    <styleUrl>#vesselActive</styleUrl>')
-        if icon_h is not None:
-            kml_lines.append(f'    <Style><IconStyle><heading>{icon_h}</heading><Icon><href>{ICON_HREF_PRODUCTION}</href></Icon></IconStyle></Style>')
-        kml_lines.append(f'    <description>{desc}</description>')
-        kml_lines.append(f'    <Point><coordinates>{lon:.5f},{lat:.5f},0</coordinates></Point>')
-        kml_lines.append(f'    {extended}')
-        kml_lines.append(f'  </Placemark>')
-    else:
-        offline+=1
-        desc_off=f"<![CDATA[<b>{html.escape(name)}</b> ({code})<br/>Operator: {html.escape(op)}<br/>MMSI: {mmsi} | IMO: {imo} | Flag: {flag}<br/><b style=\"color:#cc0000\">AIS status: No current position received</b> (no AISHub record within {interval_min}-min interval)<br/>Permanent placemark retained — not moved to estimated position, not deleted, not substituted.<br/>Last-known: not shown (stale) | Fetched: {html.escape(fetched_at)} | Source: AISHub<br/><i>{html.escape(DISCLAIMER)}</i>]]>"
-        kml_lines.append(f'  <Placemark id="{mmsi}">')
-        kml_lines.append(f'    <name>{html.escape(name)} (offline)</name>')
-        kml_lines.append(f'    <styleUrl>#vesselOffline</styleUrl>')
-        kml_lines.append(f'    <description>{desc_off}</description>')
-        kml_lines.append(f'    <Point><coordinates>0,0,0</coordinates></Point>')
-        kml_lines.append(f'    <visibility>0</visibility>')
-        kml_lines.append(f'    <ExtendedData><Data name="mmsi"><value>{mmsi}</value></Data><Data name="imo"><value>{imo}</value></Data><Data name="status"><value>No current position</value></Data><Data name="fetched_at"><value>{html.escape(fetched_at)}</value></Data><Data name="source"><value>AISHub (data.aishub.net)</value></Data></ExtendedData>')
-        kml_lines.append(f'  </Placemark>')
+            if h_val is None and cog_val is not None:
+                icon_h=int(cog_val) if cog_val!=360 else None
+                heading_src="COG (HEADING=511/NA fallback)"
+                heading_num=heading
+            heading_str=f"{heading}°" if heading not in (511,"511",None) else "not available (COG fallback)"
+            cog_str=f"{cog}°" if cog not in (360,360.0) and cog is not None else "not available"
+            sog_str=f"{sog} kn" if sog not in (102.4,1024) and sog is not None else "not available"
+            desc=f"<![CDATA[<b>{html.escape(name)}</b> ({code})<br/>Operator: {html.escape(op)}<br/>Type: {html.escape(typ)}<br/>MMSI: {mmsi} | IMO: {imo} | Call: {html.escape(call)} | Flag: {flag} | Length: {length}<br/>Position: {lat:.5f}, {lon:.5f}<br/>HEADING: {heading_str} (source: {heading_src}) | COG: {cog_str} | SOG: {sog_str}<br/>NAVSTAT: {navstat} | AIS NAME: {html.escape(str(ais_name))}<br/>AIS TIME: {html.escape(str(ais_time))} | Fetched: {html.escape(fetched_at)}<br/>Source: AISHub — attribution preserved<br/><i>{html.escape(DISCLAIMER)}</i>]]>"
+            extended=f'<ExtendedData><Data name="mmsi"><value>{mmsi}</value></Data><Data name="imo"><value>{imo}</value></Data><Data name="heading"><value>{heading}</value></Data><Data name="cog"><value>{cog}</value></Data><Data name="sog"><value>{sog}</value></Data><Data name="ais_time"><value>{html.escape(str(ais_time))}</value></Data><Data name="fetched_at"><value>{html.escape(fetched_at)}</value></Data><Data name="source"><value>AISHub (data.aishub.net)</value></Data><Data name="callsign"><value>{html.escape(call)}</value></Data></ExtendedData>'
+            # Build placemark with red icon heading
+            kml_lines.append(f'  <Placemark id="{mmsi}">')
+            kml_lines.append(f'    <name>{html.escape(name)}</name>')
+            kml_lines.append(f'    <styleUrl>#vesselActive</styleUrl>')
+            if icon_h is not None:
+                kml_lines.append(f'    <Style><IconStyle><heading>{icon_h}</heading><Icon><href>{ICON_HREF_PRODUCTION}</href></Icon></IconStyle></Style>')
+            kml_lines.append(f'    <description>{desc}</description>')
+            kml_lines.append(f'    <Point><coordinates>{lon:.5f},{lat:.5f},0</coordinates></Point>')
+            kml_lines.append(f'    {extended}')
+            kml_lines.append(f'  </Placemark>')
+        else:
+            offline+=1
+            desc_off=f"<![CDATA[<b>{html.escape(name)}</b> ({code})<br/>Operator: {html.escape(op)}<br/>MMSI: {mmsi} | IMO: {imo} | Flag: {flag}<br/><b style=\"color:#cc0000\">AIS status: No current position received</b> (no AISHub record within {interval_min}-min interval)<br/>Permanent placemark retained — not moved to estimated position, not deleted, not substituted.<br/>Last-known: not shown (stale) | Fetched: {html.escape(fetched_at)} | Source: AISHub<br/><i>{html.escape(DISCLAIMER)}</i>]]>"
+            kml_lines.append(f'  <Placemark id="{mmsi}">')
+            kml_lines.append(f'    <name>{html.escape(name)} (offline)</name>')
+            kml_lines.append(f'    <styleUrl>#vesselOffline</styleUrl>')
+            kml_lines.append(f'    <description>{desc_off}</description>')
+            kml_lines.append(f'    <Point><coordinates>0,0,0</coordinates></Point>')
+            kml_lines.append(f'    <visibility>0</visibility>')
+            kml_lines.append(f'    <ExtendedData><Data name="mmsi"><value>{mmsi}</value></Data><Data name="imo"><value>{imo}</value></Data><Data name="status"><value>No current position</value></Data><Data name="fetched_at"><value>{html.escape(fetched_at)}</value></Data><Data name="source"><value>AISHub (data.aishub.net)</value></Data></ExtendedData>')
+            kml_lines.append(f'  </Placemark>')
 
-kml_lines.append('</Document>')
-kml_lines.append('</kml>')
-kml_content="\n".join(kml_lines)
-# Write KML
-out_kml="ais/great_lakes_ais.kml"
-pathlib.Path(out_kml).write_text(kml_content)
-print(f"Wrote KML {out_kml} — {len(ROSTER_118)} placemarks (live {live}, offline {offline})")
-# Also write KMZ (zip KML + icon)
-out_kmz="/var/folders/_7/cqm25grj5w95r1zwk6lw9mf80000gn/T/opencode/production_ais/great_lakes_ais.kmz"
-with zipfile.ZipFile(out_kmz, 'w', zipfile.ZIP_DEFLATED) as z:
-    z.write(out_kml, "great_lakes_ais.kml")
-    z.write(ICON_SRC, "icons/Copilot_20260827_201004.png")
-print(f"Wrote KMZ {out_kmz} — contains KML + red icon (exact PNG, 1024x1024 RGBA, MD5 a194d59...)")
-# Quick validation
-print(f"Unique MMSI check: {len(set(mmsis))} == {len(ROSTER_118)} -> {len(set(mmsis))==len(ROSTER_118)}")
-print(f"Ceiling 180: {len(ROSTER_118)} <=180 -> {len(ROSTER_118)<=180}")
-print(f"Red icon href: {ICON_HREF_PRODUCTION} — Google Earth Small (native 1024 but used exactly as provided, 0°=north, transparency preserved)")
-print(f"ATB one unit = one placemark: verified (e.g., Dirk 5175745 represents Michigan Trader barge as attribute)")
+    kml_lines.append('</Document>')
+    kml_lines.append('</kml>')
+    kml_content="\n".join(kml_lines)
+    # Write KML
+    out_kml="ais/great_lakes_ais.kml"
+    pathlib.Path(out_kml).write_text(kml_content)
+    print(f"Wrote KML {out_kml} — {len(ROSTER_118)} placemarks (live {live}, offline {offline})")
+    # Also write KMZ (zip KML + icon)
+    out_kmz="/var/folders/_7/cqm25grj5w95r1zwk6lw9mf80000gn/T/opencode/production_ais/great_lakes_ais.kmz"
+    with zipfile.ZipFile(out_kmz, 'w', zipfile.ZIP_DEFLATED) as z:
+        z.write(out_kml, "great_lakes_ais.kml")
+        z.write(ICON_SRC, "icons/Copilot_20260827_201004.png")
+    print(f"Wrote KMZ {out_kmz} — contains KML + red icon (exact PNG, 1024x1024 RGBA, MD5 a194d59...)")
+    # Quick validation
+    print(f"Unique MMSI check: {len(set(mmsis))} == {len(ROSTER_118)} -> {len(set(mmsis))==len(ROSTER_118)}")
+    print(f"Ceiling 180: {len(ROSTER_118)} <=180 -> {len(ROSTER_118)<=180}")
+    print(f"Red icon href: {ICON_HREF_PRODUCTION} — Google Earth Small (native 1024 but used exactly as provided, 0°=north, transparency preserved)")
+    print(f"ATB one unit = one placemark: verified (e.g., Dirk 5175745 represents Michigan Trader barge as attribute)")
+
+if __name__ == "__main__":
+    main()

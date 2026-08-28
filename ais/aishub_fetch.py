@@ -86,16 +86,13 @@ if __name__ == "__main__":
     # Load roster MMSIs — use production roster 118 MMSI list embedded in update_ais.py ROSTER_118
     # For portability, extract MMSIs from ais/update_ais.py
     import pathlib, json, re, importlib.util, sys
-    # Try to import update_ais to get ROSTER_118 without hardcoding path
+    # Load roster MMSIs from roster_118.json (no import side-effect)
     try:
-        spec = importlib.util.spec_from_file_location("update_ais", str(pathlib.Path(__file__).parent / "update_ais.py"))
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        mmsis = [str(m) for m in [r[5] for r in mod.ROSTER_118]]
-        # Ensure 9-digit strings
+        roster_data = json.load(open(pathlib.Path(__file__).parent / "roster_118.json"))
+        mmsis = [str(r["mmsi"]) for r in roster_data]
         mmsis = [re.sub(r'\D','',m) for m in mmsis if len(re.sub(r'\D','',m))==9]
     except Exception as e:
-        print(f"Warning: could not load ROSTER_118 from update_ais.py ({e}), falling back to minimal list")
+        print(f"Warning: could not load roster_118.json ({e}), falling back to minimal list")
         mmsis=["366904000","316009090"]
     username=os.environ.get("AISHUB_USERNAME","USERNAME")
     # --live requires username, else fail for workflow fallback; --mock forces mock
