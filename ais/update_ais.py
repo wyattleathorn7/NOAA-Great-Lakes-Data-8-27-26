@@ -15,7 +15,7 @@ import json, pathlib, re, time, html, xml.etree.ElementTree as ET, os, zipfile
 # --- Config ---
 ROSTER_COUNT = 118
 CEILING = 180
-ICON_SRC = "/var/folders/_7/cqm25grj5w95r1zwk6lw9mf80000gn/T/opencode/production_ais/icons/Copilot_20260827_201004.png"
+ICON_SRC = str(pathlib.Path(__file__).parent / "icons/Copilot_20260827_201004.png")
 ICON_HREF_PRODUCTION = "icons/Copilot_20260827_201004.png"  # relative for KMZ
 # For GitHub Pages, will be https://<user>.github.io/<repo>/icons/Copilot_20260827_201004.png — keep relative
 BBOX = {"latmin":41.0,"latmax":49.5,"lonmin":-93.5,"lonmax":-66.0}
@@ -172,7 +172,7 @@ assert len(ROSTER_118) <= 180
 
 # Load snapshot (mock or real if USERNAME set)
 import urllib.request, urllib.parse, json, time
-SNAP_PATH="/var/folders/_7/cqm25grj5w95r1zwk6lw9mf80000gn/T/opencode/proto_ais/latest_snapshot.json"
+SNAP_PATH=str(pathlib.Path(__file__).parent / "latest_snapshot.json")
 snapshot=None
 try:
     snapshot=json.load(open(SNAP_PATH))
@@ -276,7 +276,7 @@ kml_lines.append('</Document>')
 kml_lines.append('</kml>')
 kml_content="\n".join(kml_lines)
 # Write KML
-out_kml="/var/folders/_7/cqm25grj5w95r1zwk6lw9mf80000gn/T/opencode/production_ais/great_lakes_ais.kml"
+out_kml="ais/great_lakes_ais.kml"
 pathlib.Path(out_kml).write_text(kml_content)
 print(f"Wrote KML {out_kml} — {len(ROSTER_118)} placemarks (live {live}, offline {offline})")
 # Also write KMZ (zip KML + icon)

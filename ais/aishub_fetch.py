@@ -83,21 +83,35 @@ def fetch(username, mmsi_list, mock=False):
     return {"fetched_at": fetched_at, "source": "AISHub (data.aishub.net)", "attribution": ATTRIBUTION, "disclaimer": DISCLAIMER, "bbox": BBOX, "interval_min": INTERVAL, "vessels": vessels, "record_count": len(vessels), "mock": False}
 
 if __name__ == "__main__":
-    # Load roster MMSIs
-    roster_path = "/var/folders/_7/cqm25grj5w95r1zwk6lw9mf80000gn/T/opencode/roster_mmsi.json"
-    import pathlib, json, re
-    if pathlib.Path(roster_path).exists():
-        rows=json.load(open(roster_path))
-        mmsis=[re.sub(r'\D','',r[3])[:9] for r in rows if len(re.sub(r'\D','',r[3]))==9]
-        # Limit to first 20 for demo URL length; production would send all 73 clean MMSIs in one batch (729 chars, <2048)
-        mmsis=mmsis[:20]
-    else:
+    # Load roster MMSIs — use production roster 118 MMSI list embedded in update_ais.py ROSTER_118
+    # For portability, extract MMSIs from ais/update_ais.py
+    import pathlib, json, re, importlib.util, sys
+    # Try to import update_ais to get ROSTER_118 without hardcoding path
+    try:
+        spec = importlib.util.spec_from_file_location("update_ais", str(pathlib.Path(__file__).parent / "update_ais.py"))
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        mmsis = [str(m) for m in [r[5] for r in mod.ROSTER_118]]
+        # Ensure 9-digit strings
+        mmsis = [re.sub(r'\D','',m) for m in mmsis if len(re.sub(r'\D','',m))==9]
+    except Exception as e:
+        print(f"Warning: could not load ROSTER_118 from update_ais.py ({e}), falling back to minimal list")
         mmsis=["366904000","316009090"]
     username=os.environ.get("AISHUB_USERNAME","USERNAME")
-    mock="--mock" in sys.argv or username=="USERNAME"
+    # --live requires username, else fail for workflow fallback; --mock forces mock
+    requested_live = "--live" in sys.argv
+    requested_mock = "--mock" in sys.argv
+    if requested_live and (not username or username=="USERNAME"):
+        print("ERROR: --live requested but AISHUB_USERNAME not set (use GitHub Secret)", file=sys.stderr)
+        sys.exit(2)
+    mock = requested_mock or (not username or username=="USERNAME")
+    # If no flag, auto-detect: live if username present else mock
+    if not requested_live and not requested_mock:
+        mock = not username or username=="USERNAME"
     result=fetch(username, mmsis, mock=mock)
-    out="/var/folders/_7/cqm25grj5w95r1zwk6lw9mf80000gn/T/opencode/proto_ais/latest_snapshot.json"
-    open(out,"w").write(json.dumps(result, indent=2))
-    print(f"Wrote {out} — {result['record_count']} vessels (mock={result['mock']})")
+    # Production snapshot path (repo-relative)
+    out = pathlib.Path(__file__).parent / "latest_snapshot.json"
+    out.write_text(json.dumps(result, indent=2))
+    print(f"Wrote {out} — {result['record_count']} vessels (mock={result['mock']}) for {len(mmsis)} MMSIs batched (Great Lakes bbox {BBOX})")
     for v in result["vessels"][:3]:
         print(json.dumps(v, indent=2))
