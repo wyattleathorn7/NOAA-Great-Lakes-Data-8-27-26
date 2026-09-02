@@ -49,14 +49,14 @@ def run(base_url, force=False):
     # Keep Small sizes (scale 0.7) as requested, preserve native Point appearance
     buoy_style = ET.Element(f"{{{KML_NS}}}Style", id="buoyStyle")
     icon_style = ET.SubElement(buoy_style, f"{{{KML_NS}}}IconStyle")
-    icon_color = ET.SubElement(icon_style, f"{{{KML_NS}}}color")
-    icon_color.text = "fff4d916"
     icon_scale = ET.SubElement(icon_style, f"{{{KML_NS}}}scale")
-    icon_scale.text = "0.7"
+    icon_scale.text = "1.0"
     icon = ET.SubElement(icon_style, f"{{{KML_NS}}}Icon")
     icon_href = ET.SubElement(icon, f"{{{KML_NS}}}href")
-    icon_href.text = "https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png"
+    icon_href.text = "icons/noaa_buoy_512.png"
     label_style = ET.SubElement(buoy_style, f"{{{KML_NS}}}LabelStyle")
+    label_color = ET.SubElement(label_style, f"{{{KML_NS}}}color")
+    label_color.text = "ffffffff"
     label_scale = ET.SubElement(label_style, f"{{{KML_NS}}}scale")
     label_scale.text = "0.7"
     # Insert as first child of Document
