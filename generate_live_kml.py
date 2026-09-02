@@ -50,7 +50,7 @@ def run(base_url, force=False):
     buoy_style = ET.Element(f"{{{KML_NS}}}Style", id="buoyStyle")
     icon_style = ET.SubElement(buoy_style, f"{{{KML_NS}}}IconStyle")
     icon_scale = ET.SubElement(icon_style, f"{{{KML_NS}}}scale")
-    icon_scale.text = "1.0"
+    icon_scale.text = "0.4"
     icon = ET.SubElement(icon_style, f"{{{KML_NS}}}Icon")
     icon_href = ET.SubElement(icon, f"{{{KML_NS}}}href")
     icon_href.text = "icons/noaa_buoy_512.png"
