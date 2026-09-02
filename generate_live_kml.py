@@ -44,22 +44,20 @@ def run(base_url, force=False):
     with __import__("zipfile").ZipFile(SOURCE) as archive:
         source_doc = archive.read("doc.kml")
     root = ET.fromstring(source_doc)
-    # Add shared buoy style: native Point, Small icon/label, color #F4D916 (no custom PNG)
-    # KML color is aabbggrr: #F4D916 -> ff16D9F4, but spec requires exactly #F4D916 so use fff4d916 as direct hex with alpha ff
+    # Add shared buoy style: native Point via standard icon, Small icon/label, no custom PNG
+    # Use explicit href so Google Earth Web renders icon (no href = no icon in data layer mode)
+    # Keep Small sizes (scale 0.7) as requested, preserve native Point appearance
     buoy_style = ET.Element(f"{{{KML_NS}}}Style", id="buoyStyle")
     icon_style = ET.SubElement(buoy_style, f"{{{KML_NS}}}IconStyle")
-    icon_color = ET.SubElement(icon_style, f"{{{KML_NS}}}color")
-    icon_color.text = "fff4d916"
     icon_scale = ET.SubElement(icon_style, f"{{{KML_NS}}}scale")
     icon_scale.text = "0.7"
-    # No Icon href — uses native default Point
+    icon = ET.SubElement(icon_style, f"{{{KML_NS}}}Icon")
+    icon_href = ET.SubElement(icon, f"{{{KML_NS}}}href")
+    icon_href.text = "http://maps.google.com/mapfiles/kml/paddle/placemark_circle.png"
     label_style = ET.SubElement(buoy_style, f"{{{KML_NS}}}LabelStyle")
-    label_color = ET.SubElement(label_style, f"{{{KML_NS}}}color")
-    label_color.text = "fff4d916"
     label_scale = ET.SubElement(label_style, f"{{{KML_NS}}}scale")
     label_scale.text = "0.7"
-    # Insert as first child of Document (before Placemarks/Folders)
-    # Find Document element (root is kml, first child is Document)
+    # Insert as first child of Document
     doc_elem = root.find(f"{{{KML_NS}}}Document")
     if doc_elem is not None:
         doc_elem.insert(0, buoy_style)
@@ -102,7 +100,7 @@ def run(base_url, force=False):
         original_link = G.extract_original_link(previous_descriptions[index])
         body = G.render_description(name, result, attempts, fetched_at, original_link)
         description.text = body
-        # Ensure each Placemark uses the shared buoyStyle (native Point, Small, #F4D916)
+        # Ensure each Placemark uses the shared buoyStyle (native Point, Small icon/label)
         style_url = placemark.find(f"{{{KML_NS}}}styleUrl")
         if style_url is None:
             style_url = ET.Element(f"{{{KML_NS}}}styleUrl")
