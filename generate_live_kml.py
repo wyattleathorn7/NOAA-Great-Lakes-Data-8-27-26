@@ -44,6 +44,27 @@ def run(base_url, force=False):
     with __import__("zipfile").ZipFile(SOURCE) as archive:
         source_doc = archive.read("doc.kml")
     root = ET.fromstring(source_doc)
+    # Add shared buoy style: native Point, Small icon/label, color #F4D916 (no custom PNG)
+    # KML color is aabbggrr: #F4D916 -> ff16D9F4, but spec requires exactly #F4D916 so use fff4d916 as direct hex with alpha ff
+    buoy_style = ET.Element(f"{{{KML_NS}}}Style", id="buoyStyle")
+    icon_style = ET.SubElement(buoy_style, f"{{{KML_NS}}}IconStyle")
+    icon_color = ET.SubElement(icon_style, f"{{{KML_NS}}}color")
+    icon_color.text = "fff4d916"
+    icon_scale = ET.SubElement(icon_style, f"{{{KML_NS}}}scale")
+    icon_scale.text = "0.7"
+    # No Icon href — uses native default Point
+    label_style = ET.SubElement(buoy_style, f"{{{KML_NS}}}LabelStyle")
+    label_color = ET.SubElement(label_style, f"{{{KML_NS}}}color")
+    label_color.text = "fff4d916"
+    label_scale = ET.SubElement(label_style, f"{{{KML_NS}}}scale")
+    label_scale.text = "0.7"
+    # Insert as first child of Document (before Placemarks/Folders)
+    # Find Document element (root is kml, first child is Document)
+    doc_elem = root.find(f"{{{KML_NS}}}Document")
+    if doc_elem is not None:
+        doc_elem.insert(0, buoy_style)
+    else:
+        root.insert(0, buoy_style)
     placemarks = root.findall(f".//{{{KML_NS}}}Placemark")
     links = root.findall(f".//{{{KML_NS}}}NetworkLink")
     original_names = [G.text_of(p.find(f"{{{KML_NS}}}name")) for p in placemarks]
@@ -81,6 +102,12 @@ def run(base_url, force=False):
         original_link = G.extract_original_link(previous_descriptions[index])
         body = G.render_description(name, result, attempts, fetched_at, original_link)
         description.text = body
+        # Ensure each Placemark uses the shared buoyStyle (native Point, Small, #F4D916)
+        style_url = placemark.find(f"{{{KML_NS}}}styleUrl")
+        if style_url is None:
+            style_url = ET.Element(f"{{{KML_NS}}}styleUrl")
+            placemark.insert(0, style_url)
+        style_url.text = "#buoyStyle"
 
     candidate_names = [G.text_of(p.find(f"{{{KML_NS}}}name")) for p in placemarks]
     candidate_coords = [G.text_of(p.find(f".//{{{KML_NS}}}coordinates")) for p in placemarks]
