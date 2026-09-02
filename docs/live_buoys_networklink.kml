@@ -3,9 +3,9 @@
   <NetworkLink>
     <name>Great Lakes Live Buoys (auto-refresh)</name>
     <Link>
-      <href>https://example.com/live_buoys.kml</href>
+      <href>https://wyattleathorn7.github.io/NOAA-Great-Lakes-Data-8-27-26/live_buoys.kml</href>
       <refreshMode>onInterval</refreshMode>
-      <refreshInterval>900</refreshInterval>
+      <refreshInterval>300</refreshInterval>
       <viewRefreshMode>never</viewRefreshMode>
     </Link>
   </NetworkLink>
