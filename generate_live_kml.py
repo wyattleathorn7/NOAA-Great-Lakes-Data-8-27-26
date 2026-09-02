@@ -95,7 +95,7 @@ def run(base_url, force=False):
                       xml_text, flags=re.DOTALL)
     LIVE_KML.write_text(xml_text, encoding="utf-8")
 
-    # NetworkLink KML pointing at the public URL.
+    # NetworkLink KML pointing at the public URL — mirrors AIS NetworkLink (300s, onInterval, never).
     netlink = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<kml xmlns="http://www.opengis.net/kml/2.2">\n'
@@ -104,7 +104,7 @@ def run(base_url, force=False):
         "    <Link>\n"
         f"      <href>{html.escape(base_url.rstrip('/'))}/live_buoys.kml</href>\n"
         "      <refreshMode>onInterval</refreshMode>\n"
-        "      <refreshInterval>900</refreshInterval>\n"
+        "      <refreshInterval>300</refreshInterval>\n"
         "      <viewRefreshMode>never</viewRefreshMode>\n"
         "    </Link>\n"
         "  </NetworkLink>\n"
