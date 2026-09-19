@@ -123,6 +123,40 @@ def timestamp_text(record):
     return stamp.strftime("%Y-%m-%d %H:%M:%S UTC") if stamp else None
 
 
+def friendly_utc_stamp(stamp):
+    """Format a UTC timestamp for Google Earth balloon descriptions.
+
+    Accepts '2026-09-19 01:51:39 UTC' or ISO '2026-09-19T01:51:39Z' and returns
+    12-hour Great Lakes local time with AM/PM plus a UTC reference, e.g.
+    '9:51 PM EDT Thu, Sep 18 (01:51 UTC Fri, Sep 19)'.
+    Unparseable input is returned unchanged so descriptions never go blank.
+    """
+    text = str(stamp or "").strip()
+    dt = None
+    for fmt in ("%Y-%m-%d %H:%M:%S UTC", "%Y-%m-%d %H:%M UTC",
+                "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S%z",
+                "%Y-%m-%dT%H:%M%z", "%Y-%m-%d %H:%M:%S%z"):
+        try:
+            dt = datetime.strptime(text, fmt)
+            break
+        except ValueError:
+            continue
+    if dt is None:
+        try:
+            dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
+        except ValueError:
+            return text
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    try:
+        from zoneinfo import ZoneInfo
+        local = dt.astimezone(ZoneInfo("America/Detroit"))
+    except Exception:
+        local = dt
+    return (local.strftime("%-I:%M %p %Z %a, %b %d")
+            + dt.strftime(" (%H:%M UTC %a, %b %d)"))
+
+
 def valid_value(value):
     if value is None or str(value).strip().upper() in {"", "MM", "NA", "NAN", "NULL"}:
         return False
@@ -798,8 +832,8 @@ def render_description(name, result, attempts, fetched_at, original_link=""):
         link_html = "<br/>".join(
             f'<a href="{html.escape(u, quote=True)}">{html.escape(l)}</a>' for l, u in links)
         return (f"<b>{html.escape(name)}</b><br/><br/>{body}"
-                f"<br/><br/><b>Observed source timestamp:</b> {observed}"
-                f"<br/><b>Fetched runtime:</b> {fetched_at}"
+                f"<br/><br/><b>Observed source timestamp:</b> {friendly_utc_stamp(observed)}"
+                f"<br/><b>Fetched runtime:</b> {friendly_utc_stamp(fetched_at)}"
                 f"<br/><b>Source:</b> {html.escape(result.get('source_label', ''))}<br/>{link_html}")
     if status == "offline":
         identity = result.get("identity_text", name)
@@ -810,15 +844,15 @@ def render_description(name, result, attempts, fetched_at, original_link=""):
                 f"<b>Exact platform:</b> {html.escape(identity)}<br/>"
                 f"<b>Status:</b> the platform's exact NOAA/GLOS source was queried and returned no "
                 f"current observation. It will be retried automatically on the next scheduled update.<br/>"
-                f"<b>Observed source timestamp:</b> none (platform offline)<br/>"
-                f"<b>Fetched runtime:</b> {fetched_at}<br/>"
+                 f"<b>Observed source timestamp:</b> none (platform offline)<br/>"
+                 f"<b>Fetched runtime:</b> {friendly_utc_stamp(fetched_at)}<br/>"
                 f"<b>Source:</b> {html.escape(result.get('source_label', ''))}<br/>{link_html}")
         if original_link and original_link not in link_html:
             body += f"<br/><a href=\"{html.escape(original_link, quote=True)}\">Original source link</a>"
         return f"<b>{html.escape(name)}</b><br/><br/>{body}"
     # UNRESOLVED: identity could not be established; keep the placemark + original link.
     body = ("Exact platform/source identity could not be established.<br/>"
-            f"<b>Fetched runtime:</b> {fetched_at}<br/>")
+            f"<b>Fetched runtime:</b> {friendly_utc_stamp(fetched_at)}<br/>")
     if original_link:
         body += f"<a href=\"{html.escape(original_link, quote=True)}\">Original source link</a><br/>"
     return f"<b>{html.escape(name)}</b><br/><br/>{body}"

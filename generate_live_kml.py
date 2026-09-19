@@ -114,6 +114,21 @@ def run(base_url, force=False):
     candidate_folders = [G.text_of(f.find(f"{{{KML_NS}}}name"))
                          for f in root.findall(f".//{{{KML_NS}}}Folder")]
 
+    # Refresh the Document-level header stamp (it would otherwise stay frozen
+    # at whatever the source KMZ contains). Per-buoy Fetched runtimes above
+    # already carry the current run time; this keeps the top banner accurate.
+    doc_desc_parent = doc_elem if doc_elem is not None else root
+    doc_desc = doc_desc_parent.find(f"{{{KML_NS}}}description")
+    if doc_desc is not None:
+        old_header = html.unescape(doc_desc.text or "")
+        fresh_stamp = G.friendly_utc_stamp(fetched_at)
+        if re.search(r"Data fetched:", old_header):
+            doc_desc.text = re.sub(r"Data fetched:.*?(?=<br|$)",
+                                   f"Data fetched: {fresh_stamp}", old_header, count=1)
+        else:
+            doc_desc.text = (f"Real-time NOAA buoy data for the Great Lakes."
+                             f"<br/>Data fetched: {fresh_stamp}<br/>{old_header}")
+
     # Plain KML (no ZIP) so GitHub Pages serves it directly over HTTPS.
     xml_bytes = ET.tostring(root, encoding="utf-8", xml_declaration=True)
     xml_text = xml_bytes.decode("utf-8")
