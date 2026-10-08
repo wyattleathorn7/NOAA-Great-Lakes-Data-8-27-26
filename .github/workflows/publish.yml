@@ -1,10 +1,12 @@
 name: Publish live buoys KML
 
 on:
-  schedule:
-    # Every 15 minutes. GitHub may delay scheduled runs slightly.
-    - cron: "*/15 * * * *"
+  # No GitHub schedule (removed 2026-10-08): this workflow is driven by the
+  # 30-minute cron-job.org pinger, chained through
+  # great-lakes-live-environment (halfhourly repository_dispatch).
   workflow_dispatch:
+  repository_dispatch:
+    types: [halfhourly]
 
 permissions:
   contents: write   # needed by peaceiris/actions-gh-pages to push gh-pages

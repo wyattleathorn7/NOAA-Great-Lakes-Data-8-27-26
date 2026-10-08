@@ -1,8 +1,7 @@
 name: Update AIS vessel positions
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  # No GitHub schedule (removed 2026-10-08): manual dispatch only.
   workflow_dispatch:
 
 permissions:
